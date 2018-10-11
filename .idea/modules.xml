@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/lvdou-order/lvdou-order.iml" filepath="$PROJECT_DIR$/lvdou-order/lvdou-order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lvdou-order/lvdou-order-interface/lvdou-order-interface.iml" filepath="$PROJECT_DIR$/lvdou-order/lvdou-order-interface/lvdou-order-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lvdou-order/lvdou-order-service/lvdou-order-service.iml" filepath="$PROJECT_DIR$/lvdou-order/lvdou-order-service/lvdou-order-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lvdou-pay/lvdou-pay.iml" filepath="$PROJECT_DIR$/lvdou-pay/lvdou-pay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lvdou-pay/lvdou-pay-interface/lvdou-pay-interface.iml" filepath="$PROJECT_DIR$/lvdou-pay/lvdou-pay-interface/lvdou-pay-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lvdou-pay/lvdou-pay-service/lvdou-pay-service.iml" filepath="$PROJECT_DIR$/lvdou-pay/lvdou-pay-service/lvdou-pay-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lvdou-search/lvdou-search.iml" filepath="$PROJECT_DIR$/lvdou-search/lvdou-search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lvdou-search/lvdou-search-interface/lvdou-search-interface.iml" filepath="$PROJECT_DIR$/lvdou-search/lvdou-search-interface/lvdou-search-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lvdou-search/lvdou-search-service/lvdou-search-service.iml" filepath="$PROJECT_DIR$/lvdou-search/lvdou-search-service/lvdou-search-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lvdou-search-web/lvdou-search-web.iml" filepath="$PROJECT_DIR$/lvdou-search-web/lvdou-search-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lvdou-seckill/lvdou-seckill.iml" filepath="$PROJECT_DIR$/lvdou-seckill/lvdou-seckill.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lvdou-seckill/lvdou-seckill-interface/lvdou-seckill-interface.iml" filepath="$PROJECT_DIR$/lvdou-seckill/lvdou-seckill-interface/lvdou-seckill-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lvdou-seckill/lvdou-seckill-service/lvdou-seckill-service.iml" filepath="$PROJECT_DIR$/lvdou-seckill/lvdou-seckill-service/lvdou-seckill-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lvdou-seckill-web/lvdou-seckill-web.iml" filepath="$PROJECT_DIR$/lvdou-seckill-web/lvdou-seckill-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lvdou-sms/lvdou-sms.iml" filepath="$PROJECT_DIR$/lvdou-sms/lvdou-sms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lvdou-solr-util/lvdou-solr-util.iml" filepath="$PROJECT_DIR$/lvdou-solr-util/lvdou-solr-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lvdou-task-service/lvdou-task-service.iml" filepath="$PROJECT_DIR$/lvdou-task-service/lvdou-task-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lvdou-user-web/lvdou-user-web.iml" filepath="$PROJECT_DIR$/lvdou-user-web/lvdou-user-web.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,3 @@
+com\lvdou\user\controller\UserController.class
+com\lvdou\user\controller\LoginController.class
+com\lvdou\user\service\UserDetailsServiceImpl.class

@@ -1,0 +1,7 @@
+com\lvdou\shop\service\UserDetailsServiceImpl.class
+com\lvdou\shop\controller\UploadController.class
+com\lvdou\shop\controller\TypeTemplateController.class
+com\lvdou\shop\controller\SellerController.class
+com\lvdou\shop\controller\GoodsController.class
+com\lvdou\shop\controller\ItemCatController.class
+com\lvdou\shop\controller\LoginController.class

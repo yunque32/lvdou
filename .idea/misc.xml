@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/../lvdou/lvdou-cart-web" />
+    <file type="web" url="file://$PROJECT_DIR$/../lvdou/lvdou-cart/lvdou-cart-service" />
+    <file type="web" url="file://$PROJECT_DIR$/../lvdou/lvdou-content/lvdou-content-service" />
+    <file type="web" url="file://$PROJECT_DIR$/../lvdou/lvdou-item-web" />
+    <file type="web" url="file://$PROJECT_DIR$/../lvdou/lvdou-manager-web" />
+    <file type="web" url="file://$PROJECT_DIR$/../lvdou/lvdou-order/lvdou-order-service" />
+    <file type="web" url="file://$PROJECT_DIR$/../lvdou/lvdou-order/pinyougou-order-service" />
+    <file type="web" url="file://$PROJECT_DIR$/../lvdou/lvdou-pay/lvdou-pay-service" />
+    <file type="web" url="file://$PROJECT_DIR$/../lvdou/lvdou-pay/pinyougou-pay-service" />
+    <file type="web" url="file://$PROJECT_DIR$/../lvdou/lvdou-portal-web" />
+    <file type="web" url="file://$PROJECT_DIR$/../lvdou/lvdou-search-web" />
+    <file type="web" url="file://$PROJECT_DIR$/../lvdou/lvdou-search/lvdou-search-service" />
+    <file type="web" url="file://$PROJECT_DIR$/../lvdou/lvdou-search/pinyougou-search-service" />
+    <file type="web" url="file://$PROJECT_DIR$/../lvdou/lvdou-seckill-web" />
+    <file type="web" url="file://$PROJECT_DIR$/../lvdou/lvdou-seckill/lvdou-seckill-service" />
+    <file type="web" url="file://$PROJECT_DIR$/../lvdou/lvdou-seckill/pinyougou-seckill-service" />
+    <file type="web" url="file://$PROJECT_DIR$/../lvdou/lvdou-sellergoods/lvdou-sellergoods-service" />
+    <file type="web" url="file://$PROJECT_DIR$/../lvdou/lvdou-sellergoods/pinyougou-sellergoods-service" />
+    <file type="web" url="file://$PROJECT_DIR$/../lvdou/lvdou-shop-web" />
+    <file type="web" url="file://$PROJECT_DIR$/../lvdou/lvdou-task-service" />
+    <file type="web" url="file://$PROJECT_DIR$/../lvdou/lvdou-user-web" />
+    <file type="web" url="file://$PROJECT_DIR$/../lvdou/lvdou-user/lvdou-user-service" />
+    <file type="web" url="file://$PROJECT_DIR$/../lvdou/lvdou-user/pinyougou-user-service" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/fastdfs_client/pom.xml" />
+        <option value="$PROJECT_DIR$/../lvdou/fastdfs-client/pom.xml" />
+        <option value="$PROJECT_DIR$/../lvdou/lvdou-search/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/../lvdou/out" />
+  </component>
+</project>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/../lvdou" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lvdou/lvdou-cart" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lvdou/lvdou-cart-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lvdou/lvdou-cart/lvdou-cart-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lvdou/lvdou-cart/lvdou-cart-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lvdou/lvdou-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lvdou/lvdou-content" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lvdou/lvdou-content/lvdou-content-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lvdou/lvdou-content/lvdou-content-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lvdou/lvdou-item-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lvdou/lvdou-manager-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lvdou/lvdou-mapper" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lvdou/lvdou-order" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lvdou/lvdou-order/lvdou-order-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lvdou/lvdou-order/lvdou-order-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lvdou/lvdou-pay" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lvdou/lvdou-pay/lvdou-pay-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lvdou/lvdou-pay/lvdou-pay-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lvdou/lvdou-pojo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lvdou/lvdou-portal-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lvdou/lvdou-search" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lvdou/lvdou-search-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lvdou/lvdou-search/lvdou-search-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lvdou/lvdou-search/lvdou-search-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lvdou/lvdou-seckill" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lvdou/lvdou-seckill-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lvdou/lvdou-seckill/lvdou-seckill-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lvdou/lvdou-seckill/lvdou-seckill-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lvdou/lvdou-sellergoods" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lvdou/lvdou-sellergoods/lvdou-sellergoods-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lvdou/lvdou-sellergoods/lvdou-sellergoods-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lvdou/lvdou-shop-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lvdou/lvdou-sms" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lvdou/lvdou-solr-util" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lvdou/lvdou-task-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lvdou/lvdou-user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lvdou/lvdou-user-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lvdou/lvdou-user/lvdou-user-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lvdou/lvdou-user/lvdou-user-service" charset="UTF-8" />
+  </component>
+</project>

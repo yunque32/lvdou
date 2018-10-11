@@ -1,0 +1,5 @@
+com\lvdou\common\util\IdWorker.class
+com\lvdou\common\util\HttpClientUtils.class
+com\lvdou\common\cookie\CookieUtils$CookieName.class
+com\lvdou\common\cookie\CookieUtils.class
+com\lvdou\common\pojo\PageResult.class
