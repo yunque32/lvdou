@@ -8,9 +8,6 @@ import java.net.URLEncoder;
 
 /**
  * 操作Cookie工具类
- * @author LEE.SIU.WAH
- * @date 2017年4月24日 下午4:04:55
- * @version 1.0
  */
 public final class CookieUtils {
 	
