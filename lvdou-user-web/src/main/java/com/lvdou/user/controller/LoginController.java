@@ -12,13 +12,16 @@ import java.util.Map;
 public class LoginController {
 
     /** 获取登录用户名 */
-    @GetMapping("/user/showName")
+    @GetMapping("/user/showLoginName")
     public Map<String,String> showName(){
+        System.out.println("进来了吗？=====");
         /** 获取用户登录名 */
-        String name = SecurityContextHolder.getContext()
-                .getAuthentication().getName();
-        Map<String, String> map = new HashMap<>();
-        map.put("loginName", name);
-        return map;
+            String name = SecurityContextHolder.getContext()
+                    .getAuthentication()
+                    .getName();
+            Map<String, String> map = new HashMap<>(1);
+            map.put("loginName", name);
+            return map;
     }
+
 }

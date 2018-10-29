@@ -42,4 +42,29 @@ app.controller('userController', function($scope, baseService){
             alert("手机号码格式不正确！");
         }
     };
+    $scope.checkUserName=function () {
+        baseService.sendGet("/user/checkUserName?userName="+$scope.user.username)
+            .then(function (response) {
+                if(response.data.checkResult=="1"){
+                    alert("用户名可以使用！")
+                }else {
+                    alert("用户名不可以使用！")
+                }
+            },function (response) {
+                alert("出现异常，请重试！")
+            })
+    }
+    $scope.registerUser=function () {
+        baseService.sendPost("/user/registerUser",$scope.user)
+            .then(function (response) {
+                if(response.data.registerResult=="1"){
+                    location.href = "/login.html";
+                    alert("注册成功！");
+                }else{
+                    alert("注册失败！");
+                }
+            },function (repsonse) {
+                alert("连接异常，请重试！");
+            })
+    }
 });

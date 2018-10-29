@@ -6,9 +6,9 @@ import com.lvdou.user.service.UserService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
-/**
- * 用户控制器
- */
+import java.util.HashMap;
+import java.util.Map;
+
 @RestController
 @RequestMapping("/user")
 public class UserController {
@@ -46,5 +46,14 @@ public class UserController {
             ex.printStackTrace();
         }
         return false;
+    }
+    @GetMapping("/checkUserName")
+    public Map<String,Object> checkUserName(String userName){
+        return  userService.checkUserName(userName);
+
+    }
+    @PostMapping("/registerUser")
+    public Map<String,String> registerUser(User user){
+        return userService.registerUser(user);
     }
 }
