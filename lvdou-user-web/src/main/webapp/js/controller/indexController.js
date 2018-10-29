@@ -3,7 +3,7 @@ app.controller('indexController', function($scope, baseService){
 
     /** 获取登录用户名方法 */
     $scope.showLoginName = function(){
-        baseService.sendGet("/user/showName").then(function (response) {
+        baseService.sendGet("/user/showLoginName").then(function (response) {
             // 获取响应数据
 
             $scope.loginName = response.data.loginName;

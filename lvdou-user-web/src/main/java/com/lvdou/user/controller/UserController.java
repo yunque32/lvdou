@@ -50,7 +50,6 @@ public class UserController {
     @GetMapping("/checkUserName")
     public Map<String,Object> checkUserName(String userName){
         return  userService.checkUserName(userName);
-
     }
     @PostMapping("/registerUser")
     public Map<String,String> registerUser(User user){

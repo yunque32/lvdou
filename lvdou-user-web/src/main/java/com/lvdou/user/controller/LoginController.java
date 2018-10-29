@@ -1,10 +1,13 @@
 package com.lvdou.user.controller;
 
-import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.context.SecurityContextImpl;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
+import java.security.Principal;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /** 登录控制器 */
@@ -13,12 +16,27 @@ public class LoginController {
 
     /** 获取登录用户名 */
     @GetMapping("/user/showLoginName")
-    public Map<String,String> showName(){
-        System.out.println("进来了吗？=====");
-        /** 获取用户登录名 */
-            String name = SecurityContextHolder.getContext()
-                    .getAuthentication()
-                    .getName();
+    public Map<String,String> showName(HttpServletRequest request){
+        SecurityContextImpl securityContextImpl = (SecurityContextImpl) request
+                .getSession().getAttribute("SPRING_SECURITY_CONTEXT");
+// 登录名
+        String name = securityContextImpl.getAuthentication().getName();
+        // 登录密码，未加密的
+//        System.out.println("Credentials:"
+//                + securityContextImpl.getAuthentication().getCredentials());
+//        WebAuthenticationDetails details = (WebAuthenticationDetails) securityContextImpl
+//                .getAuthentication().getDetails();
+//// 获得访问地址
+//        System.out.println("RemoteAddress" + details.getRemoteAddress());
+//// 获得sessionid
+//        System.out.println("SessionId" + details.getSessionId());
+//// 获得当前用户所拥有的权限
+//        List<GrantedAuthority> authorities = (List<GrantedAuthority>) securityContextImpl
+//                .getAuthentication().getAuthorities();
+//        for (GrantedAuthority grantedAuthority : authorities) {
+//            System.out.println("Authority" + grantedAuthority.getAuthority());
+//        }
+
             Map<String, String> map = new HashMap<>(1);
             map.put("loginName", name);
             return map;

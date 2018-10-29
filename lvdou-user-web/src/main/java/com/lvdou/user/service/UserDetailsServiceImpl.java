@@ -37,6 +37,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
             authorities.add(new SimpleGrantedAuthority("ROLE_SELLER"));
 
             // 返用用户 (密码由SpringSecurity判断)
+
             return new User(username, seller.getPassword(), authorities);
         }
         return null;
