@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * 地址服务接口实现类
  */
-@Service(interfaceName = "com.lvdou.user.service.impl.AddressService")
+@Service(interfaceName = "com.lvdou.user.service.AddressService")
 @Transactional
 public class AddressServiceImpl implements AddressService {
 

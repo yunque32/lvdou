@@ -2,16 +2,28 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://code.alibabatech.com/schema/dubbo
-       http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+       http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-4.2.xsd">
 
-
+    <context:property-placeholder
+            location="classpath:props/*.properties"/>
+    <context:component-scan base-package="com.lvdou.task"/>
     <!-- 导入数据访问配置文件 -->
     <import resource="classpath:applicationContext-mapper.xml"/>
     <!-- 导入redis配置文件 -->
     <import resource="classpath:applicationContext-redis.xml"/>
+
+    <bean id="idWorker" class="com.lvdou.common.util.IdWorker">
+        <!-- 工作id -->
+        <constructor-arg name="workerId" value="0"/>
+        <!-- 数据中心id -->
+        <constructor-arg name="datacenterId" value="0"/>
+    </bean>
 
     <!--######### 配置Dubbo服务提供者 #########-->
     <!-- 配置当前应用名称 -->
