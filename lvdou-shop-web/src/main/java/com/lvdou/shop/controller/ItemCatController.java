@@ -10,13 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-/**
- * ItemCatController
- * @author LEE.SIU.WAH
- * @email lixiaohua7@163.com
- * @date 2017年12月7日 下午2:08:39
- * @version 1.0
- */
 @RestController
 @RequestMapping("/itemCat")
 public class ItemCatController {

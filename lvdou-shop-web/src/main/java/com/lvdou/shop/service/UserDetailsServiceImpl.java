@@ -14,10 +14,6 @@ import java.util.List;
 
 /**
  * 自定义的认证服务类
- *
- * @author lee.siu.wah
- * @version 1.0 Alt + Enter
- * <p>File Created at 2018-07-14<p>
  */
 public class UserDetailsServiceImpl implements UserDetailsService {
 

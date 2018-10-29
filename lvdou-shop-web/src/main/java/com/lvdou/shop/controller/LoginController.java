@@ -8,13 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * 获取登录用户名的控制器
- *
- * @author lee.siu.wah
- * @version 1.0
- * <p>File Created at 2018-07-14<p>
- */
 @RestController
 public class LoginController {
 
