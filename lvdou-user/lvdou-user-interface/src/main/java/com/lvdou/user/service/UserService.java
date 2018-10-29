@@ -1,6 +1,10 @@
 package com.lvdou.user.service;
 
-import com.lvdou.pojo.User; /**
+import com.lvdou.pojo.User;
+
+import java.util.Map;
+
+/**
  * 用户服务接口
  */
 public interface UserService {
@@ -13,4 +17,9 @@ public interface UserService {
 
     /** 检验验证码 */
     boolean checkSmsCode(String phone, String smsCode);
+
+    Map checkUserName(String userName);
+
+    Map<String,String> registerUser(User user);
+    Map<String,Object> sendValidate(String mobile) throws Exception;
 }
