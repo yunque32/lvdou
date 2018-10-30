@@ -1,7 +1,8 @@
 com\lvdou\sellergoods\service\SellerService.class
-com\lvdou\sellergoods\service\FruitService.class
+com\lvdou\sellergoods\service\WuliuService.class
 com\lvdou\sellergoods\service\GoodsService.class
 com\lvdou\sellergoods\service\BrandService.class
 com\lvdou\sellergoods\service\TypeTemplateService.class
+com\lvdou\sellergoods\service\ProductService.class
 com\lvdou\sellergoods\service\SpecificationService.class
 com\lvdou\sellergoods\service\ItemCatService.class

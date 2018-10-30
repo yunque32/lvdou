@@ -11,10 +11,6 @@ import java.util.Arrays;
 
 /**
  * 删除商品静态页面消息监听器类
- *
- * @author lee.siu.wah
- * @version 1.0
- * <p>File Created at 2018-07-28<p>
  */
 public class DeleteMessageListener implements SessionAwareMessageListener<ObjectMessage> {
 

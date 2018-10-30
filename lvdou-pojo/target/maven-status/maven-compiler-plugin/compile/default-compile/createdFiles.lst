@@ -1,9 +1,11 @@
-com\lvdou\pojo\Fruit.class
 com\lvdou\pojo\ItemCat.class
+com\lvdou\pojo\Product.class
 com\lvdou\pojo\Item.class
 com\lvdou\pojo\SeckillOrder.class
 com\lvdou\pojo\PayLog.class
+com\lvdou\pojo\Checklist.class
 com\lvdou\pojo\OrderItem.class
+com\lvdou\pojo\Producter.class
 com\lvdou\pojo\Address.class
 com\lvdou\pojo\Specification.class
 com\lvdou\pojo\Content.class
@@ -16,7 +18,9 @@ com\lvdou\pojo\Areas.class
 com\lvdou\pojo\Cities.class
 com\lvdou\pojo\Goods.class
 com\lvdou\pojo\ContentCategory.class
+com\lvdou\pojo\Agency.class
 com\lvdou\pojo\Brand.class
+com\lvdou\pojo\Wuliu.class
 com\lvdou\solr\SolrItem.class
 com\lvdou\pojo\FreightTemplate.class
 com\lvdou\pojo\SeckillGoods.class

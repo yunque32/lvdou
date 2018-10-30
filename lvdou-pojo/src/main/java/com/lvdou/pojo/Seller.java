@@ -7,10 +7,6 @@ import javax.persistence.*;
  
 /**
  * 商家实体
- * @author LEE.SIU.WAH
- * @email lixiaohua7@163.com
- * @date 2017年12月14日 下午2:02:20
- * @version 1.0
  */
 @Table(name="tb_seller")
 public class Seller implements Serializable{

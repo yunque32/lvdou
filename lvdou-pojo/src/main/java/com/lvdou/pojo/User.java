@@ -37,10 +37,10 @@ public class User implements Serializable{
     private String qq;
 	@Column(name="account_balance")
     private Long accountBalance;
-	@Column(name="is_mobile_check")
-    private String isMobileCheck;
-	@Column(name="is_email_check")
-    private String isEmailCheck;
+	@Column(name="mobile_check")
+    private String mobileCheck;
+	@Column(name="email_check")
+    private String emailCheck;
 	@Column(name="sex")
     private String sex;
 	@Column(name="user_level")
@@ -166,20 +166,22 @@ public class User implements Serializable{
         this.accountBalance = accountBalance;
     }
 
-    public String getIsMobileCheck() {
-        return isMobileCheck;
+
+
+    public String getMobileCheck() {
+        return mobileCheck;
     }
 
-    public void setIsMobileCheck(String isMobileCheck) {
-        this.isMobileCheck = isMobileCheck == null ? null : isMobileCheck.trim();
+    public void setMobileCheck(String mobileCheck) {
+        this.mobileCheck = mobileCheck;
     }
 
-    public String getIsEmailCheck() {
-        return isEmailCheck;
+    public String getEmailCheck() {
+        return emailCheck;
     }
 
-    public void setIsEmailCheck(String isEmailCheck) {
-        this.isEmailCheck = isEmailCheck == null ? null : isEmailCheck.trim();
+    public void setEmailCheck(String emailCheck) {
+        this.emailCheck = emailCheck;
     }
 
     public String getSex() {

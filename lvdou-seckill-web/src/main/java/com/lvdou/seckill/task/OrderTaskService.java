@@ -26,7 +26,7 @@ public class OrderTaskService {
      * 定时任务方法
      * cron: 触发任务调度的时间表达式 7个部分 【秒 分 小时  日  月  周 年】
      * */
-    @Scheduled(cron = "0/3 * * * * ?")
+    //@Scheduled(cron = "0/3 * * * * ?")
     public void closeOrderTask(){
         System.out.println("时间：" + new Date());
 

@@ -17,7 +17,7 @@ import java.util.List;
 public class SeckillGoodsController {
 
     /** 注入秒杀商品服务接口代理对象 */
-    @Reference(timeout = 10000)
+    @Reference(timeout = 30000)
     private SeckillGoodsService seckillGoodsService;
 
     /** 查询秒杀商品 */

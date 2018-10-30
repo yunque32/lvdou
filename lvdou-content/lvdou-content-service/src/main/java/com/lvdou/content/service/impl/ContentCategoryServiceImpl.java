@@ -15,13 +15,6 @@ import tk.mybatis.mapper.entity.Example;
 import java.io.Serializable;
 import java.util.Arrays;
 import java.util.List;
-/**
- * ContentCategoryServiceImpl 服务接口实现类
- * @author LEE.SIU.WAH
- * @email lixiaohua7@163.com
- * @date 2018-07-20 08:52:09
- * @version 1.0
- */
 @Service(interfaceName = "com.lvdou.content.service.ContentCategoryService")
 @Transactional
 public class ContentCategoryServiceImpl implements ContentCategoryService {
@@ -29,7 +22,6 @@ public class ContentCategoryServiceImpl implements ContentCategoryService {
 	@Autowired
 	private ContentCategoryMapper contentCategoryMapper;
 
-	/** 添加方法 */
 	public void save(ContentCategory contentCategory){
 		try {
 			contentCategoryMapper.insertSelective(contentCategory);
@@ -38,7 +30,6 @@ public class ContentCategoryServiceImpl implements ContentCategoryService {
 		}
 	}
 
-	/** 修改方法 */
 	public void update(ContentCategory contentCategory){
 		try {
 			contentCategoryMapper.updateByPrimaryKeySelective(contentCategory);
@@ -47,7 +38,6 @@ public class ContentCategoryServiceImpl implements ContentCategoryService {
 		}
 	}
 
-	/** 根据主键id删除 */
 	public void delete(Serializable id){
 		try {
 			contentCategoryMapper.deleteByPrimaryKey(id);

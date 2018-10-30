@@ -18,7 +18,7 @@ import java.util.List;
 /**
  * 秒杀订单服务接口实现类
  */
-@Service(interfaceName = "SeckillOrderService")
+@Service(interfaceName = "com.lvdou.seckill.service.SeckillOrderService")
 @Transactional
 public class SeckillOrderServiceImpl implements SeckillOrderService {
 
@@ -117,18 +117,18 @@ public class SeckillOrderServiceImpl implements SeckillOrderService {
         List<SeckillOrder> seckillOrderList = new ArrayList<>();
         try{
             // 查询所有的未支付的订单
-            List seckillOrders = (List)redisTemplate.boundHashOps("seckillOrderList").values();
-            // 迭代，再查询超时5分钟的订单
-            for (Object obj : seckillOrders){
-                // 得到一个秒杀订单
-                SeckillOrder  seckillOrder = (SeckillOrder)obj;
-                // 用当前时间毫秒数-5分钟
-                long millsSeconds = new Date().getTime() - (5 * 60 * 1000);
-                // 判断订单是否超时
-                if (seckillOrder.getCreateTime().getTime() < millsSeconds){
-                    seckillOrderList.add(seckillOrder);
-                }
-            }
+//            List seckillOrders = (List)redisTemplate.boundHashOps("seckillOrderList").values();
+//            // 迭代，再查询超时5分钟的订单
+//            for (Object obj : seckillOrders){
+//                // 得到一个秒杀订单
+//                SeckillOrder  seckillOrder = (SeckillOrder)obj;
+//                // 用当前时间毫秒数-5分钟
+//                long millsSeconds = new Date().getTime() - (5 * 60 * 1000);
+//                // 判断订单是否超时
+//                if (seckillOrder.getCreateTime().getTime() < millsSeconds){
+//                    seckillOrderList.add(seckillOrder);
+//                }
+//            }
             return seckillOrderList;
         }catch (Exception ex){
             throw new RuntimeException(ex);

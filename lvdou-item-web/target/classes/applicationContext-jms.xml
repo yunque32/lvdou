@@ -26,7 +26,6 @@
         <property name="targetConnectionFactory" ref="activeMQConnectionFactory"/>
     </bean>
 
-
     <!--######### 配置消息的消费者 ###########-->
     <!-- 配置消息监听器的容器
          connection-factory：连接工厂
@@ -34,7 +33,6 @@
     -->
     <jms:listener-container connection-factory="singleConnectionFactory"
                             destination-type="topic">
-
         <!-- 配置消息监听器
             destination: 主题名称
             ref: 引用自定义的消息监听器Bean

@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>品牌管理</title>
+    <title>水果管理</title>
     <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/plugins/adminLTE/css/AdminLTE.css"/>
     <link rel="stylesheet" href="/plugins/adminLTE/css/skins/_all-skins.min.css"/>
@@ -18,16 +18,16 @@
 	<script src="/js/base-pagination.js"></script>
 	<script src="/js/service/baseService.js"></script>
 	<script src="/js/controller/baseController.js"></script>
-	<script src="/js/controller/fruitController.js"></script>
+	<script src="/js/controller/productController.js"></script>
+	<script src="/js/service/uploadService.js"></script>
 
-    
 </head>
 <body class="hold-transition skin-red sidebar-mini"
 	  ng-app="lvdou"
-	  ng-controller="fruitController">
+	  ng-controller="productController">
 	<!-- .box-body -->
 	<div class="box-header with-border">
-		<h3 class="box-title">品牌管理</h3>
+		<h3 class="box-title">产品管理</h3>
 	</div>
 
 	<div class="box-body">
@@ -47,12 +47,6 @@
 						<button type="button" class="btn btn-default" title="刷新"
 								onclick="window.location.reload();">
 							<i class="fa fa-refresh"></i> 刷新</button>
-						<button type="button" class="btn btn-default" title="导入Excel"
-								data-target="#uploadModal" data-toggle="modal"
-								ng-click="image_entity={};">
-							<i class="fa fa-file-o"></i> 生成二维码
-						</button>
-
 					</div>
 				</div>
 			</div>
@@ -63,9 +57,6 @@
 						<tr>
 							<td><input class="form-control"
 									   ng-model="searchEntity.name" placeholder="水果名称">
-							</td>
-							<td><input class="form-control"
-									   ng-model="searchEntity.firstChar" placeholder="首字母">
 							</td>
 							<td>
 								<button type="button" class="btn btn-default"
@@ -82,33 +73,53 @@
 			<table id="dataList" class="table table-bordered table-striped table-hover dataTable">
 				<thead>
 					<tr>
+
+						<th class="text-center">水果编号</th>
+						<th class="text-center">产品名称</th>
+
+						<th class="text-center">等级</th>
+						<th class="text-center">分类</th>
+						<th class="text-center">单位标准</th>
+						<th class="text-center">产品标准</th>
+						<th class="text-center">样品种植时长</th>
+						<th class="text-center">操作</th>
 						<th class="" style="padding-right:0px">
 							<input id="selall" type="checkbox" class="icheckbox_square-blue">
-						</th> 
-						<th class="sorting_asc">品牌ID</th>
-						<th class="sorting">产品名称</th>
-						<th class="sorting">产地</th>
-						<th class="sorting">种类</th>
-						<th class="sorting">重量</th>
-						<th class="sorting">包装方式</th>
-						<th class="text-center">操作</th>
+						</th>
 					</tr>
 				</thead>
-				<tbody>
+				<tbody class="text-center" id="productInf">
 					<tr ng-repeat="entity in dataList">
-                        <td><input type="checkbox"
-                                   ng-click="updateSelection($event,entity.id);"></td>
+
                         <td>{{entity.id}}</td>
-                        <td>{{entity.fruitName}}</td>
-                        <td>{{55}}</td>
-						<td>{{55}}</td>
-						<td>{{55}}</td>
-						<td>{{55}}</td>
+                        <td>{{entity.productName}}</td>
+						<td>{{entity.qualityGrade}}</td>
+						<td>{{entity.productClassify}}</td>
+						<td>{{entity.unitSta}}</td>
+						<td>{{entity.productSta}}</td>
+						<td>{{entity.simplePlantTime}}</td>
+						<td>{{entity.packing}}</td>
+
                         <td class="text-center">
                             <button type="button" class="btn bg-olive btn-xs"
                                     data-toggle="modal" data-target="#editModal"
                                     ng-click="show(entity);">修改</button>
+							<button type="button" class="btn bg-olive btn-xs"
+									data-toggle="modal" data-target="#yuanModal"
+									ng-click="showAgencyAndProducter(entity.id);">
+								溯源信息</button>
+							<button type="button" class="btn bg-olive btn-xs"
+									data-toggle="modal" data-target="#uploadModal"
+									ng-click="uploadExcelFile();">二维码</button>
+							<button type="button" class="btn bg-olive btn-xs"
+									data-toggle="modal" data-target="#wuliu"
+									ng-click="querywuliu(entity.id);">物流信息</button>
                         </td>
+						<td>
+							<input type="checkbox"
+								   ng-click="updateSelection($event,entity.id);">
+
+						</td>
                     </tr>
 
 				</tbody>
@@ -130,23 +141,37 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-				<h3 id="myModalLabel">品牌编辑</h3>
+				<h3 id="myModalLabel">水果信息编辑</h3>
 			</div>
 			<div class="modal-body">		
 				<table class="table table-bordered table-striped"  width="800px">
 					<tr>
-						<td>品牌名称</td>
+						<td>水果名称</td>
 						<td><input  class="form-control"
 									ng-model="entity.name"
-									placeholder="品牌名称" >  </td>
+									placeholder={{entity.productName}} >  </td>
 					</tr>		      	
 					<tr>
-						<td>首字母</td>
+						<td>种类</td>
 						<td><input  class="form-control"
-									ng-model="entity.firstChar"
-									placeholder="首字母">  </td>
-					</tr>		      	
-				 </table>				
+									ng-model="entity.classify"
+									placeholder={{entity.classify}}>  </td>
+					</tr>
+
+					<tr>
+						<td>重量</td>
+						<td><input  class="form-control"
+									ng-model="entity.productWeight"
+									placeholder={{entity.productWeight}}>  </td>
+					</tr>
+					<tr>
+						<td>包装方式</td>
+						<td><input  class="form-control"
+									ng-model="entity.packing"
+									placeholder={{entity.packing}}>  </td>
+					</tr>
+
+				 </table>
 			</div>
 			<div class="modal-footer">						
 				<button class="btn btn-success" data-dismiss="modal"
@@ -158,6 +183,72 @@
 		  </div>
 		</div>
 	</div>
+	<div class="modal fade" id="yuanModal" tabindex="-1" role="dialog"
+		 aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog" >
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<h3 id="myModalLabel3">朔源信息</h3>
+				</div>
+				<div class="modal-body">
+					<table class="table table-bordered table-striped"  width="800px">
+						<tr>
+							<td>负责人</td>
+							<td>{{agency.agencyManager}}</td>
+						</tr>
+						<tr>
+							<td>联系方式</td>
+							<td>{{agency.managerPhone}}</td>
+						</tr>
+						<tr>
+							<td>经销商地址</td>
+							<td>{{agency.saleAddress}}</td>
+						</tr>
+						<tr>
+							<td>销售许可证</td>
+							<td>{{agency.licenseId}}
+								<button class="btn btn-default">查看证书图片</button>
+							</td>
+						</tr>
+						<tr>
+							<td>办公地址</td>
+							<td>{{agency.officeAddress}}</td>
+						</tr>
+						<tr>
+							<td>生产基地</td>
+							<td>{{producter.baseName}}</td>
+						</tr>
+						<tr>
+							<td>负责人</td>
+							<td>{{producter.manager}}</td>
+						</tr>
+						<tr>
+							<td>联系方式</td>
+							<td>{{producter.managerPhone}}</td>
+						</tr>
+						<tr>
+							<td>办公地址</td>
+							<td>{{producter.officeAddress}}</td>
+						</tr>
+						<tr>
+							<td>工商证号</td>
+							<td>{{producter.licenseId}}
+								<button class="btn btn-default">查看证书图片</button>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-success" data-dismiss="modal"
+							ng-click="saveOrUpdate();"
+							aria-hidden="true">保存</button>
+					<button class="btn btn-default" data-dismiss="modal"
+							aria-hidden="true">关闭</button>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="modal fade" id="uploadModal" tabindex="-1" role="dialog"
 		 aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
@@ -165,7 +256,7 @@
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal"
 							aria-hidden="true">×</button>
-					<h3 id="myModalLabel2">上传商品图片</h3>
+					<h3 id="myModalLabel2">上传水果图片</h3>
 				</div>
 				<div class="modal-body">
 
@@ -175,15 +266,64 @@
 							<td>
 								<table>
 									<tr>
-										<td><input type="file" id="file" />
+										<td><input type="file" id="file" accept=".xls,.xlsx"/>
 											<button class="btn btn-primary" type="button"
-													ng-click="uploadFile();">上传</button></td>
+													ng-click="uploadFile2();">上传</button></td>
+
+
 										<td><img src="{{image_entity.url}}" width="200px" height="200px"></td>
 									</tr>
 								</table>
 							</td>
 						</tr>
 					</table>
+					<form id="fileForm" enctype="multipart/form-data">
+						<button id="import_asset" type="button" ng-click="uploadExcelFile()">上传文件</button>
+						<input id="file_asset" type="file" style="display: none;"/>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="wuliu" tabindex="-1" role="dialog"
+		 aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog" >
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<h3 id="myModalLabel5">物流信息</h3>
+				</div>
+				<div class="modal-body">
+					<table class="table table-bordered table-striped"  width="800px">
+						<tr>
+							<td>采摘时间</td>
+							<td>{{(wuliu.pickTime)|date:'yyyy-MM-dd'}}</td>
+						</tr>
+						<tr>
+							<td>采摘地点</td>
+							<td>{{wuliu.pickPlace}}</td>
+						</tr>
+						<tr>
+							<td>入库时间</td>
+							<td>{{(wuliu.rukuTime)|date:'yyyy-MM-dd'}}</td>
+						</tr>
+						<tr>
+							<td>出库时间</td>
+							<td>{{wuliu.chukuTime|date:'yyyy-MM-dd'}}</td>
+						</tr>
+						<tr>
+							<td>仓库地址</td>
+							<td>{{wuliu.cangkuAddress}}</td>
+						</tr>
+						<tr>
+							<td>保存方式</td>
+							<td>{{wuliu.saveStyle}}</td>
+						</tr>
+					</table>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-default" data-dismiss="modal"
+							aria-hidden="true">关闭</button>
 				</div>
 			</div>
 		</div>

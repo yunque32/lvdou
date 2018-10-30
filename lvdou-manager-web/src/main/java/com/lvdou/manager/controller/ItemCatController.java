@@ -29,14 +29,14 @@ public class ItemCatController {
 	}
 
 	/** 更新缓存 */
-	@GetMapping("/updateRedis")
-	public boolean updateRedis(){
-		try{
-			itemCatService.saveToRedis();
-			return true;
-		}catch (Exception ex){
-			ex.printStackTrace();
-		}
-		return false;
-	}
+//	@GetMapping("/updateRedis")
+//	public boolean updateRedis(){
+//		try{
+//			itemCatService.saveToRedis();
+//			return true;
+//		}catch (Exception ex){
+//			ex.printStackTrace();
+//		}
+//		return false;
+//	}
 }

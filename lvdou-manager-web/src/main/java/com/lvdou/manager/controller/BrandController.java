@@ -20,8 +20,6 @@ public class BrandController {
     /** 处理Get请求 */
     @GetMapping("/findAll")
     public List<Brand> findAll(){
-        System.out.println("brandService: " + brandService);
-        // Alt + Enter
         return brandService.findAll();
     }
 

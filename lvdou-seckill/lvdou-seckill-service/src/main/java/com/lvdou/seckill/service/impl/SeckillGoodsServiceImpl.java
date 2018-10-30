@@ -13,7 +13,7 @@ import java.util.Date;
 import java.util.List;
 
 
-@Service(interfaceName = "SeckillGoodsService")
+@Service(interfaceName = "com.lvdou.seckill.service.SeckillGoodsService")
 @Transactional
 public class SeckillGoodsServiceImpl implements SeckillGoodsService{
 

@@ -8,16 +8,10 @@ import com.lvdou.pojo.PayLog;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * 订单控制器
- *
- * @author lee.siu.wah
- * @version 1.0
- * <p>File Created at 2018-08-04<p>
- */
 @RestController
 @RequestMapping("/order")
 public class OrderController {
@@ -80,6 +74,6 @@ public class OrderController {
             ex.printStackTrace();
         }
         return result;
-
     }
+
 }

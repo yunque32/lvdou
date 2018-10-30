@@ -13,14 +13,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Date;
 
-
-/**
- * 服务实现层
- * @author LEE.SIU.WAH
- * @email lixiaohua7@163.com
- * @date 2017年12月7日 下午1:57:51
- * @version 1.0
- */
 @Service(interfaceName="com.lvdou.sellergoods.service.SellerService")
 @Transactional(readOnly=false)
 public class SellerServiceImpl implements SellerService {
@@ -66,8 +58,6 @@ public class SellerServiceImpl implements SellerService {
 
 	/**
 	 * 修改商家状态
-	 * @param sellerId
-	 * @param status
 	 */
 	public void updateStatus(String sellerId, String status){
 		try {

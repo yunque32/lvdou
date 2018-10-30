@@ -4,7 +4,6 @@
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$/../../lvdou/lvdou-search">
-      <sourceFolder url="file://$MODULE_DIR$/../../lvdou/lvdou-search/src/main/resources" type="java-resource" />
       <excludeFolder url="file://$MODULE_DIR$/../../lvdou/lvdou-search/target" />
     </content>
     <orderEntry type="inheritedJdk" />

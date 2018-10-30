@@ -36,11 +36,7 @@
 				<div class="pull-left">
 					<div class="form-group form-inline">
 						<div class="btn-group">
-							<button type="button" class="btn btn-default"
-									ng-click="delete();"
-									title="删除">
-								<i class="fa fa-trash-o"></i> 删除
-							</button>
+
 							<button type="button" class="btn btn-default"
 									ng-click="updateStatus('1');"
 									title="审核通过">
@@ -53,6 +49,11 @@
 							</button>
 							<button type="button" class="btn btn-default" title="刷新" onclick="window.location.reload();">
 								<i class="fa fa-refresh"></i> 刷新
+							</button>
+							<button type="button" class="btn btn-default"
+									ng-click="delete();"
+									title="删除">
+								<i class="fa fa-trash-o"></i> 删除
 							</button>
 						</div>
 					</div>
@@ -72,13 +73,14 @@
 						<tr>
 							<th class="" style="padding-right: 0px"><input id="selall"
 								type="checkbox" class="icheckbox_square-blue"></th>
-							<th class="sorting_asc">商品ID</th>
+							<th class="sorting_asc">商品编码</th>
 							<th class="sorting">商品名称</th>
-							<th class="sorting">商品价格</th>
-							<th class="sorting">一级分类</th>
-							<th class="sorting">二级分类</th>
-							<th class="sorting">三级分类</th>
-							<th class="sorting">状态</th>
+							<th class="sorting">检测日期</th>
+							<th class="sorting">检测项目</th>
+							<th class="sorting">检测结果</th>
+							<th class="sorting">最大限量</th>
+							<th class="sorting">判定</th>
+							<th class="sorting">检测单位</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -86,12 +88,13 @@
 							<td><input  type="checkbox"
 										ng-click="updateSelection($event, entity.id);"></td>
 							<td>{{entity.id}}</td>
-							<td>{{entity.goodsName}}</td>
-							<td>{{entity.price}}</td>
-							<td>{{entity.category1Name}}</td>
-							<td>{{entity.category2Name}}</td>
-							<td>{{entity.category3Name}}</td>
-							<td>{{status[entity.auditStatus]}}</td>
+							<td>白菜</td>
+							<td>2013-9-8</td>
+							<td>含氮量</td>
+							<td>56mg/斤</td>
+							<td>86mg/斤</td>
+							<td>合格</td>
+							<td>广州市白云区食品药品监督管理局</td>
 						</tr>
 					</tbody>
 				</table>

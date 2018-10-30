@@ -22,7 +22,7 @@ import java.util.Map;
 
 
 @Service(interfaceName="com.lvdou.sellergoods.service.TypeTemplateService")
-@Transactional(readOnly=false)
+@Transactional
 public class TypeTemplateServiceImpl implements TypeTemplateService {
 	@Autowired
 	private TypeTemplateMapper typeTemplateMapper;

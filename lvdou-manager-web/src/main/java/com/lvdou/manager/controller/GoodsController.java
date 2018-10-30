@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.jms.*;
 import java.util.Arrays;
 
-
 @RestController
 @RequestMapping("/goods")
 public class GoodsController {

@@ -7,7 +7,6 @@ import java.io.Serializable;
 @Table(name="tb_areas")
 public class Areas implements Serializable{
 
-    /** 主键id */
 	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="id")
 	private Integer id;

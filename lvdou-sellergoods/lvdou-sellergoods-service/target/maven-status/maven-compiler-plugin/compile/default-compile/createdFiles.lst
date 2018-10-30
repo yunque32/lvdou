@@ -3,13 +3,14 @@ com\lvdou\sellergoods\service\impl\TypeTemplateServiceImpl$1.class
 com\lvdou\sellergoods\service\impl\BrandServiceImpl.class
 com\lvdou\sellergoods\service\impl\ItemCatServiceImpl.class
 com\lvdou\sellergoods\service\impl\GoodsServiceImpl.class
+com\lvdou\sellergoods\service\impl\ProductServiceImpl.class
 com\lvdou\sellergoods\service\impl\SellerServiceImpl$1.class
 com\lvdou\sellergoods\service\impl\SellerServiceImpl.class
 com\lvdou\sellergoods\service\impl\BrandServiceImpl$2.class
 com\lvdou\sellergoods\service\impl\TypeTemplateServiceImpl.class
-com\lvdou\sellergoods\service\impl\FruitServiceImpl$1.class
+com\lvdou\sellergoods\service\impl\ProductServiceImpl$1.class
 com\lvdou\sellergoods\service\impl\BrandServiceImpl$1.class
-com\lvdou\sellergoods\service\impl\FruitServiceImpl$2.class
+com\lvdou\sellergoods\service\impl\WuliuServiceImpl.class
 com\lvdou\sellergoods\service\impl\SpecificationServiceImpl$1.class
+com\lvdou\sellergoods\service\impl\ProductServiceImpl$2.class
 com\lvdou\sellergoods\service\impl\SpecificationServiceImpl.class
-com\lvdou\sellergoods\service\impl\FruitServiceImpl.class

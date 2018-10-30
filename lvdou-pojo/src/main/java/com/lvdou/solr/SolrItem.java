@@ -10,10 +10,6 @@ import java.util.Map;
 
 /**
  * 商品SKU实体
- *
- * @author lee.siu.wah
- * @version 1.0
- * <p>File Created at 2018-04-15<p>
  */
 public class SolrItem implements Serializable {
 

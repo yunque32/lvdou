@@ -1,5 +1,5 @@
 /** 品牌控制器层 */
-app.controller('fruitController', function ($scope, $controller, baseService) {
+app.controller('fruitController', function ($scope, $controller,$http, baseService,uploadService) {
 
     // 指定继承baseController
     $controller("baseController", {$scope : $scope});
@@ -77,9 +77,77 @@ app.controller('fruitController', function ($scope, $controller, baseService) {
                         alert("删除失败！");
                     }
                 });
-
         }else{
             alert("请选择要删除的品牌！");
         }
     };
+    $scope.genCode=function () {
+        // baseService.sendGet("/fruit/testCodeGen")
+        //     .then(function(response){
+        //         // true,false
+        //         if (response.data){
+        //             $scope.fruitId=data.fruitId;
+        //             $scope.pickingTime=data.pickingTime;
+        //
+        //         }else{
+        //             alert("生成二维码测试失败！");
+        //         }
+        //
+        //     });
+        uploadService.uploadFile2();
+
+    }
+    $scope.fruitTestid=1;
+
+
+    $scope.uploadExcelFile=function () {
+         uploadService.uploadExcelFile();
+    }
+    $scope.import_asset = function () {
+        $("#file_asset").click();
+    };
+    $("#file_asset").on("change", function(){
+        var formData = new FormData();
+        var file = document.getElementById("file_asset").files[0];
+        if(file.name){
+                formData.append('file', file);
+                $http({
+                    method:"post",
+                    url:'/upload',
+                    data:formData,
+                    headers : {
+                        'Content-Type' : undefined
+                    },
+                    transformRequest : angular.identity
+                }).then(function (response) {
+                    if(response.status == 200){
+                        alert("文件上传成功！！！");
+                    }else{
+                        alert("文件上传失败！！！");
+                    }
+                });
+            }else{
+                alert("文件格式不正确，请上传以.xlsx，.xls 为后缀名的文件。");
+                $("#file_asset").val("");
+            }
+    });
+
+    $scope.showAgencyAndProducter=function (agencyid,producterid) {
+        baseService.findOne("/fruit/showAgencyAndProducter")
+            .then(function (response) {
+                $scope.agency=response.data.agency;
+                $scope.producter=response.data.producter;
+                alert("查询成功");
+            },function (response) {
+                alert("查询经销信息失败！")
+            })
+    }
+    $scope.querywuliu=function(id){
+        baseService.findOne("/wuliu/querywuliu",id)
+            .then(function (response) {
+                $scope.wuliu=response.data;
+            },function (response) {
+                alert("查询物流失败！");
+            });
+    }
 });

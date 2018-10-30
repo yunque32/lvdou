@@ -11,10 +11,6 @@ import com.lvdou.sellergoods.service.SellerService;
 
 /**
  * SellerController
- * @author LEE.SIU.WAH
- * @email lixiaohua7@163.com
- * @date 2017年12月7日 下午2:09:18
- * @version 1.0
  */
 @RestController
 @RequestMapping("/seller")

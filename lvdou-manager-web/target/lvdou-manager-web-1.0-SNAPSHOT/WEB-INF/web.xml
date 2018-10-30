@@ -6,10 +6,11 @@
 
 
 	<!-- 配置Spring加载文件 -->
-	<!--<context-param>
+	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>classpath:applicationContext*.xml</param-value>
 	</context-param>
+	<!--
 	&lt;!&ndash; 配置Spring的核心监听器 &ndash;&gt;
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
@@ -56,6 +57,6 @@
 
 	<!-- 欢迎列表 -->
 	<welcome-file-list>
-		<welcome-file>index.html</welcome-file>
+		<welcome-file>/admin/product.html</welcome-file>
 	</welcome-file-list>
 </web-app>

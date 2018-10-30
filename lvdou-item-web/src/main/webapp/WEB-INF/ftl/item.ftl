@@ -21,7 +21,7 @@
 	</script>
 </head>
 
-<body ng-app="pinyougou" ng-controller="itemController"
+<body ng-app="lvdou" ng-controller="itemController"
 	  ng-init="num=1;loadSku();loadUsername();">
 	<#-- 包含header.ftl -->
 	<#include 'header.ftl'/>

@@ -7,5 +7,7 @@ com\lvdou\manager\controller\ContentCategoryController.class
 com\lvdou\manager\controller\SpecificationController.class
 com\lvdou\manager\controller\BrandController.class
 com\lvdou\manager\controller\ContentController.class
-com\lvdou\manager\controller\FruitController.class
+com\lvdou\manager\controller\AgencyController.class
+com\lvdou\manager\controller\WuliuController.class
 com\lvdou\manager\controller\ItemCatController.class
+com\lvdou\manager\controller\ProductController.class
