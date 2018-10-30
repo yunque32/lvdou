@@ -12,4 +12,12 @@ app.controller('indexController', function($scope, baseService){
             alert("获取用户名失败！");
         });
     };
+
+    $scope.selectBXG=function () {
+        baseService.sendGet("/seckill/findSeckillGoods")
+            .then(function (response) {
+                // 获取响应数据
+                $scope.seckillGoodsList = response.data;
+            });
+    }
 });
