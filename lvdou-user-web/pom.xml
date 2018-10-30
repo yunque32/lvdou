@@ -10,7 +10,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <artifactId>lvdou-user-web</artifactId>
-    <packaging>war</packaging>
+    <packaging>pom</packaging>
 
     <dependencies>
         <!-- servlet-api -->
