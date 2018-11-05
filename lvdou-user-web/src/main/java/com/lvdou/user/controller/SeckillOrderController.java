@@ -26,14 +26,12 @@ public class SeckillOrderController {
     public boolean submitOrder(Long id, HttpServletRequest request){
         try{
             // 获取当前登录用户
-            System.out.println("lail ma ");
             String userId = request.getRemoteUser();
-            System.out.println(userId);
             // 保存订单到Redis
             seckillOrderService.submitOrderToRedis(id, userId);
             return true;
         }catch (Exception ex){
-            System.out.println("出现了异常！");
+            System.out.println("秒杀订单出现了异常！");
             ex.printStackTrace();
         }
         return false;

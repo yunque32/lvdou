@@ -1,6 +1,7 @@
 package com.lvdou.user.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
+import com.lvdou.common.util.IdWorker;
 import com.lvdou.user.service.OrderService;
 import com.lvdou.user.service.WeixinPayService;
 import com.lvdou.pojo.Order;
@@ -45,17 +46,22 @@ public class OrderController {
     @GetMapping("/genPayCode")
     public Map<String, Object> genPayCode(HttpServletRequest request){
         // 获取登录用户名
-       // String userId = request.getRemoteUser();
+        String userId = request.getRemoteUser();
         // 查询当前登录用户的支付日志
-//        PayLog payLog = orderService.findPayLogFromRedis(userId);
+        PayLog payLog = orderService.findPayLogFromRedis(userId);
 //        if(payLog==null){
 //            System.out.println("payLog是个null");
 //        }
 
+
         // 调用微信支付服务
-        return weixinPayService.genPayCode("1892526278912",
+        return weixinPayService.genPayCode(String.valueOf(new IdWorker().nextId()),
                 String.valueOf(1));
 
+    }
+    @GetMapping("/afterPaySuccess")
+    public String afterPaySuccess(){
+        return "dddddd";
     }
 
     /** 查询支付状态 */

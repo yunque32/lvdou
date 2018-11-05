@@ -35,42 +35,12 @@
         <module name="lvdou-task-service" />
         <module name="lvdou-user-interface" />
         <module name="lvdou-user-service" />
+        <module name="lvdou-user-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="fastdfs-client" target="1.8" />
       <module name="fastdfs_client" target="1.8" />
-      <module name="lvdou-cart" target="1.8" />
-      <module name="lvdou-cart-interface" target="1.8" />
-      <module name="lvdou-cart-service" target="1.8" />
-      <module name="lvdou-cart-web" target="1.8" />
-      <module name="lvdou-content" target="1.8" />
-      <module name="lvdou-content-interface" target="1.8" />
-      <module name="lvdou-content-service" target="1.8" />
-      <module name="lvdou-item-web" target="1.8" />
-      <module name="lvdou-manager-web" target="1.8" />
-      <module name="lvdou-order" target="1.8" />
-      <module name="lvdou-order-interface" target="1.8" />
-      <module name="lvdou-order-service" target="1.8" />
-      <module name="lvdou-pay" target="1.8" />
-      <module name="lvdou-pay-interface" target="1.8" />
-      <module name="lvdou-pay-service" target="1.8" />
-      <module name="lvdou-portal-web" target="1.8" />
-      <module name="lvdou-search" target="1.8" />
-      <module name="lvdou-search-interface" target="1.8" />
-      <module name="lvdou-search-service" target="1.8" />
-      <module name="lvdou-search-web" target="1.8" />
-      <module name="lvdou-seckill" target="1.8" />
-      <module name="lvdou-seckill-interface" target="1.8" />
-      <module name="lvdou-seckill-service" target="1.8" />
-      <module name="lvdou-seckill-web" target="1.8" />
-      <module name="lvdou-sellergoods" target="1.8" />
-      <module name="lvdou-sellergoods-interface" target="1.8" />
-      <module name="lvdou-sellergoods-service" target="1.8" />
-      <module name="lvdou-shop-web" target="1.8" />
-      <module name="lvdou-sms" target="1.8" />
-      <module name="lvdou-solr-util" target="1.8" />
-      <module name="lvdou-task-service" target="1.8" />
       <module name="pinyougou-search-interface" target="1.5" />
       <module name="wang" target="1.8" />
     </bytecodeTargetLevel>
