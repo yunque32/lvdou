@@ -105,11 +105,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderServiceImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OrderServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user/lvdou-user-service/src/main/java/com/lvdou/user/service/impl/OrderServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
               <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/user/controller/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="545">
+              <caret line="40" column="55" lean-forward="true" selection-start-line="40" selection-start-column="55" selection-end-line="40" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddressController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/user/controller/AddressController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-120">
+              <caret line="31" column="33" lean-forward="true" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -209,7 +236,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lvdou-shop-web/src/main/webapp/shoplogin.html" />
         <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/user/controller/CartController.java" />
         <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/user/controller/TypeTemplateController.java" />
         <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/user/controller/UploadController.java" />
@@ -260,6 +286,7 @@
         <option value="$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/js/controller/baseController.js" />
         <option value="$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/user/controller/OrderController.java" />
         <option value="$PROJECT_DIR$/../lvdou/lvdou-user/lvdou-user-service/src/main/java/com/lvdou/user/service/impl/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/user/controller/LoginController.java" />
       </list>
     </option>
   </component>
@@ -315,6 +342,32 @@
             <path>
               <item name="lvdou" type="b2602c69:ProjectViewProjectNode" />
               <item name="lvdou" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lvdou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lvdou" type="462c0819:PsiDirectoryNode" />
+              <item name="lvdou-user-web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lvdou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lvdou" type="462c0819:PsiDirectoryNode" />
+              <item name="lvdou-user-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lvdou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lvdou" type="462c0819:PsiDirectoryNode" />
+              <item name="lvdou-user-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lvdou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lvdou" type="462c0819:PsiDirectoryNode" />
+              <item name="lvdou-user-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -602,7 +655,7 @@
       <workItem from="1540879688335" duration="1632000" />
       <workItem from="1540881460595" duration="5938000" />
       <workItem from="1541062094995" duration="596000" />
-      <workItem from="1541380067989" duration="12119000" />
+      <workItem from="1541380067989" duration="14060000" />
     </task>
     <task id="LOCAL-00001" summary="lvdou-cart resource提交">
       <created>1539226809107</created>
@@ -615,10 +668,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="417117000" />
+    <option name="totallyTimeSpent" value="419058000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32867134" />
@@ -722,7 +776,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../lvdou/wang/target/tomcat/conf/tomcat-users.xml" />
     <entry file="file://$PROJECT_DIR$/../lvdou/wang/target/tomcat/conf/logging.properties" />
     <entry file="file://$PROJECT_DIR$/../lvdou/wang/target/tomcat/conf/web.xml" />
     <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/WEB-INF/web.xml">
@@ -770,13 +823,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="17" column="35" lean-forward="true" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -1131,13 +1177,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/user/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/js/controller/baseController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -1170,6 +1209,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/user/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="40" column="55" lean-forward="true" selection-start-line="40" selection-start-column="55" selection-end-line="40" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/user/controller/AddressController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-120">
+          <caret line="31" column="33" lean-forward="true" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
         </state>
       </provider>
     </entry>

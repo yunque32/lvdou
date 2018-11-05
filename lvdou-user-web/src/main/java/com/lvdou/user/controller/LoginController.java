@@ -1,5 +1,6 @@
 package com.lvdou.user.controller;
 
+import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextImpl;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -31,11 +32,11 @@ public class LoginController {
 //// 获得sessionid
 //        System.out.println("SessionId" + details.getSessionId());
 //// 获得当前用户所拥有的权限
-//        List<GrantedAuthority> authorities = (List<GrantedAuthority>) securityContextImpl
-//                .getAuthentication().getAuthorities();
-//        for (GrantedAuthority grantedAuthority : authorities) {
-//            System.out.println("Authority" + grantedAuthority.getAuthority());
-//        }
+        List<GrantedAuthority> authorities = (List<GrantedAuthority>) securityContextImpl
+                .getAuthentication().getAuthorities();
+        for (GrantedAuthority grantedAuthority : authorities) {
+            System.out.println("Authority" + grantedAuthority.getAuthority());
+        }
 
             Map<String, String> map = new HashMap<>(1);
             map.put("loginName", name);
