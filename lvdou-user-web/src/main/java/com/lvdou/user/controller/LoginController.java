@@ -20,8 +20,10 @@ public class LoginController {
     public Map<String,String> showName(HttpServletRequest request){
         SecurityContextImpl securityContextImpl = (SecurityContextImpl) request
                 .getSession().getAttribute("SPRING_SECURITY_CONTEXT");
+
 // 登录名
         String name = securityContextImpl.getAuthentication().getName();
+
         // 登录密码，未加密的
 //        System.out.println("Credentials:"
 //                + securityContextImpl.getAuthentication().getCredentials());

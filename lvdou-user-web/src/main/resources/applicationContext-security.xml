@@ -19,7 +19,7 @@
     <security:http pattern="/user/**" security="none"/>
     <security:http pattern="/seckill/**" security="none"/>
 
-    <security:http pattern="/seller/save" security="none"/>
+    <security:http pattern="/seller/save"  security="none"/>
 
 
     <!-- use-expressions: 是否使用SpEL表达式 false  -->

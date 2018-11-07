@@ -55,7 +55,8 @@ public class OrderController {
 
 
         // 调用微信支付服务
-        return weixinPayService.genPayCode(String.valueOf(new IdWorker().nextId()),
+        return weixinPayService
+                .genPayCode(String.valueOf(new IdWorker().nextId()),
                 String.valueOf(1));
 
     }

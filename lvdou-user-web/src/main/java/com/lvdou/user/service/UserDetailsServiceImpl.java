@@ -35,10 +35,15 @@ public class UserDetailsServiceImpl implements UserDetailsService {
             List<GrantedAuthority> authorities = new ArrayList<>();
             // 添加权限与角色数据
             authorities.add(new SimpleGrantedAuthority("ROLE_SELLER"));
-
+            GrantedAuthority grantedAuthority = authorities.get(0);
+            String authority = grantedAuthority.getAuthority();
+            System.out.println(authority+"=======================");
             // 返用用户 (密码由SpringSecurity判断)
+            System.out.println("用户的权限长度是："+authorities.size());
 
             return new User(username, seller.getPassword(), authorities);
+
+
         }
         return null;
     }
