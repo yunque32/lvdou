@@ -1,8 +1,5 @@
 /*******************************************************************************
 * KindEditor - WYSIWYG HTML Editor for Internet
-* Copyright (C) 2006-2013 kindsoft.net
-*
-* @author Roddy <luolonghao@gmail.com>
 * @website http://www.kindsoft.net/
 * @licence http://www.kindsoft.net/license.php
 * @version 4.1.10 (2013-11-23)
@@ -6051,12 +6048,12 @@ KindEditor.lang({
 	tablerowdelete : '删除行',
 	noColor : '无颜色',
 	pleaseSelectFile : '请选择文件。',
-	invalidImg : "请输入有效的URL地址。\n只允许jpg,gif,bmp,png格式。",
-	invalidMedia : "请输入有效的URL地址。\n只允许swf,flv,mp3,wav,wma,wmv,mid,avi,mpg,asf,rm,rmvb格式。",
+	invalidImg : "请输入有效的图片地址。\n只允许jpg,gif,bmp,png格式。",
+	invalidMedia : "请输入有效的URL地址2。\n只允许swf,flv,mp3,wav,wma,wmv,mid,avi,mpg,asf,rm,rmvb格式。",
 	invalidWidth : "宽度必须为数字。",
 	invalidHeight : "高度必须为数字。",
 	invalidBorder : "边框必须为数字。",
-	invalidUrl : "请输入有效的URL地址。",
+	invalidUrl : "请输入有效的URL地址1。",
 	invalidRows : '行数为必选项，只允许输入大于0的数字。',
 	invalidCols : '列数为必选项，只允许输入大于0的数字。',
 	invalidPadding : '边距必须为数字。',
@@ -6196,9 +6193,6 @@ KindEditor.lang({
 }, 'zh_CN');
 /*******************************************************************************
 * KindEditor - WYSIWYG HTML Editor for Internet
-* Copyright (C) 2006-2011 kindsoft.net
-*
-* @author Roddy <luolonghao@gmail.com>
 * @site http://www.kindsoft.net/
 * @licence http://www.kindsoft.net/license.php
 *******************************************************************************/
@@ -6242,10 +6236,6 @@ KindEditor.plugin('anchor', function(K) {
 });
 /*******************************************************************************
 * KindEditor - WYSIWYG HTML Editor for Internet
-* Copyright (C) 2006-2011 kindsoft.net
-*
-* @author Roddy <luolonghao@gmail.com>
-* @site http://www.kindsoft.net/
 * @licence http://www.kindsoft.net/license.php
 *******************************************************************************/
 
@@ -6480,9 +6470,6 @@ KindEditor.plugin('code', function(K) {
 });
 /*******************************************************************************
 * KindEditor - WYSIWYG HTML Editor for Internet
-* Copyright (C) 2006-2011 kindsoft.net
-*
-* @author Roddy <luolonghao@gmail.com>
 * @site http://www.kindsoft.net/
 * @licence http://www.kindsoft.net/license.php
 *******************************************************************************/
@@ -6812,7 +6799,7 @@ KindEditor.plugin('flash', function(K) {
 		formatUploadUrl = K.undef(self.formatUploadUrl, true),
 		extraParams = K.undef(self.extraFileUploadParams, {}),
 		filePostName = K.undef(self.filePostName, 'imgFile'),
-		uploadJson = K.undef(self.uploadJson, self.basePath + 'php/upload_json.php');
+		uploadJson = K.undef(self.uploadJson, self.basePath + 'java/upload_json.jpg');
 	self.plugin.flash = {
 		edit : function() {
 			var html = [
@@ -6960,7 +6947,6 @@ KindEditor.plugin('flash', function(K) {
 /*******************************************************************************
 * KindEditor - WYSIWYG HTML Editor for Internet
 * Copyright (C) 2006-2011 kindsoft.net
-*
 * @author Roddy <luolonghao@gmail.com>
 * @site http://www.kindsoft.net/
 * @licence http://www.kindsoft.net/license.php
@@ -6972,7 +6958,7 @@ KindEditor.plugin('image', function(K) {
 		allowImageRemote = K.undef(self.allowImageRemote, true),
 		formatUploadUrl = K.undef(self.formatUploadUrl, true),
 		allowFileManager = K.undef(self.allowFileManager, false),
-		uploadJson = K.undef(self.uploadJson, self.basePath + 'php/upload_json.php'),
+		uploadJson = K.undef(self.uploadJson, self.basePath + '/java/mi.jpg'),
 		imageTabIndex = K.undef(self.imageTabIndex, 0),
 		imgPath = self.pluginsPath + 'image/images/',
 		extraParams = K.undef(self.extraFileUploadParams, {}),
@@ -7126,14 +7112,15 @@ KindEditor.plugin('image', function(K) {
 				src : K('.tabs', div),
 				afterSelect : function(i) {}
 			});
+            tabs.add({
+                title : lang.localImage,
+                panel : K('.tab2', div)
+            });
 			tabs.add({
 				title : lang.remoteImage,
 				panel : K('.tab1', div)
 			});
-			tabs.add({
-				title : lang.localImage,
-				panel : K('.tab2', div)
-			});
+
 			tabs.select(tabIndex);
 		} else if (showRemote) {
 			K('.tab1', div).show();
@@ -7299,7 +7286,7 @@ KindEditor.plugin('insertfile', function(K) {
 		allowFileUpload = K.undef(self.allowFileUpload, true),
 		allowFileManager = K.undef(self.allowFileManager, false),
 		formatUploadUrl = K.undef(self.formatUploadUrl, true),
-		uploadJson = K.undef(self.uploadJson, self.basePath + 'php/upload_json.php'),
+		uploadJson = K.undef(self.uploadJson, self.basePath + 'java'),
 		extraParams = K.undef(self.extraFileUploadParams, {}),
 		filePostName = K.undef(self.filePostName, 'imgFile'),
 		lang = self.lang(name + '.');

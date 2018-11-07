@@ -15,7 +15,7 @@
 	    <script src="/plugins/bootstrap/js/bootstrap.min.js"></script>
 	    <!-- 富文本编辑器 -->
 		<link rel="stylesheet" href="/plugins/kindeditor/themes/default/default.css"/>
-		<script src="/plugins/kindeditor/kindeditor-min.js"></script>
+		<script src="/plugins/kindeditor/kindeditor-all.js"></script>
 		<script src="/plugins/kindeditor/lang/zh_CN.js"></script>
 
 		<script src="/plugins/angularjs/angular.min.js"></script>
@@ -27,11 +27,15 @@
 
 		<!-- 正文区域 /-->
 		<script type="text/javascript">
-			var editor;
-			KindEditor.ready(function(K) {
-			    // 创建富文本编辑器对象 <textarea name=content>
-				editor = K.create('textarea[name="content"]');
-			});
+            KindEditor.ready(function(K) {
+                window.editor = K.create('#description',{
+                    //uploadJson：修改文件上传的地址
+                    uploadJson:"../upload/file",
+                    //开启图片空间
+                    allowFileManager : true,
+                    //查询图片空间的请求
+                    fileManagerJson:"../queryimage"
+                });
 
 			// 配置位置的提供者
 			app.config(function($locationProvider){
