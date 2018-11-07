@@ -69,74 +69,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="baseController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/js/controller/baseController.js">
+      <file leaf-file-name="brand.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/admin/brand.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+            <state relative-caret-position="2976">
+              <caret line="130" column="22" selection-start-line="130" selection-start-column="22" selection-end-line="130" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/resources/props/application.properties">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="UploadController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-manager-web/src/main/java/com/lvdou/manager/controller/UploadController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="497">
+              <caret line="172" selection-start-line="75" selection-start-column="4" selection-end-line="172" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/user/controller/OrderController.java">
+      <file leaf-file-name="UploadController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/user/controller/UploadController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="50" column="49" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
+            <state relative-caret-position="267">
+              <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
               <folding>
-                <element signature="e#1779#1780#0" expanded="true" />
-                <element signature="e#1810#1811#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#912#930#1" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user/lvdou-user-interface/src/main/java/com/lvdou/user/service/OrderService.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-manager-web/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+            <state relative-caret-position="432">
+              <caret line="108" column="21" selection-start-line="98" selection-start-column="8" selection-end-line="108" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user/lvdou-user-service/src/main/java/com/lvdou/user/service/impl/OrderServiceImpl.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/user/controller/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
-              <caret line="40" column="55" lean-forward="true" selection-start-line="40" selection-start-column="55" selection-end-line="40" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddressController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/user/controller/AddressController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-120">
-              <caret line="31" column="33" lean-forward="true" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+            <state relative-caret-position="552">
+              <caret line="116" column="21" selection-start-line="116" selection-start-column="21" selection-end-line="116" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -146,44 +123,44 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>editModal</find>
-      <find>fruitId</find>
-      <find>上传</find>
-      <find>产品管理</find>
-      <find>产品信息</find>
-      <find>brand</find>
-      <find>Fruit</find>
-      <find>fruit</find>
-      <find />
-      <find>Logo.png</find>
-      <find>帮助中心</find>
-      <find>wx_cz.jpg</find>
-      <find>er.jpg</find>
-      <find>erweima</find>
-      <find>freemarker</find>
-      <find>7</find>
-      <find>submit</find>
-      <find>loadUser</find>
-      <find>redirectUrl</find>
-      <find>service</find>
-      <find>fast</find>
-      <find>submitOrderToRedis</find>
-      <find>submitOrder</find>
-      <find>genPayCode</find>
-      <find>org.</find>
-      <find>log</find>
-      <find>ver</find>
       <find>加入</find>
       <find>active</find>
+      <find>fastjson</find>
+      <find>tomcat</find>
       <find>立即抢购</find>
+      <find>网络</find>
+      <find>localImage</find>
+      <find>remoteImage</find>
+      <find>上传文件</find>
+      <find>批量</find>
+      <find>浏览</find>
+      <find>upload_j</find>
+      <find>新增</find>
+      <find>upload_json</find>
+      <find>本地上传</find>
+      <find>invalidUrl</find>
+      <find>editor</find>
+      <find>网络图片</find>
+      <find>请输入有效的URL地址</find>
+      <find>invalidImg</find>
+      <find>absolute</find>
+      <find>options</find>
+      <find>url-type</find>
+      <find>php/upload</find>
+      <find>java/</find>
+      <find>java</find>
+      <find>请输入有效的URL</find>
+      <find>uploadJson</find>
+      <find>产品信息</find>
+      <find>conf</find>
     </findStrings>
     <replaceStrings>
       <replace>doe</replace>
@@ -236,33 +213,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/user/controller/CartController.java" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/user/controller/TypeTemplateController.java" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/user/controller/UploadController.java" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/order/getOrderInfo.html" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/order/paysuccess.html" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/order/payfail.html" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/js/controller/baseController.js" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/js/controller/indexController.js" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/admin/type_template.html" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/login.html" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/user/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/user/controller/SeckillOrderController.java" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/seckill-item.html" />
-        <option value="$PROJECT_DIR$/lvdou-user/lvdou-user-service/src/main/java/com/lvdou/user/service/impl/SeckillGoodsServiceImpl.java" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/seckill-index.html" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/js/controller/seckillGoodsController.js" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/order/pay.html" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/js/controller/orderController.js" />
-        <option value="$PROJECT_DIR$/lvdou-user/lvdou-user-service/src/main/java/com/lvdou/task/SeckillTaskService.java" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/user/controller/OrderController.java" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/order/pay.html" />
-        <option value="$PROJECT_DIR$/lvdou-user/lvdou-user-service/src/main/java/com/lvdou/user/service/impl/WeixinPayServiceImpl.java" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/user/controller/OrderController.java" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/js/controller/orderController.js" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/order/paysuccess.html" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/home-order-pay.html" />
-        <option value="$PROJECT_DIR$/wang/pom.xml" />
         <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/js/controller/indexController.js" />
         <option value="$PROJECT_DIR$/wang/src/main/webapp/js/controller/indexController.js" />
         <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/index.html" />
@@ -279,14 +229,41 @@
         <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/user/controller/SeckillOrderController.java" />
         <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/js/controller/orderController.js" />
         <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/user/controller/OrderController.java" />
-        <option value="$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/user/controller/SeckillOrderController.java" />
-        <option value="$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/order/paysuccess.html" />
-        <option value="$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/js/controller/orderController.js" />
-        <option value="$PROJECT_DIR$/../lvdou/lvdou-user/lvdou-user-service/src/main/resources/props/weixinpay.properties" />
-        <option value="$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/js/controller/baseController.js" />
-        <option value="$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/user/controller/OrderController.java" />
-        <option value="$PROJECT_DIR$/../lvdou/lvdou-user/lvdou-user-service/src/main/java/com/lvdou/user/service/impl/OrderServiceImpl.java" />
-        <option value="$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/user/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/user/controller/SeckillOrderController.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/order/paysuccess.html" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/js/controller/orderController.js" />
+        <option value="$PROJECT_DIR$/lvdou-user/lvdou-user-service/src/main/resources/props/weixinpay.properties" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/js/controller/baseController.js" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/user/controller/OrderController.java" />
+        <option value="$PROJECT_DIR$/lvdou-user/lvdou-user-service/src/main/java/com/lvdou/user/service/impl/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/user/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/user/controller/OrderController.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/seckill-item.html" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/yunying_login.html" />
+        <option value="$PROJECT_DIR$/lvdou-mapper/src/main/resources/applicationContext-mapper.xml" />
+        <option value="$PROJECT_DIR$/lvdou-user/lvdou-user-service/src/main/java/com/lvdou/user/service/impl/SeckillGoodsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/js/controller/seckillGoodsController.js" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/user/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/user/controller/UserPrincipal.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/resources/applicationContext-security.xml" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/user/service/UserDetailsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/lvdou-shop-web/src/main/webapp/admin/goods_edit.html" />
+        <option value="$PROJECT_DIR$/lvdou-shop-web/src/main/webapp/plugins/kindeditor/kindeditor-all.js" />
+        <option value="$PROJECT_DIR$/../lvdou/lvdou-shop-web/src/main/webapp/plugins/kindeditor/kindeditor-all.js" />
+        <option value="$PROJECT_DIR$/../lvdou/lvdou-shop-web/src/main/webapp/admin/goods_edit.html" />
+        <option value="$PROJECT_DIR$/../lvdou/lvdou-shop-web/pom.xml" />
+        <option value="$PROJECT_DIR$/../lvdou/pom.xml" />
+        <option value="$PROJECT_DIR$/../lvdou/lvdou-shop-web/src/main/java/com/lvdou/shop/controller/GoodsController.java" />
+        <option value="$PROJECT_DIR$/../lvdou/lvdou-shop-web/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/../lvdou/lvdou-shop-web/src/main/java/com/lvdou/shop/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/../lvdou/lvdou-shop-web/src/main/java/com/lvdou/shop/controller/UploadController.java" />
+        <option value="$PROJECT_DIR$/../lvdou/lvdou-user/lvdou-user-service/src/main/java/com/lvdou/user/service/impl/SeckillOrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../lvdou/lvdou-user/lvdou-user-service/src/main/java/com/lvdou/user/service/impl/SendVCodeImpl.java" />
+        <option value="$PROJECT_DIR$/../lvdou/lvdou-user/lvdou-user-service/src/main/java/com/lvdou/user/service/impl/SpecificationServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../lvdou/lvdou-manager-web/src/main/java/com/lvdou/manager/controller/UploadController.java" />
+        <option value="$PROJECT_DIR$/../lvdou/lvdou-user-web/pom.xml" />
+        <option value="$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/user/controller/UploadController.java" />
       </list>
     </option>
   </component>
@@ -335,6 +312,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -346,6 +324,11 @@
             <path>
               <item name="lvdou" type="b2602c69:ProjectViewProjectNode" />
               <item name="lvdou" type="462c0819:PsiDirectoryNode" />
+              <item name="lvdou-manager-web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lvdou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lvdou" type="462c0819:PsiDirectoryNode" />
               <item name="lvdou-user-web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -367,13 +350,54 @@
               <item name="lvdou-user-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lvdou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lvdou" type="462c0819:PsiDirectoryNode" />
+              <item name="lvdou-user-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lvdou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lvdou" type="462c0819:PsiDirectoryNode" />
+              <item name="lvdou-user-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="lvdou" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lvdou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lvdou" type="462c0819:PsiDirectoryNode" />
+              <item name="lvdou-user-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="lvdou" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lvdou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lvdou" type="462c0819:PsiDirectoryNode" />
+              <item name="lvdou-user-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="lvdou" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -406,11 +430,11 @@
       <recent name="com.lvdou.user.service.impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\lvdou\lvdou-shop-web\src\main\webapp\plugins\kindeditor" />
+      <recent name="E:\lvdou\lvdou-user-web\src\main\webapp\img\test2" />
+      <recent name="E:\lvdou\lvdou-user-web\src\main\webapp" />
       <recent name="E:\lvdou\wang\src\main\webapp\js" />
       <recent name="E:\lvdou\wang\src\main\webapp\js\plugins" />
-      <recent name="E:\lvdou\wang\src\main\webapp" />
-      <recent name="E:\lvdou\lvdou-user-web\src\main\webapp\js" />
-      <recent name="E:\lvdou\lvdou-user-web\src\main\webapp\js\plugins" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -425,7 +449,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Maven.user-web">
+  <component name="RunManager" selected="Maven.user">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -655,7 +679,9 @@
       <workItem from="1540879688335" duration="1632000" />
       <workItem from="1540881460595" duration="5938000" />
       <workItem from="1541062094995" duration="596000" />
-      <workItem from="1541380067989" duration="14060000" />
+      <workItem from="1541380067989" duration="15442000" />
+      <workItem from="1541466480837" duration="20390000" />
+      <workItem from="1541555772545" duration="21025000" />
     </task>
     <task id="LOCAL-00001" summary="lvdou-cart resource提交">
       <created>1539226809107</created>
@@ -668,7 +694,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="419058000" />
+    <option name="totallyTimeSpent" value="461855000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -682,7 +708,6 @@
       <window_info anchor="bottom" id="JRebel Executor" order="8" weight="0.32587412" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" sideWeight="0.5006993" side_tool="true" weight="0.18637532" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -697,7 +722,7 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.3104895" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32867134" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4965035" visible="true" weight="0.21786633" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4965035" visible="true" weight="0.28727508" />
       <window_info anchor="right" id="Bean Validation" order="4" weight="0.32969153" />
       <window_info id="Web" order="3" side_tool="true" />
       <window_info id="JRebel" order="2" sideWeight="0.5034965" side_tool="true" weight="0.25385603" />
@@ -709,6 +734,7 @@
       <window_info anchor="bottom" id="Messages" order="9" weight="0.32867134" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32867134" />
     </layout>
     <layout-to-restore>
@@ -772,464 +798,487 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="25" />
+      <option name="time" value="26" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../lvdou/wang/target/tomcat/conf/logging.properties" />
-    <entry file="file://$PROJECT_DIR$/../lvdou/wang/target/tomcat/conf/web.xml" />
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-shop-web/src/main/webapp/plugins/kindeditor/plugins/emoticons/images/0.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-shop-web/src/main/webapp/plugins/kindeditor/plugins/emoticons/images/5.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-shop-web/src/main/webapp/plugins/kindeditor/plugins/multiimage/multiimage.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-shop-web/src/main/webapp/plugins/kindeditor/plugins/pagebreak/pagebreak.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="59" column="24" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
+        <state relative-caret-position="408">
+          <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-shop-web/src/main/webapp/admin/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="336" column="33" lean-forward="true" selection-start-line="336" selection-start-column="33" selection-end-line="336" selection-end-column="33" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-sms/pom.xml">
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-shop-web/src/main/webapp/plugins/kindeditor/kindeditor-min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-shop-web/src/main/webapp/plugins/kindeditor/plugins/flash/flash.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-shop-web/src/main/webapp/plugins/kindeditor/plugins/quickformat/quickformat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-shop-web/src/main/webapp/plugins/kindeditor/plugins/table/table.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-shop-web/src/main/webapp/plugins/kindeditor/kindeditor-all-min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-shop-web/src/main/webapp/plugins/kindeditor/kindeditor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5424">
+          <caret line="4159" column="46" lean-forward="true" selection-start-line="4159" selection-start-column="46" selection-end-line="4159" selection-end-column="46" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#63#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-shop-web/src/main/webapp/plugins/bootstrap/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3384">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-shop-web/src/main/webapp/plugins/kindeditor/kindeditor-all.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="6952" column="37" selection-start-line="6952" selection-start-column="37" selection-end-line="6952" selection-end-column="37" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#63#69#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#hr#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user/lvdou-user-service/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="31" lean-forward="true" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-shop-web/src/main/webapp/admin/goods_edit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="25" />
+          <caret line="38" column="50" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-shop-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/cart.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-840">
-          <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        <state relative-caret-position="264">
+          <caret line="86" column="21" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/home-setting-address.html">
+    <entry file="file://$PROJECT_DIR$/../lvdou/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="173">
+          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/css/checkbix.min.css">
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-shop-web/src/main/java/com/lvdou/shop/controller/TypeTemplateController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-384">
-          <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+        <state relative-caret-position="229">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/index.html">
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-shop-web/src/main/java/com/lvdou/shop/controller/SellerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-seckill-web/src/main/java/com/lvdou/seckill/task/OrderTaskService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-search-web/src/main/java/com/lvdou/search/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
+        <state relative-caret-position="144">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-search-web/src/main/java/com/lvdou/search/listener/DeleteMessageListener.java">
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-shop-web/src/main/java/com/lvdou/shop/controller/ItemCatController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+        <state relative-caret-position="144">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-shop-web/src/main/java/com/lvdou/shop/controller/GoodsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-shop-web/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-shop-web/src/main/resources/applicationContext-security.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="22" column="43" lean-forward="true" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-shop-web/src/main/resources/fastdfs_client.conf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-shop-web/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-shop-web/src/main/resources/lvdou-shop-web-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-shop-web/src/main/java/com/lvdou/shop/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-shop-web/src/main/java/com/lvdou/shop/controller/UploadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-355">
+          <caret line="64" column="32" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-search-web/src/main/java/com/lvdou/search/controller/ItemSearchController.java">
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-shop-web/src/main/java/com/lvdou/shop/service/UserDetailsServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="624">
+          <caret line="36" column="73" lean-forward="true" selection-start-line="36" selection-start-column="73" selection-end-line="36" selection-end-column="73" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-search-web/src/main/java/com/lvdou/search/listener/ItemMessageListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-search-web/src/main/resources/applicationContext-jms.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1104">
-          <caret line="46" column="68" selection-start-line="46" selection-start-column="68" selection-end-line="46" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://MAVEN/com:lvdou-user-web:1.0-SNAPSHOT">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>MAVEN</ID>
-          <OriginalElement>com:lvdou-user-web:1.0-SNAPSHOT</OriginalElement>
-          <nodes>
-            <node x="" y="">com:lvdou-user-web:1.0-SNAPSHOT</node>
-            <node x="" y="">org.apache.tomcat.embed:tomcat-embed-core:jar:8.5.28</node>
-            <node x="" y="">org.apache.tomcat.embed:tomcat-embed-core:jar:8.5.28/org.apache.tomcat:tomcat-annotations-api:jar:8.5.28</node>
-            <node x="" y="">org.slf4j:slf4j-log4j12:jar:1.7.5</node>
-            <node x="" y="">org.slf4j:slf4j-log4j12:jar:1.7.5/org.slf4j:slf4j-api:jar:1.7.5</node>
-            <node x="" y="">org.slf4j:slf4j-log4j12:jar:1.7.5/log4j:log4j:jar:1.2.17</node>
-            <node x="" y="">org.springframework:spring-webmvc:jar:4.3.10.RELEASE</node>
-            <node x="" y="">org.springframework:spring-webmvc:jar:4.3.10.RELEASE/org.springframework:spring-aop:jar:4.3.10.RELEASE</node>
-            <node x="" y="">org.springframework:spring-webmvc:jar:4.3.10.RELEASE/org.springframework:spring-beans:jar:4.3.10.RELEASE</node>
-            <node x="" y="">org.springframework:spring-webmvc:jar:4.3.10.RELEASE/org.springframework:spring-context:jar:4.3.10.RELEASE</node>
-            <node x="" y="">org.springframework:spring-webmvc:jar:4.3.10.RELEASE/org.springframework:spring-core:jar:4.3.10.RELEASE</node>
-            <node x="" y="">org.springframework:spring-webmvc:jar:4.3.10.RELEASE/org.springframework:spring-core:jar:4.3.10.RELEASE/commons-logging:commons-logging:jar:1.2</node>
-            <node x="" y="">org.springframework:spring-webmvc:jar:4.3.10.RELEASE/org.springframework:spring-expression:jar:4.3.10.RELEASE</node>
-            <node x="" y="">org.springframework:spring-webmvc:jar:4.3.10.RELEASE/org.springframework:spring-web:jar:4.3.10.RELEASE</node>
-            <node x="" y="">com.alibaba:fastjson:jar:1.2.29</node>
-            <node x="" y="">org.apache.commons:commons-lang3:jar:3.3.2</node>
-            <node x="" y="">commons-codec:commons-codec:jar:1.9</node>
-            <node x="" y="">com.alibaba:dubbo:jar:2.5.7</node>
-            <node x="" y="">com.alibaba:dubbo:jar:2.5.7/org.javassist:javassist:jar:3.20.0-GA</node>
-            <node x="" y="">com.alibaba:dubbo:jar:2.5.7/org.jboss.netty:netty:jar:3.2.5.Final</node>
-            <node x="" y="">org.apache.zookeeper:zookeeper:jar:3.4.11</node>
-            <node x="" y="">org.apache.zookeeper:zookeeper:jar:3.4.11/log4j:log4j:jar:1.2.16</node>
-            <node x="" y="">org.apache.zookeeper:zookeeper:jar:3.4.11/jline:jline:jar:0.9.94</node>
-            <node x="" y="">org.apache.zookeeper:zookeeper:jar:3.4.11/jline:jline:jar:0.9.94/junit:junit:jar:4.12</node>
-            <node x="" y="">org.apache.zookeeper:zookeeper:jar:3.4.11/jline:jline:jar:0.9.94/junit:junit:jar:4.12/org.hamcrest:hamcrest-core:jar:1.3</node>
-            <node x="" y="">org.apache.zookeeper:zookeeper:jar:3.4.11/org.apache.yetus:audience-annotations:jar:0.5.0</node>
-            <node x="" y="">org.apache.zookeeper:zookeeper:jar:3.4.11/io.netty:netty:jar:3.10.5.Final</node>
-            <node x="" y="">com.github.sgroschupf:zkclient:jar:0.1</node>
-            <node x="" y="">com:lvdou-user-interface:jar:1.0-SNAPSHOT</node>
-            <node x="" y="">com:lvdou-user-interface:jar:1.0-SNAPSHOT/com:lvdou-pojo:jar:1.0-SNAPSHOT</node>
-            <node x="" y="">com:lvdou-user-interface:jar:1.0-SNAPSHOT/com:lvdou-pojo:jar:1.0-SNAPSHOT/tk.mybatis:mapper:jar:3.4.0</node>
-            <node x="" y="">com:lvdou-user-interface:jar:1.0-SNAPSHOT/com:lvdou-pojo:jar:1.0-SNAPSHOT/tk.mybatis:mapper:jar:3.4.0/javax.persistence:persistence-api:jar:1.0</node>
-            <node x="" y="">com:lvdou-user-interface:jar:1.0-SNAPSHOT/com:lvdou-pojo:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-solr:jar:1.5.6.RELEASE</node>
-            <node x="" y="">com:lvdou-user-interface:jar:1.0-SNAPSHOT/com:lvdou-pojo:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-solr:jar:1.5.6.RELEASE/org.springframework:spring-tx:jar:4.1.9.RELEASE</node>
-            <node x="" y="">com:lvdou-user-interface:jar:1.0-SNAPSHOT/com:lvdou-pojo:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-solr:jar:1.5.6.RELEASE/org.springframework.data:spring-data-commons:jar:1.11.6.RELEASE</node>
-            <node x="" y="">com:lvdou-user-interface:jar:1.0-SNAPSHOT/com:lvdou-pojo:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-solr:jar:1.5.6.RELEASE/org.springframework.data:spring-data-commons:jar:1.11.6.RELEASE/org.springframework:spring-core:jar:4.1.9.RELEASE</node>
-            <node x="" y="">com:lvdou-user-interface:jar:1.0-SNAPSHOT/com:lvdou-pojo:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-solr:jar:1.5.6.RELEASE/org.springframework.data:spring-data-commons:jar:1.11.6.RELEASE/org.springframework:spring-beans:jar:4.1.9.RELEASE</node>
-            <node x="" y="">com:lvdou-user-interface:jar:1.0-SNAPSHOT/com:lvdou-pojo:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-solr:jar:1.5.6.RELEASE/org.springframework.data:spring-data-commons:jar:1.11.6.RELEASE/org.slf4j:slf4j-api:jar:1.7.21</node>
-            <node x="" y="">com:lvdou-user-interface:jar:1.0-SNAPSHOT/com:lvdou-pojo:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-solr:jar:1.5.6.RELEASE/org.springframework.data:spring-data-commons:jar:1.11.6.RELEASE/org.slf4j:jcl-over-slf4j:jar:1.7.21</node>
-            <node x="" y="">com:lvdou-user-interface:jar:1.0-SNAPSHOT/com:lvdou-pojo:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-solr:jar:1.5.6.RELEASE/commons-collections:commons-collections:jar:3.2.1</node>
-            <node x="" y="">com:lvdou-user-interface:jar:1.0-SNAPSHOT/com:lvdou-pojo:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-solr:jar:1.5.6.RELEASE/org.apache.httpcomponents:httpmime:jar:4.2.2</node>
-            <node x="" y="">com:lvdou-user-interface:jar:1.0-SNAPSHOT/com:lvdou-pojo:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-solr:jar:1.5.6.RELEASE/org.apache.httpcomponents:httpmime:jar:4.2.2/org.apache.httpcomponents:httpcore:jar:4.2.2</node>
-            <node x="" y="">com:lvdou-user-interface:jar:1.0-SNAPSHOT/com:lvdou-pojo:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-solr:jar:1.5.6.RELEASE/org.apache.httpcomponents:httpclient-cache:jar:4.2.2</node>
-            <node x="" y="">com:lvdou-user-interface:jar:1.0-SNAPSHOT/com:lvdou-pojo:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-solr:jar:1.5.6.RELEASE/org.apache.solr:solr-solrj:jar:4.10.3</node>
-            <node x="" y="">com:lvdou-user-interface:jar:1.0-SNAPSHOT/com:lvdou-pojo:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-solr:jar:1.5.6.RELEASE/org.apache.solr:solr-solrj:jar:4.10.3/commons-io:commons-io:jar:2.3</node>
-            <node x="" y="">com:lvdou-user-interface:jar:1.0-SNAPSHOT/com:lvdou-pojo:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-solr:jar:1.5.6.RELEASE/org.apache.solr:solr-solrj:jar:4.10.3/org.apache.httpcomponents:httpcore:jar:4.3</node>
-            <node x="" y="">com:lvdou-user-interface:jar:1.0-SNAPSHOT/com:lvdou-pojo:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-solr:jar:1.5.6.RELEASE/org.apache.solr:solr-solrj:jar:4.10.3/org.codehaus.woodstox:wstx-asl:jar:3.2.7</node>
-            <node x="" y="">com:lvdou-user-interface:jar:1.0-SNAPSHOT/com:lvdou-pojo:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-solr:jar:1.5.6.RELEASE/org.apache.solr:solr-solrj:jar:4.10.3/org.noggit:noggit:jar:0.5</node>
-            <node x="" y="">com:lvdou-user-interface:jar:1.0-SNAPSHOT/com:lvdou-pojo:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-solr:jar:1.5.6.RELEASE/com.fasterxml.jackson.core:jackson-databind:jar:2.6.7</node>
-            <node x="" y="">com:lvdou-user-interface:jar:1.0-SNAPSHOT/com:lvdou-pojo:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-solr:jar:1.5.6.RELEASE/com.fasterxml.jackson.core:jackson-databind:jar:2.6.7/com.fasterxml.jackson.core:jackson-annotations:jar:2.6.0</node>
-            <node x="" y="">com:lvdou-user-interface:jar:1.0-SNAPSHOT/com:lvdou-pojo:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-solr:jar:1.5.6.RELEASE/com.fasterxml.jackson.core:jackson-databind:jar:2.6.7/com.fasterxml.jackson.core:jackson-core:jar:2.6.7</node>
-            <node x="" y="">com:lvdou-user-interface:jar:1.0-SNAPSHOT/com:lvdou-pojo:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-solr:jar:1.5.6.RELEASE/org.slf4j:slf4j-api:jar:1.7.5</node>
-            <node x="" y="">com:lvdou-user-interface:jar:1.0-SNAPSHOT/com:lvdou-pojo:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-solr:jar:1.5.6.RELEASE/org.slf4j:jcl-over-slf4j:jar:1.7.25</node>
-            <node x="" y="">com:lvdou-user-interface:jar:1.0-SNAPSHOT/com.github.pagehelper:pagehelper:jar:5.0.0</node>
-            <node x="" y="">com:lvdou-user-interface:jar:1.0-SNAPSHOT/com.github.pagehelper:pagehelper:jar:5.0.0/com.github.jsqlparser:jsqlparser:jar:0.9.5</node>
-            <node x="" y="">org.springframework.security:spring-security-web:jar:4.2.3.RELEASE</node>
-            <node x="" y="">org.springframework.security:spring-security-web:jar:4.2.3.RELEASE/aopalliance:aopalliance:jar:1.0</node>
-            <node x="" y="">org.springframework.security:spring-security-web:jar:4.2.3.RELEASE/org.springframework.security:spring-security-core:jar:4.2.3.RELEASE</node>
-            <node x="" y="">org.springframework.security:spring-security-web:jar:4.2.3.RELEASE/org.springframework.security:spring-security-core:jar:4.2.3.RELEASE/org.springframework:spring-aop:jar:4.3.9.RELEASE</node>
-            <node x="" y="">org.springframework.security:spring-security-web:jar:4.2.3.RELEASE/org.springframework.security:spring-security-core:jar:4.2.3.RELEASE/org.springframework:spring-beans:jar:4.3.9.RELEASE</node>
-            <node x="" y="">org.springframework.security:spring-security-web:jar:4.2.3.RELEASE/org.springframework.security:spring-security-core:jar:4.2.3.RELEASE/org.springframework:spring-core:jar:4.3.9.RELEASE</node>
-            <node x="" y="">org.springframework.security:spring-security-web:jar:4.2.3.RELEASE/org.springframework.security:spring-security-core:jar:4.2.3.RELEASE/org.springframework:spring-expression:jar:4.3.9.RELEASE</node>
-            <node x="" y="">org.springframework.security:spring-security-web:jar:4.2.3.RELEASE/org.springframework:spring-beans:jar:4.3.10.RELEASE</node>
-            <node x="" y="">org.springframework.security:spring-security-web:jar:4.2.3.RELEASE/org.springframework:spring-core:jar:4.3.10.RELEASE</node>
-            <node x="" y="">org.springframework.security:spring-security-web:jar:4.2.3.RELEASE/org.springframework:spring-expression:jar:4.3.10.RELEASE</node>
-            <node x="" y="">org.springframework.security:spring-security-config:jar:4.2.3.RELEASE</node>
-            <node x="" y="">org.springframework.security:spring-security-config:jar:4.2.3.RELEASE/org.springframework:spring-aop:jar:4.3.10.RELEASE</node>
-            <node x="" y="">org.springframework.security:spring-security-config:jar:4.2.3.RELEASE/org.springframework:spring-beans:jar:4.3.10.RELEASE</node>
-            <node x="" y="">org.springframework.security:spring-security-config:jar:4.2.3.RELEASE/org.springframework:spring-core:jar:4.3.10.RELEASE</node>
-            <node x="" y="">com:lvdou-common:jar:1.0-SNAPSHOT</node>
-            <node x="" y="">com:lvdou-common:jar:1.0-SNAPSHOT/redis.clients:jedis:jar:2.9.0</node>
-            <node x="" y="">com:lvdou-common:jar:1.0-SNAPSHOT/redis.clients:jedis:jar:2.9.0/org.apache.commons:commons-pool2:jar:2.4.2</node>
-            <node x="" y="">com:lvdou-common:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-redis:jar:1.8.6.RELEASE</node>
-            <node x="" y="">com:lvdou-common:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-redis:jar:1.8.6.RELEASE/org.springframework.data:spring-data-keyvalue:jar:1.2.6.RELEASE</node>
-            <node x="" y="">com:lvdou-common:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-redis:jar:1.8.6.RELEASE/org.springframework.data:spring-data-keyvalue:jar:1.2.6.RELEASE/org.springframework.data:spring-data-commons:jar:1.13.6.RELEASE</node>
-            <node x="" y="">com:lvdou-common:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-redis:jar:1.8.6.RELEASE/org.springframework.data:spring-data-keyvalue:jar:1.2.6.RELEASE/org.slf4j:slf4j-api:jar:1.7.25</node>
-            <node x="" y="">com:lvdou-common:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-redis:jar:1.8.6.RELEASE/org.springframework:spring-oxm:jar:4.3.10.RELEASE</node>
-            <node x="" y="">com:lvdou-common:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-redis:jar:1.8.6.RELEASE/org.springframework:spring-context-support:jar:4.3.10.RELEASE</node>
-            <node x="" y="">com:lvdou-common:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-redis:jar:1.8.6.RELEASE/org.slf4j:slf4j-api:jar:1.7.5</node>
-            <node x="" y="">com:lvdou-common:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-redis:jar:1.8.6.RELEASE/org.slf4j:jcl-over-slf4j:jar:1.7.25</node>
-            <node x="" y="">com:lvdou-common:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-redis:jar:1.8.6.RELEASE/org.slf4j:jcl-over-slf4j:jar:1.7.25/org.slf4j:slf4j-api:jar:1.7.5</node>
-            <node x="" y="">com:lvdou-common:jar:1.0-SNAPSHOT/org.apache.httpcomponents:httpclient:jar:4.5.3</node>
-            <node x="" y="">com:lvdou-common:jar:1.0-SNAPSHOT/org.apache.httpcomponents:httpclient:jar:4.5.3/org.apache.httpcomponents:httpcore:jar:4.4.6</node>
-            <node x="" y="">com:lvdou-common:jar:1.0-SNAPSHOT/com:lvdou-mapper:jar:1.0-SNAPSHOT</node>
-            <node x="" y="">com:lvdou-common:jar:1.0-SNAPSHOT/com:lvdou-mapper:jar:1.0-SNAPSHOT/org.springframework:spring-jdbc:jar:4.3.10.RELEASE</node>
-            <node x="" y="">com:lvdou-common:jar:1.0-SNAPSHOT/com:lvdou-mapper:jar:1.0-SNAPSHOT/org.mybatis:mybatis:jar:3.4.1</node>
-            <node x="" y="">com:lvdou-common:jar:1.0-SNAPSHOT/com:lvdou-mapper:jar:1.0-SNAPSHOT/org.mybatis:mybatis-spring:jar:1.3.1</node>
-            <node x="" y="">com:lvdou-common:jar:1.0-SNAPSHOT/com:lvdou-mapper:jar:1.0-SNAPSHOT/mysql:mysql-connector-java:jar:5.1.38</node>
-            <node x="" y="">com:lvdou-common:jar:1.0-SNAPSHOT/com:lvdou-mapper:jar:1.0-SNAPSHOT/com.alibaba:druid:jar:1.0.9</node>
-            <node x="" y="">com:lvdou-common:jar:1.0-SNAPSHOT/com:lvdou-mapper:jar:1.0-SNAPSHOT/com.alibaba:druid:jar:1.0.9/com.alibaba:jconsole:jar:1.8.0</node>
-            <node x="" y="">com:lvdou-common:jar:1.0-SNAPSHOT/com:lvdou-mapper:jar:1.0-SNAPSHOT/com.alibaba:druid:jar:1.0.9/com.alibaba:tools:jar:1.8.0</node>
-            <node x="" y="">com:lvdou-sellergoods-interface:jar:1.0-SNAPSHOT</node>
-            <node x="" y="">org.apache.activemq:activemq-client:jar:5.14.5</node>
-            <node x="" y="">org.apache.activemq:activemq-client:jar:5.14.5/org.slf4j:slf4j-api:jar:1.7.13</node>
-            <node x="" y="">org.apache.activemq:activemq-client:jar:5.14.5/org.apache.geronimo.specs:geronimo-jms_1.1_spec:jar:1.1.1</node>
-            <node x="" y="">org.apache.activemq:activemq-client:jar:5.14.5/org.fusesource.hawtbuf:hawtbuf:jar:1.11</node>
-            <node x="" y="">org.apache.activemq:activemq-client:jar:5.14.5/org.apache.geronimo.specs:geronimo-j2ee-management_1.1_spec:jar:1.0.1</node>
-            <node x="" y="">org.springframework:spring-jms:jar:4.3.10.RELEASE</node>
-            <node x="" y="">org.springframework:spring-jms:jar:4.3.10.RELEASE/org.springframework:spring-messaging:jar:4.3.10.RELEASE</node>
-            <node x="" y="">org.springframework:spring-jms:jar:4.3.10.RELEASE/org.springframework:spring-tx:jar:4.3.10.RELEASE</node>
-            <node x="" y="">org.freemarker:freemarker:jar:2.3.26-incubating</node>
-            <node x="" y="">org.csource:fastdfs-client:jar:1.25-RELEASE</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.8516379601485984" x="5542.0" y="220.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>All</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://MAVEN/com:lvdou:1.0-SNAPSHOT">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>MAVEN</ID>
-          <OriginalElement>com:lvdou:1.0-SNAPSHOT</OriginalElement>
-          <nodes>
-            <node x="" y="">com:lvdou:1.0-SNAPSHOT</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="202.0" y="15.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>All</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/apache/activemq/activemq-client/5.14.5/activemq-client-5.14.5.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3312" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="90" column="38" selection-start-line="90" selection-start-column="38" selection-end-line="90" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6840">
-          <caret line="285" column="25" selection-start-line="285" selection-start-column="25" selection-end-line="285" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/user/controller/UploadController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-search/lvdou-search-service/src/main/java/com/lvdou/search/service/impl/ItemSearchServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="297" column="28" lean-forward="true" selection-start-line="297" selection-start-column="28" selection-end-line="297" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user/lvdou-user-interface/src/main/java/com/lvdou/user/service/SeckillOrderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user/lvdou-user-service/src/main/java/com/lvdou/user/service/impl/SeckillOrderServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user/lvdou-user-service/src/main/java/com/lvdou/user/service/impl/GoodsServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/tk/mybatis/mapper/3.4.0/mapper-3.4.0.jar!/tk/mybatis/mapper/common/example/SelectByExampleMapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user/lvdou-user-service/src/main/java/com/lvdou/user/service/impl/SeckillGoodsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-216">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/seckill-item.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="47" lean-forward="true" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/user/controller/SeckillGoodsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user/lvdou-user-interface/src/main/java/com/lvdou/user/service/SeckillGoodsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/js/controller/seckillGoodsController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="92" column="21" lean-forward="true" selection-start-line="92" selection-start-column="21" selection-end-line="92" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/user/controller/SeckillOrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-127">
-          <caret line="30" column="63" lean-forward="true" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/order/paysuccess.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="14" column="49" lean-forward="true" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/user/controller/SellerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="31" column="45" lean-forward="true" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/order/pay.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="47" lean-forward="true" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/js/controller/orderController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1625">
-          <caret line="126" column="53" lean-forward="true" selection-start-line="126" selection-start-column="53" selection-end-line="126" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/resources/lvdou-user-web-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-55">
-          <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/resources/applicationContext-security.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-899">
-          <caret line="16" column="53" lean-forward="true" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user/lvdou-user-interface/src/main/java/com/lvdou/user/service/WeixinPayService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user/lvdou-user-service/src/main/java/com/lvdou/user/service/impl/WeixinPayServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user/lvdou-user-service/src/main/resources/props/weixinpay.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="55" lean-forward="true" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/seckill-index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/js/controller/baseController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/resources/props/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/user/controller/OrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="50" column="49" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
-          <folding>
-            <element signature="e#1779#1780#0" expanded="true" />
-            <element signature="e#1810#1811#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user/lvdou-user-interface/src/main/java/com/lvdou/user/service/OrderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user/lvdou-user-service/src/main/java/com/lvdou/user/service/impl/OrderServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+        <state relative-caret-position="-2688">
+          <caret line="35" column="14" lean-forward="true" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user/lvdou-user-service/src/main/java/com/lvdou/user/service/impl/ProductServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user/lvdou-user-service/src/main/java/com/lvdou/user/service/impl/SeckillGoodsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user/lvdou-user-service/src/main/java/com/lvdou/user/service/impl/SeckillOrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user/lvdou-user-service/src/main/java/com/lvdou/user/service/impl/SellerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-535">
+          <caret line="28" column="49" lean-forward="true" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user/lvdou-user-service/src/main/java/com/lvdou/user/service/impl/SendVCodeImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="73" column="37" lean-forward="true" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user/lvdou-user-service/src/main/java/com/lvdou/user/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2424">
+          <caret line="44" column="27" lean-forward="true" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user/lvdou-user-service/src/main/java/com/lvdou/user/service/impl/SpecificationServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="111" column="13" lean-forward="true" selection-start-line="111" selection-start-column="13" selection-end-line="111" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/admin/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-792" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/admin/product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="383" column="19" selection-start-line="383" selection-start-column="19" selection-end-line="383" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/js/service/uploadService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/js/controller/productController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/js/base-pagination.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/admin/brand.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2976">
+          <caret line="130" column="22" selection-start-line="130" selection-start-column="22" selection-end-line="130" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/user/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="40" column="55" lean-forward="true" selection-start-line="40" selection-start-column="55" selection-end-line="40" selection-end-column="55" />
+        <state relative-caret-position="144">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/user/controller/AddressController.java">
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/user/controller/ItemCatController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/login.html">
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/user/controller/CartController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-120">
-          <caret line="31" column="33" lean-forward="true" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+        <state relative-caret-position="144">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-manager-web/src/main/java/com/lvdou/manager/controller/UploadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="172" selection-start-line="75" selection-start-column="4" selection-end-line="172" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-manager-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="108" column="21" selection-start-line="98" selection-start-column="8" selection-end-line="108" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="116" column="21" selection-start-line="116" selection-start-column="21" selection-end-line="116" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/user/controller/UploadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#912#930#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

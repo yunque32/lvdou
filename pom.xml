@@ -11,8 +11,8 @@
         <module>lvdou-pojo</module>
         <module>lvdou-common</module>
         <module>lvdou-mapper</module>
-        <!--<module>lvdou-sellergoods</module>
-        <module>lvdou-manager-web</module>-->
+        <module>lvdou-sellergoods</module>
+        <module>lvdou-manager-web</module>
         <!--<module>lvdou-content</module>-->
         <!--<module>lvdou-cart</module>-->
         <!--<module>lvdou-cart-web</module>-->
@@ -21,7 +21,7 @@
         <!--<module>lvdou-portal-web</module>-->
         <module>lvdou-user-web</module>
         <module>lvdou-user</module>
-        <!--<module>lvdou-shop-web</module>-->
+        <module>lvdou-shop-web</module>
         <!--<module>lvdou-sms</module>-->
         <!--<module>lvdou-item-web</module>-->
         <!--<module>lvdou-solr-util</module>-->

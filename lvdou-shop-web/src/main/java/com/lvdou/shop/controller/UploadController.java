@@ -4,6 +4,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
 import org.csource.fastdfs.ClientGlobal;
 import org.csource.fastdfs.StorageClient;
+import org.apache.struts2.ServletActionContext;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,6 +12,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.awt.*;
+import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
@@ -26,6 +29,34 @@ public class UploadController {
     @Value("${fileServerUrl}")
     private String fileServerUrl;
 
+    public File getImgFile() {
+        return imgFile;
+    }
+
+    public void setImgFile(File imgFile) {
+        this.imgFile = imgFile;
+    }
+
+    public String getImgFileFileName() {
+        return imgFileFileName;
+    }
+
+    public void setImgFileFileName(String imgFileFileName) {
+        this.imgFileFileName = imgFileFileName;
+    }
+
+    public String getImgFileContentType() {
+        return imgFileContentType;
+    }
+
+    public void setImgFileContentType(String imgFileContentType) {
+        this.imgFileContentType = imgFileContentType;
+    }
+
+    private File imgFile;
+    private String imgFileFileName;
+    private String imgFileContentType;
+    Map<Object, Object> result = new HashMap<>();
     /** 文件上传 */
     @PostMapping("/file")
     public Map<String, Object> upload(@RequestParam("file") MultipartFile multipartFile){
@@ -75,7 +106,7 @@ public class UploadController {
 			System.out.println(imgFileContentType);*/
 
             //把图片文件保存到服务器目录（网站的根目录的upload目录）
-            //获取网站下面某个目录的绝对路径： ServletContext.getRealPath("/目录")
+           // 获取网站下面某个目录的绝对路径： ServletContext.getRealPath("/目录")
             String uploadPath = ServletActionContext.getServletContext().getRealPath("/upload");
             System.out.println(uploadPath);
 
@@ -96,13 +127,13 @@ public class UploadController {
             result.put("url", ServletActionContext.getRequest().getContextPath()+"/upload/"+fileName);
         } catch (Exception e) {
             e.printStackTrace();
-            //失败
+//            //失败
             result.put("error", 1);
             result.put("message", e.getMessage());
         }finally{
-            writeJson(result);
+            //writeJson(result);
         }
-    }
+    //}
         return null;
     }
 }

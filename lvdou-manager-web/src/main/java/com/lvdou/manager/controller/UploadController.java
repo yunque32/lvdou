@@ -81,9 +81,9 @@ public class UploadController {
         String originalFilename = multipartFile.getOriginalFilename();
         String subname = FilenameUtils.getExtension(originalFilename);
         StringBuffer url=new StringBuffer("127.0.0.1:9101/admin/index.html?=");
+        File file = new File("D://" + originalFilename);
         try {
-            multipartFile.transferTo(new File("D://"+originalFilename));
-            File file = new File("D://"+originalFilename);
+            multipartFile.transferTo(file);
             Map<String, String> map = new HashMap<>();
             FileInputStream fis=new FileInputStream(file);
             if("xls".equals(subname)){

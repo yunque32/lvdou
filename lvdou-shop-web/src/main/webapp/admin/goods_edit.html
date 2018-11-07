@@ -27,15 +27,11 @@
 
 		<!-- 正文区域 /-->
 		<script type="text/javascript">
-            KindEditor.ready(function(K) {
-                window.editor = K.create('#description',{
-                    //uploadJson：修改文件上传的地址
-                    uploadJson:"../upload/file",
-                    //开启图片空间
-                    allowFileManager : true,
-                    //查询图片空间的请求
-                    fileManagerJson:"../queryimage"
-                });
+			var editor;
+			KindEditor.ready(function(K) {
+			    // 创建富文本编辑器对象 <textarea name=content>
+				editor = K.create('textarea[name="content"]');
+			});
 
 			// 配置位置的提供者
 			app.config(function($locationProvider){
