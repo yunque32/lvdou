@@ -11,8 +11,8 @@
         <module>lvdou-pojo</module>
         <module>lvdou-common</module>
         <module>lvdou-mapper</module>
-        <!--<module>lvdou-sellergoods</module>
-        <module>lvdou-manager-web</module>-->
+        <!--<module>lvdou-sellergoods</module>-->
+        <module>lvdou-manager-web</module>
         <!--<module>lvdou-content</module>-->
         <!--<module>lvdou-order</module>-->
         <!--<module>lvdou-pay</module>-->
