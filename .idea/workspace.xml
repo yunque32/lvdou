@@ -71,54 +71,74 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ItemCatServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/java/com/lvdou/user/service/impl/ItemCatServiceImpl.java">
+      <file leaf-file-name="ItemCatMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/mapper/ItemCatMapper.java">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="SeckillGoodsServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/java/com/lvdou/user/service/impl/SeckillGoodsServiceImpl.java">
+      <file leaf-file-name="ItemMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/mapper/ItemMapper.java">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="SeckillOrderServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/java/com/lvdou/user/service/impl/SeckillOrderServiceImpl.java">
+      <file leaf-file-name="GoodsMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/mapper/GoodsMapper.java">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="BrandServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/java/com/lvdou/user/service/impl/BrandServiceImpl.java">
+      <file leaf-file-name="ProducterMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/mapper/ProducterMapper.java">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="OrderServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/java/com/lvdou/user/service/impl/OrderServiceImpl.java">
+      <file leaf-file-name="OrderItemMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/mapper/OrderItemMapper.java">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="TypeTemplateServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/java/com/lvdou/user/service/impl/TypeTemplateServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="ItemMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/resources/mappers/ItemMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoleResourceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/java/com/lvdou/user/service/impl/RoleResourceImpl.java">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="AgencyController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-manager-web/src/main/java/com/lvdou/manager/controller/AgencyController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/java/com/lvdou/user/service/impl/UserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../lvdou/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="SeckillTaskService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/java/com/lvdou/task/SeckillTaskService.java">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="UploadController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-manager-web/src/main/java/com/lvdou/manager/controller/UploadController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddressServiceImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/java/com/lvdou/user/service/impl/AddressServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="WuliuController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-manager-web/src/main/java/com/lvdou/manager/controller/WuliuController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -161,9 +181,9 @@
       <find>~</find>
       <find>socket</find>
       <find>最后</find>
-      <find>socket</find>
       <find>最后生成</find>
       <find>seckill</find>
+      <find>githu</find>
     </findStrings>
     <replaceStrings>
       <replace>doe</replace>
@@ -219,57 +239,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lvdou-user/lvdou-user-service/src/main/java/com/lvdou/user/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/lvdou-user/lvdou-user-service/src/main/java/com/lvdou/user/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/mi/src/main/webapp/mi.html" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/Seller/youke.html" />
-        <option value="$PROJECT_DIR$/lvdou-pojo/src/main/java/com/lvdou/pojo/Seller.java" />
-        <option value="$PROJECT_DIR$/lvdou-pojo/src/main/java/com/lvdou/pojo/Role.java" />
-        <option value="$PROJECT_DIR$/lvdou-pojo/src/main/java/com/lvdou/pojo/User.java" />
-        <option value="$PROJECT_DIR$/lvdou-pojo/src/main/java/com/lvdou/pojo/Resource.java" />
+        <option value="$PROJECT_DIR$/lvdou-shop-web/src/main/java/com/lvdou/sellergoods/service/impl/SellerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/sellergoods/service/impl/ItemCatServiceImpl.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/controller/ItemCatController.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/controller/GoodsController.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/user/controller/GoodsController.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/controller/ItemSearchController.java" />
         <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/user/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/lvdou-user/lvdou-user-interface/src/main/java/com/lvdou/user/service/UserService.java" />
-        <option value="$PROJECT_DIR$/lvdou-mapper/src/main/java/com/lvdou/mapper/UserMapper.java" />
-        <option value="$PROJECT_DIR$/lvdou-mapper/src/main/resources/mappers/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/lvdou-pojo/src/main/java/com/lvdou/pojo/RoleResource.java" />
-        <option value="$PROJECT_DIR$/lvdou-user/lvdou-user-service/src/main/java/com/lvdou/user/service/impl/RoleResourceImpl.java" />
-        <option value="$PROJECT_DIR$/lvdou-pojo/src/main/java/com/lvdou/pojo/UserRole.java" />
-        <option value="$PROJECT_DIR$/lvdou-mapper/src/main/java/com/lvdou/mapper/UserRoleMapper.java" />
-        <option value="$PROJECT_DIR$/lvdou-user/lvdou-user-interface/src/main/java/com/lvdou/user/service/TypeTemplateService.java" />
-        <option value="$PROJECT_DIR$/lvdou-user/lvdou-user-interface/src/main/java/com/lvdou/user/service/UserRoleService.java" />
-        <option value="$PROJECT_DIR$/lvdou-user/lvdou-user-service/src/main/java/com/lvdou/user/service/impl/UserRoleImpl.java" />
-        <option value="$PROJECT_DIR$/lvdou-user/lvdou-user-service/src/main/java/com/lvdou/user/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/lvdou-mapper/src/main/java/com/lvdou/mapper/RoleMapper.java" />
-        <option value="$PROJECT_DIR$/lvdou-mapper/src/main/resources/mappers/RoleMapper.xml" />
-        <option value="$PROJECT_DIR$/lvdou-mapper/src/main/resources/mappers/UserRoleMapper.xml" />
-        <option value="$PROJECT_DIR$/lvdou-user/lvdou-user-service/src/main/java/com/lvdou/user/service/impl/UserRoleServiceImpl.java" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/resources/applicationContext-security.xml" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/user/service/UserDetailsServiceImpl.java" />
-        <option value="$PROJECT_DIR$/lvdou-pojo/src/main/java/com/lvdou/pojo/User.java" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/mo-details.html" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/mo-order.html" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/mo-register.html" />
-        <option value="$PROJECT_DIR$/lvdou-user/lvdou-user-service/src/main/resources/props/sms.properties" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/user/service/UserDetailsServiceImpl.java" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/resources/applicationContext-security.xml" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/resources/lvdou-user-web-servlet.xml" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/css/mo-style.css" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/index.html" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/seckill-index.html" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/js/controller/indexController.js" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/mo-index.html" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/index2.html" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/index.html" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/pom.xml" />
-        <option value="$PROJECT_DIR$/lvdou-mo/pom.xml" />
-        <option value="$PROJECT_DIR$/lvdou-mo/src/main/java/com/lvdou/user/controller/SeckillGoodsController.java" />
-        <option value="$PROJECT_DIR$/lvdou-mo/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/lvdou-mo/src/main/webapp/js/plugins/angularjs/angular.min.js" />
-        <option value="$PROJECT_DIR$/lvdou-mo/src/main/webapp/index.html" />
-        <option value="$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/user/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/controller/SellerController.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/user/controller/SellerController.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/user/controller/UploadController.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/user/controller/TypeTemplateController.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/controller/UploadController.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/controller/TypeTemplateController.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/service/AddressServiceImpl.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/service/BrandServiceImpl.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/service/CartServiceImpl.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/service/ContentCategoryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/service/ContentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/service/GoodsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/service/ItemCatServiceImpl.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/service/ItemSearchServiceImpl.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/service/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/service/ProductServiceImpl.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/service/RoleResourceImpl.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/service/SeckillGoodsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/service/SeckillOrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/service/SellerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/service/SendVCodeImpl.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/service/SpecificationServiceImpl.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/service/TypeTemplateServiceImpl.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/service/UserRoleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/service/UserDetailsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/service/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/service/WeixinPayServiceImpl.java" />
+        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/java/com/lvdou/service/WuliuServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/shop/controller/GoodsController.java" />
+        <option value="$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/controller/GoodsController.java" />
+        <option value="$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/shop/controller/ItemCatController.java" />
+        <option value="$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/shop/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/shop/controller/SellerController.java" />
+        <option value="$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/shop/controller/TypeTemplateController.java" />
+        <option value="$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/shop/controller/UploadController.java" />
+        <option value="$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/sellergoods/service/impl/TypeTemplateServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/sellergoods/service/impl/BrandServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/service/BrandServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/sellergoods/service/impl/GoodsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/mapper/OrderItemMapper.java" />
+        <option value="$PROJECT_DIR$/../lvdou/pom.xml" />
       </list>
     </option>
   </component>
@@ -294,7 +314,12 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="lvdou" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
@@ -318,9 +343,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -328,70 +352,11 @@
               <item name="lvdou" type="b2602c69:ProjectViewProjectNode" />
               <item name="lvdou" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="lvdou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lvdou" type="462c0819:PsiDirectoryNode" />
-              <item name="lvdou-mo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lvdou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lvdou" type="462c0819:PsiDirectoryNode" />
-              <item name="lvdou-mo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lvdou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lvdou" type="462c0819:PsiDirectoryNode" />
-              <item name="lvdou-mo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lvdou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lvdou" type="462c0819:PsiDirectoryNode" />
-              <item name="lvdou-mo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lvdou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lvdou" type="462c0819:PsiDirectoryNode" />
-              <item name="lvdou-user-web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lvdou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lvdou" type="462c0819:PsiDirectoryNode" />
-              <item name="lvdou-user-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lvdou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lvdou" type="462c0819:PsiDirectoryNode" />
-              <item name="lvdou-user-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lvdou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lvdou" type="462c0819:PsiDirectoryNode" />
-              <item name="lvdou-user-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lvdou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lvdou" type="462c0819:PsiDirectoryNode" />
-              <item name="lvdou-user-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -424,11 +389,11 @@
       <recent name="com.lvdou.task" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\lvdou\lvdou-mo\src\main\webapp\js" />
+      <recent name="E:\lvdou\lvdou-user-web\src\main\resources" />
+      <recent name="E:\lvdou\lvdou-user-web\src\main\java" />
+      <recent name="E:\lvdou\lvdou-user-web\src\main\java\com\lvdou\controller" />
+      <recent name="E:\lvdou\lvdou-shop-web\src\main\java" />
       <recent name="E:\lvdou\lvdou-mo\src\main\java" />
-      <recent name="E:\lvdou\lvdou-mo\src\main\resources" />
-      <recent name="E:\lvdou\lvdou-mo\src\main\webapp\css" />
-      <recent name="E:\lvdou\lvdou-mo\src\main\webapp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -462,6 +427,16 @@
         <value defaultName="singleModule" />
       </option>
       <patterns />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="lvdou-cart-interface" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
     </configuration>
     <configuration name="lvdou-mo" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
@@ -706,7 +681,8 @@
       <workItem from="1542071059837" duration="22631000" />
       <workItem from="1542158213695" duration="27230000" />
       <workItem from="1542243973502" duration="11605000" />
-      <workItem from="1542271217074" duration="1220000" />
+      <workItem from="1542271217074" duration="5822000" />
+      <workItem from="1542277617360" duration="2215000" />
     </task>
     <task id="LOCAL-00001" summary="lvdou-cart resource提交">
       <created>1539226809107</created>
@@ -719,7 +695,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="570415000" />
+    <option name="totallyTimeSpent" value="577232000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -732,9 +708,8 @@
       <window_info anchor="bottom" id="JRebel Executor" order="8" weight="0.32587412" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info id="Structure" order="1" sideWeight="0.5034965" side_tool="true" weight="0.26863754" />
+      <window_info id="Structure" order="1" sideWeight="0.5048951" side_tool="true" weight="0.22686376" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.75944054" />
@@ -747,18 +722,19 @@
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993573" weight="0.83916086" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32867134" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4965035" visible="true" weight="0.22686376" />
-      <window_info anchor="right" id="Bean Validation" order="4" weight="0.32969153" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4951049" visible="true" weight="0.22686376" />
       <window_info id="Web" order="3" side_tool="true" />
       <window_info id="JRebel" order="2" sideWeight="0.5034965" side_tool="true" weight="0.25385603" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" sideWeight="0.5034965" side_tool="true" weight="0.1992288" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32867134" />
       <window_info anchor="bottom" id="Thumbnails" order="9" weight="0.32867134" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.32867134" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Bean Validation" order="4" weight="0.32969153" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32867134" />
     </layout>
     <layout-to-restore>
@@ -826,234 +802,367 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/pom.xml">
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/service/GoodsServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="104" column="19" selection-end-line="120" selection-end-column="10" />
+        <state relative-caret-position="260">
+          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/pom.xml">
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/service/ItemCatServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2077">
-          <caret line="116" column="32" lean-forward="true" selection-start-line="116" selection-start-column="32" selection-end-line="116" selection-end-column="32" />
+        <state relative-caret-position="91">
+          <caret line="28" column="49" lean-forward="true" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/service/ItemSearchServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" column="26" lean-forward="true" selection-end-line="59" selection-end-column="10" />
+        <state relative-caret-position="-2016">
+          <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/resources/lvdou-user-web-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/java/com/lvdou/user/controller/UploadController.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/java/com/lvdou/user/controller/AddressController.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/java/com/lvdou/user/service/UserDetailsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/java/com/lvdou/user/controller/ItemController.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/java/com/lvdou/user/controller/ContentController.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/java/com/lvdou/user/controller/ItemSearchController.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/java/com/lvdou/user/controller/GoodsController.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/java/com/lvdou/user/controller/TypeTemplateController.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/java/com/lvdou/user/controller/SellerController.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/webapp/order.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/webapp/js/plugins/sui/sui.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/java/com/lvdou/user/controller/SeckillGoodsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/webapp/js/controller/seckillGoodsController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1872" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/webapp/js/controller/indexController.js">
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/service/OrderServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/webapp/js/plugins/angularjs/angular.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="336" lean-forward="true" selection-start-line="336" selection-end-line="336" />
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/js/plugins/angularjs/angular.min.js">
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/service/ProductServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="43" column="235" selection-start-line="43" selection-start-column="235" selection-end-line="43" selection-end-column="235" />
+        <state relative-caret-position="288">
+          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/common.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-635">
-          <caret line="124" column="18" selection-start-line="124" selection-start-column="18" selection-end-line="124" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="857">
-          <caret line="57" column="84" selection-start-line="57" selection-start-column="84" selection-end-line="57" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/webapp/css/mo-style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2208">
-          <caret line="92" column="45" selection-start-line="92" selection-start-column="45" selection-end-line="92" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/seckill-index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4272">
-          <caret line="178" column="24" selection-start-line="178" selection-start-column="24" selection-end-line="178" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/css/pages-seckill-index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1392" selection-start-column="1392" selection-end-column="1392" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/webapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="88" column="45" selection-start-line="88" selection-start-column="45" selection-end-line="88" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.10.RELEASE/spring-webmvc-4.3.10.RELEASE.jar!/org/springframework/web/servlet/mvc/WebContentInterceptor.class">
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/service/RoleResourceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.10.RELEASE/spring-webmvc-4.3.10.RELEASE.jar!/org/springframework/web/servlet/HandlerInterceptor.class">
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/service/SeckillGoodsServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        <state relative-caret-position="-96">
+          <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/service/SeckillOrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
           <folding>
-            <element signature="e#0#632#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/user/controller/LoginController.java">
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/service/SellerServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="44" column="33" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
+        <state relative-caret-position="-456">
+          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/user/service/impl/ItemCatServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/service/SendVCodeImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/service/SpecificationServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/service/TypeTemplateServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/service/UserDetailsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="984">
+          <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/service/UserRoleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/service/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/service/WeixinPayServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/service/WuliuServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/service/AddressServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/controller/GoodsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-511">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/shop/controller/GoodsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/controller/ItemCatController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/shop/controller/ItemCatController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/cart/Cart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/shop/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/shop/controller/SellerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/controller/TypeTemplateController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/shop/controller/TypeTemplateController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/controller/SellerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="30" column="45" lean-forward="true" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/shop/controller/UploadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="987">
+          <caret line="98" column="5" lean-forward="true" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/controller/UploadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1219">
+          <caret line="65" column="38" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/controller/AddressController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/sellergoods/service/impl/TypeTemplateServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-964">
+          <caret line="2" column="33" lean-forward="true" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/sellergoods/service/impl/BrandServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-643">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/service/BrandServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="912">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/sellergoods/service/impl/GoodsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/mapper/SpecificationMapper.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/user/service/impl/SeckillGoodsServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/mapper/ContentCategoryMapper.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/user/service/impl/SeckillOrderServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/mapper/SeckillOrderMapper.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/user/service/impl/BrandServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/mapper/SpecificationOptionMapper.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/user/service/impl/OrderServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/mapper/BrandMapper.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/user/service/impl/TypeTemplateServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/mapper/ItemCatMapper.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/user/service/impl/RoleResourceImpl.java">
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/mapper/ItemMapper.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/user/service/impl/UserServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/mapper/GoodsMapper.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/task/SeckillTaskService.java">
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/mapper/ProducterMapper.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/user/service/impl/AddressServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/mapper/OrderItemMapper.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/java/com/lvdou/user/service/impl/ItemCatServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/resources/mappers/ItemMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/java/com/lvdou/user/service/impl/SeckillGoodsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-manager-web/src/main/java/com/lvdou/manager/controller/AgencyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/java/com/lvdou/user/service/impl/SeckillOrderServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/../lvdou/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/java/com/lvdou/user/service/impl/BrandServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-manager-web/src/main/java/com/lvdou/manager/controller/UploadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/java/com/lvdou/user/service/impl/OrderServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/java/com/lvdou/user/service/impl/TypeTemplateServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/java/com/lvdou/user/service/impl/RoleResourceImpl.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/java/com/lvdou/user/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/java/com/lvdou/task/SeckillTaskService.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-mo/src/main/java/com/lvdou/user/service/impl/AddressServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-manager-web/src/main/java/com/lvdou/manager/controller/WuliuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

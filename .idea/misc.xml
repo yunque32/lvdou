@@ -33,15 +33,19 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/../lvdou/lvdou-mo/pom.xml" />
+        <option value="$PROJECT_DIR$/lvdou-mo/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/fastdfs-client/pom.xml" />
         <option value="$PROJECT_DIR$/fastdfs_client/pom.xml" />
+        <option value="$PROJECT_DIR$/lvdou-common/pom.xml" />
+        <option value="$PROJECT_DIR$/lvdou-pojo/pom.xml" />
         <option value="$PROJECT_DIR$/lvdou-search/pom.xml" />
+        <option value="$PROJECT_DIR$/lvdou-user/pom.xml" />
         <option value="$PROJECT_DIR$/wang/pom.xml" />
+        <option value="$PROJECT_DIR$/../lvdou/lvdou-mapper/pom.xml" />
       </set>
     </option>
   </component>

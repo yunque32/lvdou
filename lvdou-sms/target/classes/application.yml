@@ -1,9 +1,0 @@
-# 配置tomcat端口号
-server:
-   port: 9004
-spring:
-  activemq:
-    broker-url: tcp://192.168.12.131:61616
-sms:
-  accessKeyId: LTAIiKVKFzm3Vsri
-  accessKeySecret: ww9nVlltvqfhjSWscfoVq04M7aItPY
