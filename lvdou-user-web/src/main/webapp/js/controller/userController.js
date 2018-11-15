@@ -17,7 +17,7 @@ app.controller('userController', function($scope, baseService){
                         $scope.smsCode = "";
                         alert("注册成功！");
                     }else{
-                        alert("注册失败！");
+                        alert("注册失败！请重试");
                     }
                 });
         }else{
@@ -35,7 +35,7 @@ app.controller('userController', function($scope, baseService){
                     if (response.data){
                         alert("发送成功！");
                     }else {
-                        alert("发送失败！");
+                        alert("发送验证码失败！请重试");
                     }
                 });
         }else{

@@ -1,17 +1,13 @@
 package com.lvdou.user.controller;
 
-import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextImpl;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
-import java.security.Principal;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
-/** 登录控制器 */
 @RestController
 public class LoginController {
 
@@ -34,15 +30,20 @@ public class LoginController {
 //// 获得sessionid
 //        System.out.println("SessionId" + details.getSessionId());
 //// 获得当前用户所拥有的权限
-        List<GrantedAuthority> authorities = (List<GrantedAuthority>) securityContextImpl
-                .getAuthentication().getAuthorities();
-        for (GrantedAuthority grantedAuthority : authorities) {
-            System.out.println("Authority" + grantedAuthority.getAuthority());
-        }
+//        List<GrantedAuthority> authorities = (List<GrantedAuthority>) securityContextImpl
+//                .getAuthentication().getAuthorities();
+//        for (GrantedAuthority grantedAuthority : authorities) {
+//            System.out.println("Authority" + grantedAuthority.getAuthority());
+//        }
 
             Map<String, String> map = new HashMap<>(1);
             map.put("loginName", name);
             return map;
+    }
+    @GetMapping("/sessionTimeout")
+    public String sessionTimeout(){
+        return "redirect:/login";
+
     }
 
 }

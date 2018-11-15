@@ -8,19 +8,17 @@
         <outputRelativeToContentRoot value="true" />
         <module name="lvdou-cart-interface" />
         <module name="lvdou-cart-service" />
-        <module name="lvdou-cart-web" />
         <module name="lvdou-common" />
         <module name="lvdou-content-interface" />
         <module name="lvdou-content-service" />
-        <module name="lvdou-item-web" />
         <module name="lvdou-manager-web" />
         <module name="lvdou-mapper" />
+        <module name="lvdou-mo" />
         <module name="lvdou-order-interface" />
         <module name="lvdou-order-service" />
         <module name="lvdou-pay-interface" />
         <module name="lvdou-pay-service" />
         <module name="lvdou-pojo" />
-        <module name="lvdou-portal-web" />
         <module name="lvdou-search-interface" />
         <module name="lvdou-search-service" />
         <module name="lvdou-search-web" />
@@ -32,7 +30,6 @@
         <module name="lvdou-shop-web" />
         <module name="lvdou-sms" />
         <module name="lvdou-solr-util" />
-        <module name="lvdou-task-service" />
         <module name="lvdou-user-interface" />
         <module name="lvdou-user-service" />
         <module name="lvdou-user-web" />
@@ -49,6 +46,7 @@
       <module name="lvdou-content-interface" target="1.8" />
       <module name="lvdou-content-service" target="1.8" />
       <module name="lvdou-item-web" target="1.8" />
+      <module name="lvdou-manager-web" target="1.8" />
       <module name="lvdou-order" target="1.8" />
       <module name="lvdou-order-interface" target="1.8" />
       <module name="lvdou-order-service" target="1.8" />
@@ -64,9 +62,14 @@
       <module name="lvdou-seckill-interface" target="1.8" />
       <module name="lvdou-seckill-service" target="1.8" />
       <module name="lvdou-seckill-web" target="1.8" />
+      <module name="lvdou-sellergoods" target="1.8" />
+      <module name="lvdou-sellergoods-interface" target="1.8" />
+      <module name="lvdou-sellergoods-service" target="1.8" />
+      <module name="lvdou-shop-web" target="1.8" />
       <module name="lvdou-sms" target="1.8" />
       <module name="lvdou-solr-util" target="1.8" />
       <module name="lvdou-task-service" target="1.8" />
+      <module name="mi" target="1.8" />
       <module name="pinyougou-search-interface" target="1.5" />
       <module name="wang" target="1.8" />
     </bytecodeTargetLevel>

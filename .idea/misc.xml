@@ -7,6 +7,7 @@
     <file type="web" url="file://$PROJECT_DIR$/../lvdou/lvdou-content/lvdou-content-service" />
     <file type="web" url="file://$PROJECT_DIR$/../lvdou/lvdou-item-web" />
     <file type="web" url="file://$PROJECT_DIR$/../lvdou/lvdou-manager-web" />
+    <file type="web" url="file://$PROJECT_DIR$/../lvdou/lvdou-mo" />
     <file type="web" url="file://$PROJECT_DIR$/../lvdou/lvdou-order/lvdou-order-service" />
     <file type="web" url="file://$PROJECT_DIR$/../lvdou/lvdou-order/pinyougou-order-service" />
     <file type="web" url="file://$PROJECT_DIR$/../lvdou/lvdou-pay/lvdou-pay-service" />
@@ -25,12 +26,14 @@
     <file type="web" url="file://$PROJECT_DIR$/../lvdou/lvdou-user-web" />
     <file type="web" url="file://$PROJECT_DIR$/../lvdou/lvdou-user/lvdou-user-service" />
     <file type="web" url="file://$PROJECT_DIR$/../lvdou/lvdou-user/pinyougou-user-service" />
+    <file type="web" url="file://$PROJECT_DIR$/../lvdou/mi" />
     <file type="web" url="file://$PROJECT_DIR$/../lvdou/wang" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../lvdou/lvdou-mo/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
@@ -38,7 +41,7 @@
         <option value="$PROJECT_DIR$/fastdfs-client/pom.xml" />
         <option value="$PROJECT_DIR$/fastdfs_client/pom.xml" />
         <option value="$PROJECT_DIR$/lvdou-search/pom.xml" />
-        <option value="$PROJECT_DIR$/../lvdou/wang/pom.xml" />
+        <option value="$PROJECT_DIR$/wang/pom.xml" />
       </set>
     </option>
   </component>

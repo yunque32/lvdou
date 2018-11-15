@@ -1,27 +1,21 @@
 package com.lvdou.user.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
-import com.lvdou.common.util.Base64Utils;
-import com.lvdou.common.util.FastJsonUtils;
-import com.lvdou.common.util.HttpClientPost;
-import com.lvdou.common.util.Md5Utils;
+import com.lvdou.common.util.*;
 import com.lvdou.mapper.UserMapper;
+import com.lvdou.pojo.Role;
 import com.lvdou.pojo.User;
-import com.lvdou.user.service.SendVCode;
+import com.lvdou.user.service.UserRoleService;
 import com.lvdou.user.service.UserService;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.jms.core.JmsTemplate;
-import org.springframework.jms.core.MessageCreator;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.jms.*;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.UUID;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 @Service(interfaceName = "com.lvdou.user.service.UserService")
@@ -30,6 +24,8 @@ public class UserServiceImpl implements UserService {
     // 三种用户：商城后台管理用户、商家用户、商城用户(会员)
     @Autowired
     private UserMapper userMapper;
+    @Autowired
+    private UserRoleService userRoleService;
     @Autowired
     private RedisTemplate redisTemplate;
     @Autowired
@@ -79,7 +75,7 @@ public class UserServiceImpl implements UserService {
     /** 发送验证码 */
     public void sendSmsCode(String phone){
         try {
-            System.out.println("signName:" + signName);
+            System.out.println("signName=========" + signName);
             // 随机生成六位数字验证码
             String code  = UUID.randomUUID().toString()
                     .replaceAll("-", "")
@@ -89,17 +85,17 @@ public class UserServiceImpl implements UserService {
             // 发送验证码到用户的手机(短信发送)
             // 发送消息到消息中间件
 
-            jmsTemplate.send(smsQueue, new MessageCreator() {
-                @Override
-                public Message createMessage(Session session) throws JMSException {
-                    MapMessage mapMessage = session.createMapMessage();
-                    mapMessage.setString("phoneNum", phone);
-                    mapMessage.setString("templateCode", templateCode);
-                    mapMessage.setString("signName", signName);
-                    mapMessage.setString("message", "{\"number\":\""+ code +"\"}");
-                    return mapMessage;
-                }
-            });
+//            jmsTemplate.send(smsQueue, new MessageCreator() {
+//                @Override
+//                public Message createMessage(Session session) throws JMSException {
+//                    MapMessage mapMessage = session.createMapMessage();
+//                    mapMessage.setString("phoneNum", phone);
+//                    mapMessage.setString("templateCode", templateCode);
+//                    mapMessage.setString("signName", signName);
+//                    mapMessage.setString("message", "{\"number\":\""+ code +"\"}");
+//                    return mapMessage;
+//                }
+//            });
 
             // 把验证码存储到Redis(有效时间5分)
             redisTemplate.boundValueOps(phone).set(code, 5, TimeUnit.SECONDS);
@@ -141,6 +137,7 @@ public class UserServiceImpl implements UserService {
     }
     @Override
     public Map sendValidate(String mobile) throws Exception {
+        System.out.println("发送号码是："+mobile);
         timestamp = System.currentTimeMillis();
         vcode  = UUID.randomUUID().toString()
                 .replaceAll("-", "")
@@ -160,13 +157,22 @@ public class UserServiceImpl implements UserService {
         // &sign=2c2af13589e23239ddc5f43e317bac9e
         // &key=YjI4MmUzNzFlM2Q4NGNhMmFiMDU2NzFiMjI5NGM5ODM6MTUyNjU0NDQzMjI0MQ==
         // &pageSize=500";
-        String url = BaseURL+"?id="+accountKey+"&sign="+sign+"&key="+key+"&to="+mobile+"&appId="+appId+"&content="+encode+"&smsType="+smsType;
-
+        String url = BaseURL+"?id="+accountKey+"&sign="+sign+
+                "&key="+key+"&to="+mobile+"&appId="+appId+"&content="+encode+"&smsType="+smsType;
+        System.out.println("来到了发送短信的一步了吗？");
+        System.out.println("最后生成的url是："+url);
         String body = HttpClientPost.URLConnection(url, null,"utf-8");
 
         Map map=FastJsonUtils.stringToCollect(body);
         redisTemplate.boundValueOps(mobile).set(vcode, 5, TimeUnit.SECONDS);
+        System.out.println("来到了最后一步了吗？====");
         return map;
-
     }
+
+    @Override
+    public User selectUserByUsername(String username) {
+          return userMapper.selectUserByUsername(username);
+    }
+
+
 }

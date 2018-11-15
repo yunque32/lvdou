@@ -6,10 +6,7 @@ app.controller('indexController', function($scope, baseService){
         // 发送异步请求
         baseService.sendGet("/user/loginName").then(function(response){
             // 获取登录用户名
-            alert("获取成功！")
             $scope.loginName = response.data.loginName;
-        },function (response) {
-            alert("获取用户名失败！")
         });
     };
 });

@@ -2,6 +2,7 @@ E:\lvdou\lvdou-mapper\src\main\java\com\lvdou\mapper\CitiesMapper.java
 E:\lvdou\lvdou-mapper\src\main\java\com\lvdou\mapper\AddressMapper.java
 E:\lvdou\lvdou-mapper\src\main\java\com\lvdou\mapper\SeckillGoodsMapper.java
 E:\lvdou\lvdou-mapper\src\main\java\com\lvdou\mapper\ProducterMapper.java
+E:\lvdou\lvdou-mapper\src\main\java\com\lvdou\mapper\UserRoleMapper.java
 E:\lvdou\lvdou-mapper\src\main\java\com\lvdou\mapper\ItemCatMapper.java
 E:\lvdou\lvdou-mapper\src\main\java\com\lvdou\mapper\OrderMapper.java
 E:\lvdou\lvdou-mapper\src\main\java\com\lvdou\mapper\ProvincesMapper.java
@@ -18,9 +19,12 @@ E:\lvdou\lvdou-mapper\src\main\java\com\lvdou\mapper\SpecificationOptionMapper.j
 E:\lvdou\lvdou-mapper\src\main\java\com\lvdou\mapper\AgencyMapper.java
 E:\lvdou\lvdou-mapper\src\main\java\com\lvdou\mapper\OrderItemMapper.java
 E:\lvdou\lvdou-mapper\src\main\java\com\lvdou\mapper\WuliuMapper.java
+E:\lvdou\lvdou-mapper\src\main\java\com\lvdou\mapper\RoleMapper.java
 E:\lvdou\lvdou-mapper\src\main\java\com\lvdou\mapper\ItemMapper.java
 E:\lvdou\lvdou-mapper\src\main\java\com\lvdou\mapper\SeckillOrderMapper.java
 E:\lvdou\lvdou-mapper\src\main\java\com\lvdou\mapper\TypeTemplateMapper.java
 E:\lvdou\lvdou-mapper\src\main\java\com\lvdou\mapper\PayLogMapper.java
+E:\lvdou\lvdou-mapper\src\main\java\com\lvdou\mapper\RoleResourceMapper.java
 E:\lvdou\lvdou-mapper\src\main\java\com\lvdou\mapper\FreightTemplateMapper.java
 E:\lvdou\lvdou-mapper\src\main\java\com\lvdou\mapper\UserMapper.java
+E:\lvdou\lvdou-mapper\src\main\java\com\lvdou\mapper\ResourceMapper.java

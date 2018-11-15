@@ -37,12 +37,14 @@ public class UserController {
     @GetMapping("/sendCode")
     public boolean sendCode(String phone){
         try {
-            if(StringUtils.isNoneBlank(phone)){
+            if(StringUtils.isNoneBlank(phone)&&phone.length()>0){
                 /** 发送验证码 */
-                userService.sendSmsCode(phone);
+                userService.sendValidate(phone);
+
             }
             return true;
         }catch (Exception ex){
+            System.out.println("调用短信验证码失败！");
             ex.printStackTrace();
         }
         return false;
@@ -53,6 +55,7 @@ public class UserController {
     }
     @PostMapping("/registerUser")
     public Map<String,String> registerUser(User user){
+
         return userService.registerUser(user);
     }
 }

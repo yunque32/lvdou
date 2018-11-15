@@ -1,6 +1,10 @@
 package com.lvdou.user.service;
 
+import com.lvdou.mapper.UserMapper;
+import com.lvdou.pojo.Role;
 import com.lvdou.pojo.Seller;
+import org.apache.ibatis.jdbc.Null;
+import org.springframework.security.authentication.jaas.JaasAuthenticationToken;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
@@ -21,29 +25,22 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         return new User(username, "", authorities);
     }*/
     private  SellerService sellerService;
-
+    private UserService userService;
+    private UserRoleService userRoleService;
     /** 根据用户名加载用户 */
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        System.out.println("sellerService: " + sellerService);
         // 根据商家的id查询商家
         Seller seller = sellerService.findOne(username);
-        // 判断商家是否登录成功
+        // 判断商家是否登录成功或者是已通过审核商家
         if (seller != null && seller.getStatus().equals("1")) {
-
             // 创建List集合封装角色与权限
             List<GrantedAuthority> authorities = new ArrayList<>();
             // 添加权限与角色数据
             authorities.add(new SimpleGrantedAuthority("ROLE_SELLER"));
-            GrantedAuthority grantedAuthority = authorities.get(0);
-            String authority = grantedAuthority.getAuthority();
-            System.out.println(authority+"=======================");
-            // 返用用户 (密码由SpringSecurity判断)
-            System.out.println("用户的权限长度是："+authorities.size());
-
+            //JaasAuthenticationToken
+            //JaasGrantedAuthority
             return new User(username, seller.getPassword(), authorities);
-
-
         }
         return null;
     }

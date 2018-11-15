@@ -1,8 +1,10 @@
 com\lvdou\user\service\AddressService.class
 com\lvdou\user\service\SendVCode.class
+com\lvdou\user\service\UserRoleService.class
 com\lvdou\user\service\ContentCategoryService.class
 com\lvdou\user\service\ItemSearchService.class
 com\lvdou\user\service\OrderService.class
+com\lvdou\user\service\RoleResourceService.class
 com\lvdou\user\service\SellerService.class
 com\lvdou\user\service\ProductService.class
 com\lvdou\user\service\WeixinPayService.class

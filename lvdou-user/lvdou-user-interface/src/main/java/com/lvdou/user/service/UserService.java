@@ -22,4 +22,6 @@ public interface UserService {
 
     Map<String,String> registerUser(User user);
     Map<String,Object> sendValidate(String mobile) throws Exception;
+
+    User selectUserByUsername(String username);
 }

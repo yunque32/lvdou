@@ -13,6 +13,7 @@
     <file url="file://$PROJECT_DIR$/../lvdou/lvdou-item-web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../lvdou/lvdou-manager-web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../lvdou/lvdou-mapper" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../lvdou/lvdou-mo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../lvdou/lvdou-order" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../lvdou/lvdou-order/lvdou-order-interface" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../lvdou/lvdou-order/lvdou-order-service" charset="UTF-8" />
@@ -40,6 +41,5 @@
     <file url="file://$PROJECT_DIR$/../lvdou/lvdou-user-web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../lvdou/lvdou-user/lvdou-user-interface" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../lvdou/lvdou-user/lvdou-user-service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../lvdou/wang" charset="UTF-8" />
   </component>
 </project>
