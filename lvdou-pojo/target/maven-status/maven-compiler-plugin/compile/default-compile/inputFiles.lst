@@ -1,5 +1,6 @@
 E:\lvdou\lvdou-pojo\src\main\java\com\lvdou\cart\Cart.java
 E:\lvdou\lvdou-pojo\src\main\java\com\lvdou\pojo\ItemCat.java
+E:\lvdou\lvdou-pojo\src\main\java\com\lvdou\pojo\Resource.java
 E:\lvdou\lvdou-pojo\src\main\java\com\lvdou\pojo\SeckillOrder.java
 E:\lvdou\lvdou-pojo\src\main\java\com\lvdou\pojo\PayLog.java
 E:\lvdou\lvdou-pojo\src\main\java\com\lvdou\pojo\Checklist.java
@@ -10,7 +11,9 @@ E:\lvdou\lvdou-pojo\src\main\java\com\lvdou\pojo\FreightTemplate.java
 E:\lvdou\lvdou-pojo\src\main\java\com\lvdou\pojo\Goods.java
 E:\lvdou\lvdou-pojo\src\main\java\com\lvdou\pojo\Brand.java
 E:\lvdou\lvdou-pojo\src\main\java\com\lvdou\pojo\Provinces.java
+E:\lvdou\lvdou-pojo\src\main\java\com\lvdou\pojo\RoleResource.java
 E:\lvdou\lvdou-pojo\src\main\java\com\lvdou\pojo\Content.java
+E:\lvdou\lvdou-pojo\src\main\java\com\lvdou\pojo\UserRole.java
 E:\lvdou\lvdou-pojo\src\main\java\com\lvdou\pojo\SeckillGoods.java
 E:\lvdou\lvdou-pojo\src\main\java\com\lvdou\pojo\SpecificationOption.java
 E:\lvdou\lvdou-pojo\src\main\java\com\lvdou\pojo\Address.java
@@ -21,6 +24,7 @@ E:\lvdou\lvdou-pojo\src\main\java\com\lvdou\pojo\Seller.java
 E:\lvdou\lvdou-pojo\src\main\java\com\lvdou\pojo\Specification.java
 E:\lvdou\lvdou-pojo\src\main\java\com\lvdou\pojo\ContentCategory.java
 E:\lvdou\lvdou-pojo\src\main\java\com\lvdou\pojo\User.java
+E:\lvdou\lvdou-pojo\src\main\java\com\lvdou\pojo\Role.java
 E:\lvdou\lvdou-pojo\src\main\java\com\lvdou\pojo\Agency.java
 E:\lvdou\lvdou-pojo\src\main\java\com\lvdou\pojo\Producter.java
 E:\lvdou\lvdou-pojo\src\main\java\com\lvdou\pojo\Areas.java

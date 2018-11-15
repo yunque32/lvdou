@@ -15,6 +15,8 @@ public class User implements Serializable{
     private String username;
 	@Column(name="password")
     private String password;
+    @Column(name = "role_list")
+    private String roleList;
 	@Column(name="phone")
     private String phone;
 	@Column(name="email")
@@ -77,7 +79,13 @@ public class User implements Serializable{
     public void setPassword(String password) {
         this.password = password == null ? null : password.trim();
     }
+    public String getRoleList() {
+        return roleList;
+    }
 
+    public void setRoleList(String roleList) {
+        this.roleList = roleList;
+    }
     public String getPhone() {
         return phone;
     }
@@ -230,5 +238,67 @@ public class User implements Serializable{
 
     public void setLastLoginTime(Date lastLoginTime) {
         this.lastLoginTime = lastLoginTime;
+    }
+
+    public User() {
+    }
+
+    public User(String username, String password, String phone,
+                String email, Date created, Date updated,
+                String sourceType, String nickName, String name,
+                String status, String headPic, String qq,
+                Long accountBalance, String mobileCheck,
+                String emailCheck, String sex, Integer userLevel,
+                Integer points, Integer experienceValue,
+                Date birthday, Date lastLoginTime) {
+        this.username = username;
+        this.password = password;
+        this.phone = phone;
+        this.email = email;
+        this.created = created;
+        this.updated = updated;
+        this.sourceType = sourceType;
+        this.nickName = nickName;
+        this.name = name;
+        this.status = status;
+        this.headPic = headPic;
+        this.qq = qq;
+        this.accountBalance = accountBalance;
+        this.mobileCheck = mobileCheck;
+        this.emailCheck = emailCheck;
+        this.sex = sex;
+        this.userLevel = userLevel;
+        this.points = points;
+        this.experienceValue = experienceValue;
+        this.birthday = birthday;
+        this.lastLoginTime = lastLoginTime;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", phone='" + phone + '\'' +
+                ", email='" + email + '\'' +
+                ", created=" + created +
+                ", updated=" + updated +
+                ", sourceType='" + sourceType + '\'' +
+                ", nickName='" + nickName + '\'' +
+                ", name='" + name + '\'' +
+                ", status='" + status + '\'' +
+                ", headPic='" + headPic + '\'' +
+                ", qq='" + qq + '\'' +
+                ", accountBalance=" + accountBalance +
+                ", mobileCheck='" + mobileCheck + '\'' +
+                ", emailCheck='" + emailCheck + '\'' +
+                ", sex='" + sex + '\'' +
+                ", userLevel=" + userLevel +
+                ", points=" + points +
+                ", experienceValue=" + experienceValue +
+                ", birthday=" + birthday +
+                ", lastLoginTime=" + lastLoginTime +
+                '}';
     }
 }

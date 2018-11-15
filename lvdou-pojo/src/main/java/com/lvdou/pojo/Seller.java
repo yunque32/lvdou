@@ -4,36 +4,25 @@ import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.*;
- 
-/**
- * 商家实体
- */
+
 @Table(name="tb_seller")
 public class Seller implements Serializable{
    
 	private static final long serialVersionUID = -6636378626574886353L;
-	/** 登录名 */
 	@Id @Column(name="seller_id")
 	private String sellerId;
-	/** 公司名称 */
 	@Column(name="name")
     private String name;
-    /** 店铺名称 */
 	@Column(name="nick_name")
     private String nickName;
-    /** 登录密码 */
 	@Column(name="password")
     private String password;
-    /** 公司邮箱 */
 	@Column(name="email")
     private String email;
-    /** 手机 */
 	@Column(name="mobile")
     private String mobile;
-    /** 公司电话 */
 	@Column(name="telephone")
     private String telephone;
-    /** 状态 */
 	@Column(name="status")
     private String status;
     /** 公司详细地址 */
@@ -63,8 +52,38 @@ public class Seller implements Serializable{
     /** 邮编 */
 	@Column(name="address")
     private Long address;
-    /** 公司LOGO */
-	@Column(name="logo_pic")
+
+    @Override
+    public String toString() {
+        return "Seller{" +
+                "sellerId='" + sellerId + '\'' +
+                ", name='" + name + '\'' +
+                ", nickName='" + nickName + '\'' +
+                ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
+                ", mobile='" + mobile + '\'' +
+                ", telephone='" + telephone + '\'' +
+                ", status='" + status + '\'' +
+                ", addressDetail='" + addressDetail + '\'' +
+                ", linkmanName='" + linkmanName + '\'' +
+                ", linkmanQq='" + linkmanQq + '\'' +
+                ", linkmanMobile='" + linkmanMobile + '\'' +
+                ", linkmanEmail='" + linkmanEmail + '\'' +
+                ", licenseNumber='" + licenseNumber + '\'' +
+                ", taxNumber='" + taxNumber + '\'' +
+                ", orgNumber='" + orgNumber + '\'' +
+                ", address=" + address +
+                ", logoPic='" + logoPic + '\'' +
+                ", createTime=" + createTime +
+                ", legalPerson='" + legalPerson + '\'' +
+                ", legalPersonCardId='" + legalPersonCardId + '\'' +
+                ", bankName='" + bankName + '\'' +
+                ", bankUser='" + bankUser + '\'' +
+                ", brief='" + brief + '\'' +
+                '}';
+    }
+
+    @Column(name="logo_pic")
     private String logoPic;
     /** 创建时间 */
 	@Column(name="create_time")
