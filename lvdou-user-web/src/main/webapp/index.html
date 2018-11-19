@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>优鲜吧</title>
+        <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport"/>
+        <meta content="yes" name="apple-mobile-web-app-capable"/>
+        <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+        <meta content="telephone=no" name="format-detection"/>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="css/checkbix.min.css">
+        <script type="text/javascript" src="/js/jquery.min.js"></script>
+        <script type="text/javascript" src="/js/scrollTab.js"></script>
+        <script type="text/javascript" src="/js/plugins/checkbix.min.js"></script>
+
+        <script src="/js/plugins/angularjs/angular.min.js"></script>
+        <script src="/js/base.js"></script>
+        <script src="/js/service/baseService.js"></script>
+        <script src="/js/controller/indexController.js"></script>
+    </head>
+    <body ng-app="lvdou"
+          ng-controller="indexController"
+          ng-init="selectBXG()">
+
+        <section class="aui-flexView">
+            <header class="aui-navBar aui-navBar-fixed">
+
+                <div class="aui-center">
+                    <span class="aui-center-title">绿豆--移动超市</span>
+                </div>
+                <a href="javascript:" class="aui-navBar-item">
+                    <i class="icon icon-more"></i>
+                </a>
+            </header>
+
+            <div class="ban"></div>
+            <section class="aui-scrollView">
+                <div class="m-scrolltab" data-ydui-scrolltab>
+                    <div class="scrolltab-nav">
+                        <a href="javascript:" class="scrolltab-item">
+                            <div class="scrolltab-title">百香果</div>
+                        </a>
+                        <a href="javascript:" class="scrolltab-item">
+                            <div class="scrolltab-title">潘石榴</div>
+                        </a>
+                        <a href="javascript:" class="scrolltab-item">
+                            <div class="scrolltab-title">猕猴桃</div>
+                        </a>
+                        <a href="javascript:" class="scrolltab-item">
+                            <div class="scrolltab-title">柠檬</div>
+                        </a>
+                    </div>
+                    <div class="scrolltab-content">
+
+                        <div class="scrolltab-content-item">
+                            <!-- 百香果产品排版开始 -->
+                            <div class="goods-list">
+                                <div class="product-list" ng-repeat="s in GoodsList">
+                                    <a href="www.baidu.com" class="room">
+                                        <div class="aui-product-img">
+                                            <img src="images/bxg.jpg" alt="">
+                                        </div>
+                                        <div class="aui-flex-box">
+                                            <h1>{{s.title}}</h1>
+                                            <input id="myothercheckbox4" type="checkbox"
+                                                   class="checkbix" data-text="1斤" data-size="large" >
+                                            <input id="myothercheckbox5" type="checkbox"
+                                                   class="checkbix" data-text="2斤" data-size="large" >
+                                            <input id="myothercheckbox6" type="checkbox"
+                                                   class="checkbix last" data-text="3斤" data-size="large" >
+                                            <br />配送时间：<input class="long" type="text" />
+                                            <div class="jj" >
+                                                ￥<span class="pri">{{s.price}}</span>
+                                                <span class="jia">-</span>
+                                                <input class="num" value="1">
+                                                <span class="jian">+</span>
+                                            </div>
+                                        </div>
+                                        <div style="clear: both"></div>
+                                    </a>
+                                </div>
+                                </li>
+                            <!-- 百香果产品排版结束 -->
+
+                        </div>
+                        <div class="scrolltab-content-item">
+                            <h2>潘石榴</h2>
+                            <div>
+                                <!-- 百香果产品排版开始 -->
+                                <div>
+                                    <div class="product-list">
+                                        <a href="javascript:;" class="room">
+                                            <div class="aui-product-img">
+                                                <img src="images/bxg.jpg" alt="">
+
+                                            </div>
+                                            <div class="aui-flex-box">
+                                                <h1>广西贵港百香果</h1>
+                                                <input id="myothercheckbox16" type="checkbox" class="checkbix" data-text="1斤" data-size="large" >
+                                                <input id="myothercheckbox17" type="checkbox" class="checkbix" data-text="2斤" data-size="large" >
+                                                <input id="myothercheckbox18" type="checkbox" class="checkbix last" data-text="3斤" data-size="large" >
+                                                <br />配送时间：<input class="long" type="text" />
+                                                <div class="jj" >
+                                                    ￥<span class="pri">11.00</span>
+                                                    <span class="jia">-</span>
+                                                    <input class="num" value="1">
+                                                    <span class="jian">+</span>
+                                                </div>
+
+                                            </div>
+                                            <div style="clear: both"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 百香果产品排版结束 -->
+                                <!-- 百香果产品排版开始 -->
+                                <div>
+                                    <div class="product-list">
+                                        <a href="javascript:;" class="room">
+                                            <div class="aui-product-img">
+                                                <img src="images/bxg.jpg" alt="">
+
+                                            </div>
+                                            <div class="aui-flex-box">
+                                                <h1>广西贵港百香果</h1>
+                                                <input id="myothercheckbox19" type="checkbox" class="checkbix" data-text="1斤" data-size="large" >
+                                                <input id="myothercheckbox20" type="checkbox" class="checkbix" data-text="2斤" data-size="large" >
+                                                <input id="myothercheckbox21" type="checkbox" class="checkbix last" data-text="3斤" data-size="large" >
+                                                <br />配送时间：<input class="long" type="text" />
+                                                <div class="jj" >
+                                                    ￥<span class="pri">11.00</span>
+                                                    <span class="jia">-</span>
+                                                    <input class="num" value="1">
+                                                    <span class="jian">+</span>
+                                                </div>
+
+                                            </div>
+                                            <div style="clear: both"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 百香果产品排版结束 -->
+                                <!-- 百香果产品排版开始 -->
+                                <div>
+                                    <div class="product-list">
+                                        <a href="javascript:;" class="room">
+                                            <div class="aui-product-img">
+                                                <img src="images/bxg.jpg" alt="">
+
+                                            </div>
+                                            <div class="aui-flex-box">
+                                                <h1>广西贵港百香果</h1>
+                                                <input id="myothercheckbox22" type="checkbox" class="checkbix" data-text="1斤" data-size="large" >
+                                                <input id="myothercheckbox23" type="checkbox" class="checkbix" data-text="2斤" data-size="large" >
+                                                <input id="myothercheckbox24" type="checkbox" class="checkbix last" data-text="3斤" data-size="large" >
+                                                <br />配送时间：<input class="long" type="text" />
+                                                <div class="jj" >
+                                                    ￥<span class="pri">11.00</span>
+                                                    <span class="jia">-</span>
+                                                    <input class="num" value="1">
+                                                    <span class="jian">+</span>
+                                                </div>
+
+                                            </div>
+                                            <div style="clear: both"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 百香果产品排版结束 -->
+                                <!-- 百香果产品排版开始 -->
+                                <div>
+                                    <div class="product-list">
+                                        <a href="javascript:;" class="room">
+                                            <div class="aui-product-img">
+                                                <img src="images/bxg.jpg" alt="">
+
+                                            </div>
+                                            <div class="aui-flex-box">
+                                                <h1>广西贵港百香果</h1>
+                                                <input id="myothercheckbox25" type="checkbox" class="checkbix" data-text="1斤" data-size="large" >
+                                                <input id="myothercheckbox26" type="checkbox" class="checkbix" data-text="2斤" data-size="large" >
+                                                <input id="myothercheckbox27" type="checkbox" class="checkbix last" data-text="3斤" data-size="large" >
+                                                <br />配送时间：<input class="long" type="text" />
+                                                <div class="jj" >
+                                                    ￥<span class="pri">11.00</span>
+                                                    <span class="jia">-</span>
+                                                    <input class="num" value="1">
+                                                    <span class="jian">+</span>
+                                                </div>
+
+                                            </div>
+                                            <div style="clear: both"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 百香果产品排版结束 -->
+                            </div>
+                        </div>
+                        <div class="scrolltab-content-item">
+                            <h2>猕猴桃</h2>
+                            <div>
+                                <!-- 百香果产品排版开始 -->
+                                <div>
+                                    <div class="product-list">
+                                        <a href="javascript:;" class="room">
+                                            <div class="aui-product-img">
+                                                <img src="images/bxg.jpg" alt="">
+
+                                            </div>
+                                            <div class="aui-flex-box">
+                                                <h1>广西贵港百香果</h1>
+                                                <input id="myothercheckbox28" type="checkbox" class="checkbix" data-text="1斤" data-size="large" >
+                                                <input id="myothercheckbox29" type="checkbox" class="checkbix" data-text="2斤" data-size="large" >
+                                                <input id="myothercheckbox30" type="checkbox" class="checkbix last" data-text="3斤" data-size="large" >
+                                                <br />配送时间：<input class="long" type="text" />
+                                                <div class="jj" >
+                                                    ￥<span class="pri">11.00</span>
+                                                    <span class="jia">-</span>
+                                                    <input class="num" value="1">
+                                                    <span class="jian">+</span>
+                                                </div>
+
+                                            </div>
+                                            <div style="clear: both"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 百香果产品排版结束 -->
+                                <!-- 百香果产品排版开始 -->
+                                <div>
+                                    <div class="product-list">
+                                        <a href="javascript:;" class="room">
+                                            <div class="aui-product-img">
+                                                <img src="images/bxg.jpg" alt="">
+
+                                            </div>
+                                            <div class="aui-flex-box">
+                                                <h1>广西贵港百香果</h1>
+                                                <input id="myothercheckbox31" type="checkbox" class="checkbix" data-text="1斤" data-size="large" >
+                                                <input id="myothercheckbox32" type="checkbox" class="checkbix" data-text="2斤" data-size="large" >
+                                                <input id="myothercheckbox33" type="checkbox" class="checkbix last" data-text="3斤" data-size="large" >
+                                                <br />配送时间：<input class="long" type="text" />
+                                                <div class="jj" >
+                                                    ￥<span class="pri">11.00</span>
+                                                    <span class="jia">-</span>
+                                                    <input class="num" value="1">
+                                                    <span class="jian">+</span>
+                                                </div>
+
+                                            </div>
+                                            <div style="clear: both"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 百香果产品排版结束 -->
+                                <!-- 百香果产品排版开始 -->
+                                <div>
+                                    <div class="product-list">
+                                        <a href="javascript:;" class="room">
+                                            <div class="aui-product-img">
+                                                <img src="images/bxg.jpg" alt="">
+
+                                            </div>
+                                            <div class="aui-flex-box">
+                                                <h1>广西贵港百香果</h1>
+                                                <input id="myothercheckbox34" type="checkbox" class="checkbix" data-text="1斤" data-size="large" >
+                                                <input id="myothercheckbox35" type="checkbox" class="checkbix" data-text="2斤" data-size="large" >
+                                                <input id="myothercheckbox36" type="checkbox" class="checkbix last" data-text="3斤" data-size="large" >
+                                                <br />配送时间：<input class="long" type="text" />
+                                                <div class="jj" >
+                                                    ￥<span class="pri">11.00</span>
+                                                    <span class="jia">-</span>
+                                                    <input class="num" value="1">
+                                                    <span class="jian">+</span>
+                                                </div>
+
+                                            </div>
+                                            <div style="clear: both"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 百香果产品排版结束 -->
+                                <!-- 百香果产品排版开始 -->
+                                <div>
+                                    <div class="product-list">
+                                        <a href="javascript:;" class="room">
+                                            <div class="aui-product-img">
+                                                <img src="images/bxg.jpg" alt="">
+
+                                            </div>
+                                            <div class="aui-flex-box">
+                                                <h1>广西贵港百香果</h1>
+                                                <input id="myothercheckbox37" type="checkbox" class="checkbix" data-text="1斤" data-size="large" >
+                                                <input id="myothercheckbox38" type="checkbox" class="checkbix" data-text="2斤" data-size="large" >
+                                                <input id="myothercheckbox39" type="checkbox" class="checkbix last" data-text="3斤" data-size="large" >
+                                                <br />配送时间：<input class="long" type="text" />
+                                                <div class="jj" >
+                                                    ￥<span class="pri">11.00</span>
+                                                    <span class="jia">-</span>
+                                                    <input class="num" value="1">
+                                                    <span class="jian">+</span>
+                                                </div>
+
+                                            </div>
+                                            <div style="clear: both"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 百香果产品排版结束 -->
+
+                            </div>
+                        </div>
+                        <div class="scrolltab-content-item">
+                            <h2>柠檬</h2>
+                            <div>
+                                <!-- 百香果产品排版开始 -->
+                                <div>
+                                    <div class="product-list">
+                                        <a href="javascript:;" class="room">
+                                            <div class="aui-product-img">
+                                                <img src="images/bxg.jpg" alt="">
+
+                                            </div>
+                                            <div class="aui-flex-box">
+                                                <h1>广西贵港百香果</h1>
+                                                <input id="myothercheckbox40" type="checkbox" class="checkbix" data-text="1斤" data-size="large" >
+                                                <input id="myothercheckbox41" type="checkbox" class="checkbix" data-text="2斤" data-size="large" >
+                                                <input id="myothercheckbox42" type="checkbox" class="checkbix last" data-text="3斤" data-size="large" >
+                                                <br />配送时间：<input class="long" type="text" />
+                                                <div class="jj" >
+                                                    ￥<span class="pri">11.00</span>
+                                                    <span class="jia">-</span>
+                                                    <input class="num" value="1">
+                                                    <span class="jian">+</span>
+                                                </div>
+
+                                            </div>
+                                            <div style="clear: both"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 百香果产品排版结束 -->
+                                <!-- 百香果产品排版开始 -->
+                                <div>
+                                    <div class="product-list">
+                                        <a href="javascript:;" class="room">
+                                            <div class="aui-product-img">
+                                                <img src="images/bxg.jpg" alt="">
+
+                                            </div>
+                                            <div class="aui-flex-box">
+                                                <h1>广西贵港百香果</h1>
+                                                <input id="myothercheckbox43" type="checkbox" class="checkbix" data-text="1斤" data-size="large" >
+                                                <input id="myothercheckbox44" type="checkbox" class="checkbix" data-text="2斤" data-size="large" >
+                                                <input id="myothercheckbox45" type="checkbox" class="checkbix last" data-text="3斤" data-size="large" >
+                                                <br />配送时间：<input class="long" type="text" />
+                                                <div class="jj" >
+                                                    ￥<span class="pri">11.00</span>
+                                                    <span class="jia">-</span>
+                                                    <input class="num" value="1">
+                                                    <span class="jian">+</span>
+                                                </div>
+
+                                            </div>
+                                            <div style="clear: both"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 百香果产品排版结束 -->
+                                <!-- 百香果产品排版开始 -->
+                                =======================================================
+                                    <div class="product-list">
+                                        <a href="javascript:;" class="room">
+                                            <div class="aui-product-img">
+                                                <img src="images/bxg.jpg" alt="">
+
+                                            </div>
+                                            <div class="aui-flex-box">
+                                                <h1>广西贵港百香果</h1>
+                                                <input id="myothercheckbox46" type="checkbox" class="checkbix" data-text="1斤" data-size="large" >
+                                                <input id="myothercheckbox47" type="checkbox" class="checkbix" data-text="2斤" data-size="large" >
+                                                <input id="myothercheckbox48" type="checkbox" class="checkbix last" data-text="3斤" data-size="large" >
+                                                <br />配送时间：<input class="long" type="text" />
+                                                <div class="jj" >
+                                                    ￥<span class="pri">11.00</span>
+                                                    <span class="jia">-</span>
+                                                    <input class="num" value="1">
+                                                    <span class="jian">+</span>
+                                                </div>
+
+                                            </div>
+                                            <div style="clear: both"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 百香果产品排版结束 -->
+                                <!-- 百香果产品排版开始 -->
+                                <div>
+                                    <div class="product-list">
+                                        <a href="javascript:;" class="room">
+                                            <div class="aui-product-img">
+                                                <img src="images/bxg.jpg" alt="">
+
+                                            </div>
+                                            <div class="aui-flex-box">
+                                                <h1>广西贵港百香果</h1>
+                                                <input id="myothercheckbox" type="checkbox" class="checkbix" data-text="1斤" data-size="large" >
+                                                <input id="myothercheckbox2" type="checkbox" class="checkbix" data-text="2斤" data-size="large" >
+                                                <input id="myothercheckbox3" type="checkbox" class="checkbix last" data-text="3斤" data-size="large" >
+                                                <br />配送时间：<input class="long" type="text" />
+                                                <div class="jj" >
+                                                    ￥<span class="pri">11.00</span>
+                                                    <span class="jia">-</span>
+                                                    <input class="num" value="1">
+                                                    <span class="jian">+</span>
+                                                </div>
+
+                                            </div>
+                                            <div style="clear: both"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 百香果产品排版结束 -->
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!--必要脚本代码-->
+        <script src="js/plugins/checkbix.min.js"></script>
+        <script>
+            Checkbix.init();
+        </script>
+    </body>
+</html>
