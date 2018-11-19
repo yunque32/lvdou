@@ -8,8 +8,9 @@
     <artifactId>lvdou</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <!--<module>lvdou-manager-web</module>-->
-        <module>lvdou-user-web</module>月e
+  
+        <module>lvdou-user-web</module>
+ 
 
     </modules>
 
