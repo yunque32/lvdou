@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:security="http://www.springframework.org/schema/security"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/security
+       http://www.springframework.org/schema/security/spring-security.xsd
+       http://code.alibabatech.com/schema/dubbo
+       http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <!-- ######### 配置请求URL拦截的规则 ########## -->
+    <security:http pattern="/*.html" security="none"/>
+    <security:http pattern="/css/**" security="none"/>
+    <security:http pattern="/img/**" security="none"/>
+    <security:http pattern="/js/**" security="none"/>
+    <security:http pattern="/plugins/**" security="none"/>
+    <security:http pattern="/user/**" security="none"/>
+    <security:http pattern="/seckill/**" security="none"/>
+
+    <security:http pattern="/seller/save"  security="none"/>
+
+    <!-- use-expressions: 是否使用SpEL表达式 false  -->
+    <security:http use-expressions="false">
+        <!-- 剩余的请求URL，需要用什么角色或权限才可以访问 -->
+        <security:intercept-url pattern="/User/**" access="USER"/>
+        <security:intercept-url pattern="/seller/**" access="ROLE_SELLER"/>
+
+        <security:form-login login-page="/login.html"
+
+                             default-target-url="/seckill-index.html"
+                             always-use-default-target="true"
+
+                             authentication-failure-url="/login.html"
+                             username-parameter="username"
+                             password-parameter="password"/>
+
+        <!-- 关闭跨站点请求伪造CSRF -->
+        <security:csrf disabled="true"/>
+
+        <security:headers>
+            <security:frame-options policy="SAMEORIGIN"/>
+        </security:headers>
+
+        <!-- 配置安全退出 -->
+        <security:logout logout-url="/logout"/>
+    </security:http>
+
+
+    <!-- ######### 配置认证管理器 ########## -->
+    <security:authentication-manager>
+        <security:authentication-provider user-service-ref="userDetailsService">
+            <security:password-encoder ref="passwordEncoder"/>
+        </security:authentication-provider>
+    </security:authentication-manager>
+
+    <!-- 配置密码加密对象 -->
+    <bean id="passwordEncoder"
+          class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
+
+    <!-- 配置当前应用名称 -->
+    <dubbo:application name="lvdou-user-web"/>
+    <!-- 配置注册中心，发现服务 -->
+    <dubbo:registry address="zookeeper://192.168.12.131:2181"/>
+    <!-- 引用单个的服务，产生服务接口的代理对象 -->
+    <dubbo:reference id="sellerService"
+                     interface="com.lvdou.user.service.SellerService"/>
+
+    <!-- 配置自定义的认证服务类 -->
+    <bean id="userDetailsService"
+          class="com.lvdou.service.UserDetailsServiceImpl">
+        <property name="sellerService" ref="sellerService"/>
+    </bean>
+</beans>
