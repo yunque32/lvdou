@@ -6,12 +6,13 @@ import com.lvdou.pojo.Item;
 import com.lvdou.pojo.OrderItem;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
-
+@Service
 @Transactional
 public class CartServiceImpl   {
 

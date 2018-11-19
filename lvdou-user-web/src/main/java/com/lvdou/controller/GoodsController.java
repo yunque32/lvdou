@@ -2,17 +2,29 @@ package com.lvdou.controller;
 
 import com.lvdou.common.pojo.PageResult;
 import com.lvdou.pojo.Goods;
-import com.lvdou.sellergoods.service.GoodsService;
+import com.lvdou.service.GoodsServiceImpl;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 
 @RestController
 @RequestMapping("/goods")
 public class GoodsController {
 
-	private GoodsService goodsService;
+	@Autowired
+	private GoodsServiceImpl goodsService;
+
+	@GetMapping("/findAllGoods")
+	public List<Goods> findAllGoods(){
+	    System.out.println("来到了控制器吗？？");
+
+		return goodsService.findAllGoods();
+
+	}
 
 	/** 添加商品 */
 	@PostMapping("/save")

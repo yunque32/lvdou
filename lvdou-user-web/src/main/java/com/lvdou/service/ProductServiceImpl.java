@@ -11,12 +11,14 @@ import com.lvdou.pojo.Agency;
 import com.lvdou.pojo.Product;
 import com.lvdou.pojo.Producter;
 import com.lvdou.sellergoods.service.ProductService;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@Service
 @Transactional
 public class ProductServiceImpl implements ProductService {
 

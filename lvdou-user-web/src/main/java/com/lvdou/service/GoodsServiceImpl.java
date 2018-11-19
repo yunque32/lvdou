@@ -11,20 +11,29 @@ import com.lvdou.pojo.Item;
 import com.lvdou.pojo.ItemCat;
 import com.lvdou.sellergoods.service.GoodsService;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
 
 import java.util.*;
 
 
-@Transactional(rollbackFor = RuntimeException.class)
-public class GoodsServiceImpl implements GoodsService {
-	
+@Service
+@Transactional
+public class GoodsServiceImpl   {
+
+	@Autowired
 	private GoodsMapper goodsMapper;
+	@Autowired
 	private GoodsDescMapper goodsDescMapper;
+	@Autowired
 	private ItemCatMapper itemCatMapper;
+	@Autowired
 	private BrandMapper brandMapper;
+	@Autowired
 	private SellerMapper sellerMapper;
+	@Autowired
 	private ItemMapper itemMapper;
 
 	/** 保存商品 */
@@ -303,5 +312,11 @@ public class GoodsServiceImpl implements GoodsService {
 		}catch (Exception ex){
 			throw new RuntimeException(ex);
 		}
+	}
+
+	public List<Goods> findAllGoods() {
+        System.out.println("来到了Service层吗？");
+
+		return goodsMapper.selectAll();
 	}
 }

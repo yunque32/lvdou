@@ -2,14 +2,15 @@ package com.lvdou.service;
 
 import com.lvdou.mapper.AddressMapper;
 import com.lvdou.pojo.Address;
-import com.lvdou.user.service.AddressService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
+@Service
 @Transactional
-public class AddressServiceImpl implements AddressService {
+public class AddressServiceImpl  {
 
     @Autowired
     private AddressMapper addressMapper;

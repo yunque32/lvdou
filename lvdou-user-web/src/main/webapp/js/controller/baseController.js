@@ -6,7 +6,8 @@ app.controller("baseController", function($scope, $http){
         /** 定义重定向URL */
         $scope.redirectUrl = window.encodeURIComponent(location.href);
         /** 获取用户登录信息 */
-        $http.get("/user/showLoginName").then(function(response){
+        $http.get("/user/showLoginName")
+            .then(function(response){
             $scope.loginName = response.data.loginName;
         });
     };

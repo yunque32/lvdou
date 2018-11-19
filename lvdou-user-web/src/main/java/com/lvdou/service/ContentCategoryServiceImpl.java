@@ -7,6 +7,7 @@ import com.lvdou.common.pojo.PageResult;
 import com.lvdou.mapper.ContentCategoryMapper;
 import com.lvdou.pojo.ContentCategory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
 
@@ -14,6 +15,7 @@ import java.io.Serializable;
 import java.util.Arrays;
 import java.util.List;
 
+@Service
 @Transactional
 public class ContentCategoryServiceImpl     {
 

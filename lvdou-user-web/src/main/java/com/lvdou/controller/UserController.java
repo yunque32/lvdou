@@ -3,6 +3,7 @@ package com.lvdou.controller;
 import com.lvdou.pojo.User;
 import com.lvdou.service.UserServiceImpl;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
@@ -11,7 +12,8 @@ import java.util.Map;
 @RequestMapping("/user")
 public class UserController {
 
-    UserServiceImpl userService;
+    @Autowired
+    private  UserServiceImpl userService;
 
     /** 注册用户 */
     @PostMapping("/save")

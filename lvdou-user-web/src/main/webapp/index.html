@@ -10,15 +10,17 @@
         <meta content="telephone=no" name="format-detection"/>
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
         <script type="text/javascript" src="js/jquery.min.js"></script>
-        <script type="text/javascript" src="js/scrollTab.js"></script>
+        <script type="text/javascript" src="js/base/scrollTab.js"></script>
 
         <script src="/js/plugins/angularjs/angular.min.js"></script>
-        <script src="/js/base.js"></script>
+        <script src="/js/base/base.js"></script>
         <script src="/js/service/baseService.js"></script>
         <script src="/js/controller/baseController.js"></script>
-        <script src="/js/controller/seckillGoodsController.js"></script>
+        <script src="/js/controller/goodController.js"></script>
     </head>
-    <body >
+    <body ng-app="lvdou"
+          ng-controller="goodController"
+          ng-init=" findAllGoods();">
 
         <section class="aui-flexView">
             <div class="ban" style="position: relative">
@@ -51,20 +53,22 @@
                     <!-- scrolltab-content-start-->
                     <div class="scrolltab-content">
                         <!-- scrolltab-content-item start-->
+
                         <div class="scrolltab-content-item">
                             <h2>百香果</h2>
                             <div class="min">
                                 <!-- 百香果产品排版开始 -->
-                                <div class="aui-flex-links">
+                                <div class="aui-flex-links" >
+                                    <li ng-repeat="Goods in GoodsList">
                                     <a href="javascript:;" class="aui-flex-links-item">
                                         <div class="aui-flex-links-img">
                                             <img src="images/pd-001.jpg" alt="">
                                         </div>
                                         <div class="aui-flex-links-text">
-                                            <p>广西贵港奇异果</p>
+                                            <p>{{Goods.goodsName}}</p>
                                         </div>
                                         <div class="jj">
-                                            ￥<span class="pri">11.00</span>5<span class="axe">斤</span>
+                                            ￥<span class="pri">{{Goods.price}}</span>5<span class="axe">斤</span>
                                         </div>
                                         <div style="text-align: center">
                                             <span class="jia">-</span>
@@ -72,42 +76,13 @@
                                             <span class="jian">+</span>
                                         </div>
                                     </a>
-                                    <a href="javascript:;" class="aui-flex-links-item">
-                                        <div class="aui-flex-links-img">
-                                            <img src="images/pd-001.jpg" alt="">
-                                        </div>
-                                        <div class="aui-flex-links-text">
-                                            <p>广西贵港奇异果</p>
-                                        </div>
-                                        <div class="jj">
-                                            ￥<span class="pri">11.00</span>5<span class="axe">斤</span>
-                                        </div>
-                                        <div style="text-align: center">
-                                            <span class="jia">-</span>
-                                            <input class="num" value="1">
-                                            <span class="jian">+</span>
-                                        </div>
-                                    </a>
-                                    <a href="javascript:;" class="aui-flex-links-item">
-                                        <div class="aui-flex-links-img">
-                                            <img src="images/pd-001.jpg" alt="">
-                                        </div>
-                                        <div class="aui-flex-links-text">
-                                            <p>广西贵港奇异果</p>
-                                        </div>
-                                        <div class="jj">
-                                            ￥<span class="pri">11.00</span>5<span class="axe">斤</span>
-                                        </div>
-                                        <div style="text-align: center">
-                                            <span class="jia">-</span>
-                                            <input class="num" value="1">
-                                            <span class="jian">+</span>
-                                        </div>
-                                    </a>
+                                    </li>
+
                                 </div>
                                 <!-- 百香果产品排版结束 -->
                             </div>
                         </div>
+
                         <!-- scrolltab-content-item end-->
 
                         <!-- scrolltab-content-item start-->

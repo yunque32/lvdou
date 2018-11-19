@@ -5,6 +5,7 @@ import com.lvdou.service.OrderServiceImpl;
 import com.lvdou.service.WeixinPayServiceImpl;
 import com.lvdou.pojo.Order;
 import com.lvdou.pojo.PayLog;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
@@ -15,8 +16,11 @@ import java.util.Map;
 @RequestMapping("/order")
 public class OrderController {
 
-    OrderServiceImpl orderService;
-    WeixinPayServiceImpl weixinPayService;
+    @Autowired
+    private  OrderServiceImpl orderService;
+
+    @Autowired
+    private WeixinPayServiceImpl weixinPayService;
 
 
     /** 保存订单 */

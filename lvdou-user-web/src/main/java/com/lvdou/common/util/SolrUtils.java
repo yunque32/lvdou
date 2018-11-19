@@ -14,15 +14,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-/**
- * 数据导入的工具类
- */
-@Component
 public class SolrUtils {
 
     @Autowired
     private ItemMapper itemMapper;
-    @Autowired
+
     private SolrTemplate solrTemplate;
 
     /** 查询数据库tb_item表中的数据，再写入Solr索引库 */

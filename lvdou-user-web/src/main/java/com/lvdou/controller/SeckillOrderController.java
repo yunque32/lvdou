@@ -3,6 +3,7 @@ package com.lvdou.controller;
 import com.lvdou.service.WeixinPayServiceImpl;
 import com.lvdou.pojo.SeckillOrder;
 import com.lvdou.service.SeckillOrderServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,8 +16,10 @@ import java.util.Map;
 @RequestMapping("/seckillorder")
 public class SeckillOrderController {
 
-    SeckillOrderServiceImpl seckillOrderService;
-    WeixinPayServiceImpl weixinPayService;
+    @Autowired
+    private SeckillOrderServiceImpl seckillOrderService;
+    @Autowired
+    private WeixinPayServiceImpl weixinPayService;
 
     /** 秒杀下单 */
     @GetMapping("/submitOrder")

@@ -4,6 +4,7 @@ import com.lvdou.common.pojo.PageResult;
 import com.lvdou.pojo.Product;
 import com.lvdou.sellergoods.service.ProductService;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Date;
@@ -14,8 +15,9 @@ import java.util.Map;
 @RestController
 @RequestMapping("/product")
 public class ProductController {
-    
-    ProductService productService;
+
+    @Autowired
+    private ProductService productService;
 
     @GetMapping("/findAll")
     public List<Product> findAll(){

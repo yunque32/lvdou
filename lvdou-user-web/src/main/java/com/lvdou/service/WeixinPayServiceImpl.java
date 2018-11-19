@@ -3,10 +3,12 @@ package com.lvdou.service;
 import com.github.wxpay.sdk.WXPayUtil;
 import com.lvdou.common.util.HttpClientUtils;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
 import java.util.Map;
 
+@Service
 public class WeixinPayServiceImpl     {
 
     /** 微信公众号 */

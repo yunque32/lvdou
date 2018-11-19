@@ -5,12 +5,14 @@ import com.lvdou.mapper.SeckillGoodsMapper;
 import com.lvdou.pojo.SeckillGoods;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
 
 import java.util.Date;
 import java.util.List;
 
+@Service
 @Transactional
 public class SeckillGoodsServiceImpl    {
 

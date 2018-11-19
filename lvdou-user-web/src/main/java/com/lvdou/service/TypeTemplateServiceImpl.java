@@ -12,6 +12,7 @@ import com.lvdou.pojo.TypeTemplate;
 import com.lvdou.sellergoods.service.TypeTemplateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
 
@@ -19,7 +20,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
-
+@Service
 @Transactional
 public class TypeTemplateServiceImpl implements TypeTemplateService {
 	@Autowired

@@ -8,10 +8,12 @@ import com.lvdou.mapper.SellerMapper;
 import com.lvdou.pojo.Seller;
 import com.lvdou.sellergoods.service.SellerService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Date;
 
+@Service
 @Transactional(readOnly=false)
 public class SellerServiceImpl implements SellerService {
 	

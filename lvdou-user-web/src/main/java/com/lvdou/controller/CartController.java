@@ -18,6 +18,7 @@ import java.util.List;
 @RequestMapping("/cart")
 public class CartController {
 
+    @Autowired
     CartServiceImpl cartService ;
     @Autowired
     private HttpServletRequest request;

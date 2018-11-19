@@ -7,12 +7,14 @@ import com.lvdou.pojo.SeckillGoods;
 import com.lvdou.pojo.SeckillOrder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+@Service
 @Transactional
 public class SeckillOrderServiceImpl     {
 

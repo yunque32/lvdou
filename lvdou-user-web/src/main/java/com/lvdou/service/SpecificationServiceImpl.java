@@ -9,6 +9,7 @@ import com.lvdou.mapper.SpecificationOptionMapper;
 import com.lvdou.pojo.Specification;
 import com.lvdou.pojo.SpecificationOption;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
@@ -17,6 +18,7 @@ import java.util.Map;
 /**
  * 规格服务接口实现层
  */
+@Service
 @Transactional(readOnly=false)
 public class SpecificationServiceImpl  {
 

@@ -10,6 +10,7 @@ import com.lvdou.user.service.UserService;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.print.attribute.standard.Destination;
@@ -19,6 +20,7 @@ import java.util.Map;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
+@Service
 @Transactional
 public class UserServiceImpl implements UserService {
     // 三种用户：商城后台管理用户、商家用户、商城用户(会员)
