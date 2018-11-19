@@ -1,7 +1,7 @@
 package com.lvdou.controller;
 
 import com.lvdou.pojo.ItemCat;
-import com.lvdou.sellergoods.service.impl.ItemCatServiceImpl;
+import com.lvdou.service.ItemCatServiceImpl;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;

@@ -1,6 +1,5 @@
 package com.lvdou.service;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.github.pagehelper.ISelect;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
@@ -9,7 +8,6 @@ import com.lvdou.mapper.SpecificationMapper;
 import com.lvdou.mapper.SpecificationOptionMapper;
 import com.lvdou.pojo.Specification;
 import com.lvdou.pojo.SpecificationOption;
-import com.lvdou.sellergoods.service.SpecificationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -19,22 +17,15 @@ import java.util.Map;
 /**
  * 规格服务接口实现层
  */
-@Service(interfaceName="com.lvdou.sellergoods.service.SpecificationService")
 @Transactional(readOnly=false)
-public class SpecificationServiceImpl implements SpecificationService {
+public class SpecificationServiceImpl  {
 
 	@Autowired
 	private SpecificationMapper specificationMapper;
     @Autowired
     private SpecificationOptionMapper specificationOptionMapper;
 	
-	/**
-	 * 分页查询规格
-	 * @param specification 规格实体
-	 * @param page 当前页码
-	 * @param rows 每页显示的记录数
-	 * @return PageResult
-	 */
+
 	public PageResult findByPage(Specification specification,
 								 Integer page, Integer rows){
 		try{
