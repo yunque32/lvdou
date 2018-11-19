@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lvdou.mapper.ProductMapper">
+
+    <!-- 多条件查询 -->
+    <select id="findAll" resultType="Product">
+        SELECT * from tb_product
+        <where>
+            <if test="product != null">
+
+                <if test="product.productName != null and product.productName !=''">
+                    name like CONCAT('%',#{product.productName},'%')
+                </if>
+
+            </if>
+        </where>
+        order by id asc
+    </select>
+
+    <!-- 批量删除 -->
+    <delete id="deleteAll">
+        delete FROM tb_product where id in
+        <foreach collection="ids" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+
+
+    <select id="selectTwoIdByProductid" parameterType="Long" resultType="com.lvdou.pojo.Product">
+          select *
+         from tb_product
+         where id = #{productid}
+    </select>
+
+
+</mapper>
