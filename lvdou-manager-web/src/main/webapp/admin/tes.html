@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>水果管理</title>
+    <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/plugins/adminLTE/css/AdminLTE.css"/>
+    <link rel="stylesheet" href="/plugins/adminLTE/css/skins/_all-skins.min.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <script src="/plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <script src="/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="/plugins/angularjs/angular.min.js"></script>
+    <!-- 分页组件开始 -->
+    <link rel="stylesheet" href="/plugins/angularjs/pagination.css"/>
+    <script src="/plugins/angularjs/pagination.js"></script>
+    <!-- 分页组件结束 -->
+    <script src="/js/base-pagination.js"></script>
+    <script src="/js/service/baseService.js"></script>
+    <script src="/js/controller/baseController.js"></script>
+    <script src="/js/controller/productController.js"></script>
+    <script src="/js/service/uploadService.js"></script>
+
+    <script type="javascript">
+
+    </script>
+</head>
+<body ng-app="lvdou" ng-controller="productController" >
+<form id="fileForm" enctype="multipart/form-data">
+    <button id="import_asset" type="button" ng-click="import_asset()">上传文件</button>
+    <input id="file_asset" type="file" style="display: none;"/>
+</form>
+</body>
+</html>

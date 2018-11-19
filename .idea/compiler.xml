@@ -7,7 +7,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="lvdou-manager-web" />
-        <module name="lvdou-mo" />
         <module name="lvdou-user-web" />
       </profile>
     </annotationProcessing>
@@ -23,7 +22,9 @@
       <module name="lvdou-content-interface" target="1.8" />
       <module name="lvdou-content-service" target="1.8" />
       <module name="lvdou-item-web" target="1.8" />
+      <module name="lvdou-manager-web" target="1.8" />
       <module name="lvdou-mapper" target="1.8" />
+      <module name="lvdou-mo" target="1.8" />
       <module name="lvdou-order" target="1.8" />
       <module name="lvdou-order-interface" target="1.8" />
       <module name="lvdou-order-service" target="1.8" />
