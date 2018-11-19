@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+        <property name="securityManager" ref="securityManager"/>
+        <property name="filterChainDefinitions">
+            <!--   * : 通配一级资源
+                  **： 通配任意级资源
+             -->
+            <value>
+                /css/**=anon
+                /data/**=anon
+                /demo/**=anon
+                /images/**=anon
+                /js/**=anon
+                /upload/**=anon
+                /validatecode.jsp=anon
+                /services/**=anon
+                /user/**=anon
+                /**=authc
+            </value>
+
+        </property>
+        <property name="loginUrl" value="/login.html"/>
+     </bean>
+
+    <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+            <property name="realm" ref="realm"/>
+     </bean>
+    <bean id="realm" class="com.lvdou.realms.MyRealm"/>
+</beans>
