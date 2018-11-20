@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.lvdou.sellergoods.service.ItemCatService;
+import com.lvdou..service.ItemCatService;
 
 import java.util.List;
 

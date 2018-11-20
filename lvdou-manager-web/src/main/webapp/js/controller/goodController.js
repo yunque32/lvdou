@@ -4,6 +4,7 @@ app.controller('goodController', function($scope, $controller, baseService){
     /** 指定继承baseController */
     $controller('baseController',{$scope:$scope});
 
+
     /** 定义搜索对象 */
     $scope.searchEntity = {};
     /** 分页查询 */

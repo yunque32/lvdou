@@ -9,10 +9,11 @@ app.controller('goodController', function($scope, $controller, baseService){
         baseService.sendGet("/goods/findAllGoods")
             .then(function (response) {
                 // 获取响应数据
-                alert("响应了吗？")
                 $scope.GoodsList = response.data;
             });
     };
+    $scope.count=1;
+
 
     /** 定义搜索对象 */
     $scope.searchEntity = {};

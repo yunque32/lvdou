@@ -4,7 +4,7 @@ import com.alibaba.dubbo.config.annotation.Reference;
 import com.lvdou.common.pojo.PageResult;
 import com.lvdou.pojo.Agency;
 import com.lvdou.pojo.Product;
-import com.lvdou.sellergoods.service.ProductService;
+import com.lvdou..service.ProductService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

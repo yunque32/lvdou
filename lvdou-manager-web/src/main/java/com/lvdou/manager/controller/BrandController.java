@@ -2,7 +2,7 @@ package com.lvdou.manager.controller;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.lvdou.common.pojo.PageResult;
 import com.lvdou.pojo.Brand;
-import com.lvdou.sellergoods.service.BrandService;
+import com.lvdou..service.BrandService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.web.bind.annotation.*;
 

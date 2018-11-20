@@ -6,7 +6,7 @@ import com.lvdou.pojo.SpecificationOption;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.web.bind.annotation.*;
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.lvdou.sellergoods.service.SpecificationService;
+import com.lvdou..service.SpecificationService;
 
 import java.util.List;
 import java.util.Map;

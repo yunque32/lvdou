@@ -5,7 +5,7 @@ import com.lvdou.pojo.TypeTemplate;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.web.bind.annotation.*;
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.lvdou.sellergoods.service.TypeTemplateService;
+import com.lvdou..service.TypeTemplateService;
 
 /**
  * TypeTemplateController

@@ -55,12 +55,7 @@
             <groupId>com.github.sgroschupf</groupId>
             <artifactId>zkclient</artifactId>
         </dependency>
-        <!-- lvdou-sellergoods-interface -->
-        <dependency>
-            <groupId>com</groupId>
-            <artifactId>lvdou-sellergoods-interface</artifactId>
-            <version>${project.version}</version>
-        </dependency>
+
         <!-- spring-security -->
         <dependency>
             <groupId>org.springframework.security</groupId>

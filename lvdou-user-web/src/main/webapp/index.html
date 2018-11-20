@@ -17,6 +17,7 @@
         <script src="/js/service/baseService.js"></script>
         <script src="/js/controller/baseController.js"></script>
         <script src="/js/controller/goodController.js"></script>
+         hy
     </head>
     <body ng-app="lvdou"
           ng-controller="goodController"
@@ -72,10 +73,10 @@
                                         </div>
                                         <div style="text-align: center">
 
-                                            <button class="jia">-</button>
-                                            <input class="num" value="1">
-                                            <button class="jian">+</button>
- 
+                                            <button id="jia" class="jia">-</button>
+                                            <input class="num" ng-model="count">
+                                            <button id="jian" class="jian">+</button>
+
                                         </div>
                                     </a>
                                     </li>

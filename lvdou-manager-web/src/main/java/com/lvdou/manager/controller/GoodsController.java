@@ -3,7 +3,7 @@ package com.lvdou.manager.controller;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.lvdou.common.pojo.PageResult;
 import com.lvdou.pojo.Goods;
-import com.lvdou.sellergoods.service.GoodsService;
+import com.lvdou..service.GoodsService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.core.JmsTemplate;
