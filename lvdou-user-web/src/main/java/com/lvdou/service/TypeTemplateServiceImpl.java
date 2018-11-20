@@ -9,7 +9,6 @@ import com.lvdou.mapper.SpecificationOptionMapper;
 import com.lvdou.mapper.TypeTemplateMapper;
 import com.lvdou.pojo.SpecificationOption;
 import com.lvdou.pojo.TypeTemplate;
-import com.lvdou.sellergoods.service.TypeTemplateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
@@ -22,7 +21,7 @@ import java.util.Map;
 
 @Service
 @Transactional
-public class TypeTemplateServiceImpl implements TypeTemplateService {
+public class TypeTemplateServiceImpl  {
 	@Autowired
 	private TypeTemplateMapper typeTemplateMapper;
 	@Autowired

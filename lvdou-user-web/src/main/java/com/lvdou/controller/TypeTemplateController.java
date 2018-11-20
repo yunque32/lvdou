@@ -1,7 +1,7 @@
 package com.lvdou.controller;
 
 import com.lvdou.pojo.TypeTemplate;
-import com.lvdou.sellergoods.service.TypeTemplateService;
+import com.lvdou.service.TypeTemplateServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,7 +18,7 @@ import java.util.Map;
 public class TypeTemplateController {
 
     @Autowired
-    private TypeTemplateService typeTemplateService;
+    private TypeTemplateServiceImpl typeTemplateService;
 
     /** 根据主键id查询类型模版 */
     @GetMapping("/findOne")

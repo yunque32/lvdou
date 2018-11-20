@@ -10,7 +10,7 @@ import com.lvdou.mapper.ProducterMapper;
 import com.lvdou.pojo.Agency;
 import com.lvdou.pojo.Product;
 import com.lvdou.pojo.Producter;
-import com.lvdou.sellergoods.service.ProductService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -20,13 +20,15 @@ import java.util.Map;
 
 @Service
 @Transactional
-public class ProductServiceImpl implements ProductService {
-
+public class ProductServiceImpl  {
+    @Autowired
     private ProductMapper productMapper;
+
+    @Autowired
     private AgencyMapper agencyMapper;
+    @Autowired
     private ProducterMapper producterMapper;
 
-    @Override
     public List<Product> findAll() {
         // 第一个参数: 当前页码
         // 第二个参数：每页显示的记录数
@@ -97,13 +99,11 @@ public class ProductServiceImpl implements ProductService {
             throw new RuntimeException(ex);
         }
     }
-    @Override
     public Map<String, Object> selectOne(Long productid) {
         return null;
         //productMapper.selectByid;
     }
 
-    @Override
     public Map<String, Object> selectTwo(Long productid) {
         Map<String, Object> map = new HashMap<>();
         Product product=productMapper.selectTwoIdByProductid(productid);

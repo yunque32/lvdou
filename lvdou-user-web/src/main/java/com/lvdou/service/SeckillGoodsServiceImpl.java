@@ -17,7 +17,9 @@ import java.util.List;
 public class SeckillGoodsServiceImpl    {
 
     /** 注入数据访问接口代理对象 */
+    @Autowired
     private SeckillGoodsMapper seckillGoodsMapper;
+    @Autowired
     private ProductMapper productMapper;
     @Autowired
     private RedisTemplate redisTemplate;

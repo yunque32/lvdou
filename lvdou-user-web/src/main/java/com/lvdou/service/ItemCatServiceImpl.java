@@ -2,8 +2,8 @@ package com.lvdou.service;
 
 import com.lvdou.mapper.ItemCatMapper;
 import com.lvdou.pojo.ItemCat;
-import com.lvdou.sellergoods.service.ItemCatService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -11,13 +11,13 @@ import java.util.List;
 
 @Service
 @Transactional(readOnly=false)
-public class ItemCatServiceImpl implements ItemCatService {
+public class ItemCatServiceImpl{
 	
 	/** 注入数据访问层代理对象 */
 	@Autowired
 	private ItemCatMapper itemCatMapper;
-//	@Autowired
-//	private RedisTemplate redisTemplate;
+	@Autowired
+	private RedisTemplate redisTemplate;
 
 	/** 根据父级id查询商品分类 */
 	public List<ItemCat> findItemCatByParentId(Long parentId){
@@ -35,16 +35,16 @@ public class ItemCatServiceImpl implements ItemCatService {
 	}
 
 	/** 把商品分类数据存入Redis */
-//	public void saveToRedis(){
-//		try{
-//			// 查询所有的商品分类
-//			List<ItemCat> itemCatList = itemCatMapper.selectAll();
-//			for (ItemCat itemCat : itemCatList){
-//				redisTemplate.boundHashOps("itemCats")
-//						.put(itemCat.getName(), itemCat.getTypeId());
-//			}
-//		}catch (Exception ex){
-//			throw new RuntimeException(ex);
-//		}
-//	}
+	public void saveToRedis(){
+		try{
+			// 查询所有的商品分类
+			List<ItemCat> itemCatList = itemCatMapper.selectAll();
+			for (ItemCat itemCat : itemCatList){
+				redisTemplate.boundHashOps("itemCats")
+						.put(itemCat.getName(), itemCat.getTypeId());
+			}
+		}catch (Exception ex){
+			throw new RuntimeException(ex);
+		}
+	}
 }

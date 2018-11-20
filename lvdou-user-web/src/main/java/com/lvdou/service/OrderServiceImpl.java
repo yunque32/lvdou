@@ -22,10 +22,15 @@ import java.util.List;
 @Transactional
 public class OrderServiceImpl     {
 
+    @Autowired
     private IdWorker idWorker;
+    @Autowired
     private RedisTemplate<String, Object> redisTemplate;
+    @Autowired
     private OrderMapper orderMapper;
+    @Autowired
     private OrderItemMapper orderItemMapper;
+    @Autowired
     private PayLogMapper payLogMapper;
 
     /** 保存订单 */

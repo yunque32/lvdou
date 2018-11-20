@@ -1,5 +1,4 @@
 package com.lvdou.service;
-import com.alibaba.fastjson.JSON;
 import com.github.pagehelper.ISelect;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
@@ -9,7 +8,6 @@ import com.lvdou.pojo.Goods;
 import com.lvdou.pojo.GoodsDesc;
 import com.lvdou.pojo.Item;
 import com.lvdou.pojo.ItemCat;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

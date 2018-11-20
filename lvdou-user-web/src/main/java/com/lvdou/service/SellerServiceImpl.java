@@ -6,7 +6,6 @@ import com.github.pagehelper.PageInfo;
 import com.lvdou.common.pojo.PageResult;
 import com.lvdou.mapper.SellerMapper;
 import com.lvdou.pojo.Seller;
-import com.lvdou.sellergoods.service.SellerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -15,7 +14,7 @@ import java.util.Date;
 
 @Service
 @Transactional(readOnly=false)
-public class SellerServiceImpl implements SellerService {
+public class SellerServiceImpl  {
 	
 	/** 注入数据访问层代理对象 */
 	@Autowired
@@ -33,13 +32,6 @@ public class SellerServiceImpl implements SellerService {
 		}
 	}
 
-	/**
-	 * 分页查询未审核的商家
-	 * @param seller 商家实体
-	 * @param page 当前页码
-	 * @param rows 每页显示的记录数
-	 * @return 分页结果
-	 */
 	public PageResult findByPage(Seller seller, Integer page, Integer rows){
 		try {
 			// 开启分页查询

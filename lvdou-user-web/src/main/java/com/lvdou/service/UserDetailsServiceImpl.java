@@ -1,7 +1,6 @@
 package com.lvdou.service;
 
 import com.lvdou.pojo.Seller;
-import com.lvdou.sellergoods.service.SellerService;
 import com.lvdou.user.service.UserService;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

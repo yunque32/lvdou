@@ -6,8 +6,8 @@ import com.lvdou.common.util.HttpClientPost;
 import com.lvdou.common.util.Md5Utils;
 import com.lvdou.mapper.UserMapper;
 import com.lvdou.pojo.User;
-import com.lvdou.user.service.UserService;
 import org.apache.commons.codec.digest.DigestUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
@@ -22,10 +22,13 @@ import java.util.concurrent.TimeUnit;
 
 @Service
 @Transactional
-public class UserServiceImpl implements UserService {
+public class UserServiceImpl     {
     // 三种用户：商城后台管理用户、商家用户、商城用户(会员)
+    @Autowired
     private UserMapper userMapper;
+
     private UserRoleServiceImpl userRoleService;
+    @Autowired
     private RedisTemplate redisTemplate;
 
     private Destination smsQueue;
@@ -107,7 +110,6 @@ public class UserServiceImpl implements UserService {
         return smsCode.equals(redisTemplate.boundValueOps(phone).get());
     }
 
-    @Override
     public Map checkUserName(String userName) {
         HashMap<String, Object> map = new HashMap<>();
 
@@ -122,7 +124,6 @@ public class UserServiceImpl implements UserService {
         return map;
     }
 
-    @Override
     public Map<String, String> registerUser(User user) {
         Map<String, String> map = new HashMap<>();
         int insert = userMapper.insert(user);
@@ -132,7 +133,6 @@ public class UserServiceImpl implements UserService {
         }
         return null;
     }
-    @Override
     public Map sendValidate(String mobile) throws Exception {
         System.out.println("发送号码是："+mobile);
         timestamp = System.currentTimeMillis();
@@ -166,7 +166,6 @@ public class UserServiceImpl implements UserService {
         return map;
     }
 
-    @Override
     public User selectUserByUsername(String username) {
           return userMapper.selectUserByUsername(username);
     }
