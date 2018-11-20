@@ -20,7 +20,6 @@ public class GoodsController {
 
 	@GetMapping("/findAllGoods")
 	public List<Goods> findAllGoods(){
-	    System.out.println("来到了控制器吗？？");
 
 		return goodsService.findAllGoods();
 
@@ -49,8 +48,8 @@ public class GoodsController {
 	public PageResult findByPage(Goods goods, Integer page, Integer rows){
 		try{
 			// Get请求中文转码
-			if (goods != null && StringUtils.isNoneBlank(goods.getGoodsName())){
-				goods.setGoodsName(new String(goods.getGoodsName()
+			if (goods != null && StringUtils.isNoneBlank(goods.getTitle())){
+				goods.setTitle(new String(goods.getTitle()
 						.getBytes("ISO8859-1"), "UTF-8"));
 			}
 			// 获取登录的用户名(商家ID)

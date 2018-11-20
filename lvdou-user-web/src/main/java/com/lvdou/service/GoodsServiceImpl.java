@@ -9,7 +9,6 @@ import com.lvdou.pojo.Goods;
 import com.lvdou.pojo.GoodsDesc;
 import com.lvdou.pojo.Item;
 import com.lvdou.pojo.ItemCat;
-import com.lvdou.sellergoods.service.GoodsService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -36,38 +35,41 @@ public class GoodsServiceImpl   {
 	@Autowired
 	private ItemMapper itemMapper;
 
+	public List<Goods> findAllGoods() {
+		return goodsMapper.selectAll();
+	}
+
 	/** 保存商品 */
 	public void saveGoods(Goods goods){
-		try {
-			/** 往tb_goods表插入数据 (SPU表) */
-			// 设置未审核状态
+		/*try {
+
 			goods.setAuditStatus("0");
 			goodsMapper.insertSelective(goods);
 
-			/** 往tb_goods_desc表插入数据 (商品描述表) */
+			//** 往tb_goods_desc表插入数据 (商品描述表)
 			goods.getGoodsDesc().setGoodsId(goods.getId());
 			goodsDescMapper.insertSelective(goods.getGoodsDesc());
-
-			/** 添加sku商品信息 */
+			// 添加sku商品信息
 			saveItems(goods);
 
 		} catch (Exception ex) {
 			ex.printStackTrace();
 			throw new RuntimeException(ex);
-		}
+		}*/
 	}
 
 	/** 添加sku商品信息 */
 	private void saveItems(Goods goods){
 		// 判断是否启用规格
-		if ("1".equals(goods.getIsEnableSpec())) { // 启用规格
+		/*if ("1".equals(goods.getIsEnableSpec())) {
+			// 启用规格
 
-			/** 往tb_item表插入数据 (SKU表) goods.items */
+			// 往tb_item表插入数据 (SKU表) goods.items
 			for (Item item : goods.getItems()) {
 				// item: {spec:{}, price:0, num:9999, status:'0', isDefault:'0'}
 
 				// 设置SKU商品的标题 : Apple iPhone 8 Plus (A1864) 联通4G 64G
-				StringBuilder title = new StringBuilder(goods.getGoodsName());
+				StringBuilder title = new StringBuilder(goods.getTitle());
 				// spec: {"网络":"联通4G","机身内存":"64G"}
 				// 把spec的json字符串转化成map集合
 				Map specMap = JSON.parseObject(item.getSpec());
@@ -99,21 +101,21 @@ public class GoodsServiceImpl   {
 			// 设置SKU商品的规格
 			item.setSpec("{}");
 			// 设置SKU商品标题
-			item.setTitle(goods.getGoodsName());
+			item.setTitle(goods.getTitle());
 
 			// 设置SKU商品的其它信息
 			setItemInfo(goods, item);
 
 			// 往tb_item表插入数据（SKU表）
 			itemMapper.insertSelective(item);
-		}
+		}*/
 	}
 
 	/** 设置SKU商品的其它信息 */
 	private void setItemInfo(Goods goods, Item item){
 
 		// 从商品描述表取一张图片
-		String itemImages = goods.getGoodsDesc().getItemImages();
+		/*String itemImages = goods.getGoodsDesc().getItemImages();
 		if (StringUtils.isNotEmpty(itemImages)) {
 			// [{"color":"金色","url":"http://image.lvdou.com/jd/wKgMg1qtKEOATL9nAAFti6upbx4132.jpg"}]
 			List<Map> imagesList = JSON.parseArray(itemImages, Map.class);
@@ -139,34 +141,34 @@ public class GoodsServiceImpl   {
 				selectByPrimaryKey(goods.getBrandId()).getName());
 
 		// 设置SKU的商品商家店铺名称
-		item.setSeller(sellerMapper.selectByPrimaryKey(goods.getSellerId()).getNickName());
+		item.setSeller(sellerMapper.selectByPrimaryKey(goods.getSellerId()).getNickName());*/
 	}
 
 
 	/** 修改商品(SPU、商品描述、SKU) */
 	public void updateGoods(Goods goods){
-		try{
-			/** 设置未申请状态 */
+		/*try{
+			// 设置未申请状态
 			goods.setAuditStatus("0");
-			/** 修改SPU商品表 */
+			// 修改SPU商品表
 			goodsMapper.updateByPrimaryKeySelective(goods);
 
 			// 修改商品描述表
 			goodsDescMapper.updateByPrimaryKeySelective(goods.getGoodsDesc());
 
-			/** 修改SKU表(tb_item) */
+			// 修改SKU表(tb_item)
 			// 根据goods_id删除SKU数据 delete from tb_item where goods_id = ?
 			Item item = new Item();
 			item.setGoodsId(goods.getId());
 			itemMapper.delete(item);
 
 			// 往tb_item表添加新的数据
-			/** 添加sku商品信息 */
+			// 添加sku商品信息
 			saveItems(goods);
 
 		}catch (Exception ex){
 			throw new RuntimeException(ex);
-		}
+		}*/
 	}
 
 
@@ -265,7 +267,7 @@ public class GoodsServiceImpl   {
 
 	/** 根据goodsId查询商品信息 */
 	public Map<String,Object> getItem(Long goodsId){
-		try{
+		/*try{
 			Map<String,Object> dataModel = new HashMap<>();
 			// 查询SPU表中的数据
 			Goods goods = goodsMapper.selectByPrimaryKey(goodsId);
@@ -311,12 +313,9 @@ public class GoodsServiceImpl   {
 			return dataModel;
 		}catch (Exception ex){
 			throw new RuntimeException(ex);
-		}
-	}
+		}*/
+		return null;
+	};
 
-	public List<Goods> findAllGoods() {
-        System.out.println("来到了Service层吗？");
 
-		return goodsMapper.selectAll();
-	}
 }

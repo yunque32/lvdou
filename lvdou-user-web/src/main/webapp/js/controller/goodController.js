@@ -4,6 +4,16 @@ app.controller('goodController', function($scope, $controller, baseService){
     /** 指定继承baseController */
     $controller('baseController',{$scope:$scope});
 
+    $scope.findAllGoods = function(){
+        // 发送异步请求
+        baseService.sendGet("/goods/findAllGoods")
+            .then(function (response) {
+                // 获取响应数据
+                alert("响应了吗？")
+                $scope.GoodsList = response.data;
+            });
+    };
+
     /** 定义搜索对象 */
     $scope.searchEntity = {};
     /** 分页查询 */
@@ -62,15 +72,7 @@ app.controller('goodController', function($scope, $controller, baseService){
         }
     };
 
-    $scope.findAllGoods = function(){
-        // 发送异步请求
-        baseService.sendGet("/goods/findAllGoods")
-            .then(function (response) {
-                // 获取响应数据
-                alert("响应了吗？")
-                $scope.GoodsList = response.data;
-            });
-    };
+
 
     /** 根据秒杀商品的id获取秒杀商品 */
     $scope.findOne = function(){
