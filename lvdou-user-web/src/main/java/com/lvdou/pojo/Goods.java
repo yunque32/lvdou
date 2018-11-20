@@ -2,13 +2,10 @@ package com.lvdou.pojo;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.math.BigDecimal;
 import java.util.List;
+import java.util.Date;
 
-/**
- * 商品实体
- */
-@Table(name="tb_goods")
+@Table(name="goods")
 public class Goods implements Serializable{
 
 	private static final long serialVersionUID = -3888154864571208139L;
@@ -16,165 +13,201 @@ public class Goods implements Serializable{
 	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="id")
 	private Long id;
-	/** 商家id */
-	@Column(name="seller_id")
-    private String sellerId;
-    /** SPU名称 */
-	@Column(name="goods_name")
-    private String goodsName;
-    /** 默认SKU */
-	@Column(name="default_item_id")
-    private Long defaultItemId;
-    /** 状态 */
-	@Column(name="audit_status")
-    private String auditStatus;
-    /** 是否上架 */
-	@Column(name="is_marketable")
-    private String isMarketable;
-    /** 品牌id */
-	@Column(name="brand_id")
-    private Long brandId;
-    /** 副标题 */
-	@Column(name="caption")
-    private String caption;
-    /** 一级分类 */
-	@Column(name="category1_id")
-    private Long category1Id;
-    /** 二级分类 */
-	@Column(name="category2_id")
-    private Long category2Id;
-    /** 三级分类 */
-	@Column(name="category3_id")
-    private Long category3Id;
-    /** 小图 */
-	@Column(name="small_pic")
+	@Column(name = "goods_id")
+    private Long goodsId;
+	@Column(name = "title")
+    private String title;
+	@Column(name = "small_pic")
     private String smallPic;
-    /** 商城价 */
-	@Column(name="price")
-    private BigDecimal price;
-    /** 分类模版id */
-	@Column(name="type_template_id")
-    private Long typeTemplateId;
-    /** 是否启用规格 */
-	@Column(name="is_enable_spec")
-    private String isEnableSpec;
-    /** 是否删除 */
-	@Column(name="is_delete")
-    private String isDelete;
-    /** 商品描述 */
-	@Transient
+	@Column(name = "price")
+    private String price;
+	@Column(name = "cost_price")
+    private String costPrice;
+	@Column(name = "seller_id")
+    private String sellerId;
+	@Column(name = "create_time")
+    private Date createTime;
+	@Column(name = "check_time")
+    private  Date checkTime;
+	@Column(name = "audit_status")
+    private String auditStatus;
+	@Column(name = "start_time")
+    private Date startTime;
+	@Column(name = "end_time")
+    private Date endTime;
+	@Column(name = "num")
+    private Integer num;
+	@Column(name = "stock_count")
+    private Integer stockCount;
+	@Column(name = "introduction")
+    private String introduction;
+	@Column(name = "agency_id")
+    private Long agencyId;
+	@Column(name = "producter_id")
+    private Long producterId;
+
+    public Goods() {
+    }
+
+    public Long getId() {
+
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Long getGoodsId() {
+        return goodsId;
+    }
+
+    public void setGoodsId(Long goodsId) {
+        this.goodsId = goodsId;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getSmallPic() {
+        return smallPic;
+    }
+
+    public void setSmallPic(String smallPic) {
+        this.smallPic = smallPic;
+    }
+
+    public String getPrice() {
+        return price;
+    }
+
+    public void setPrice(String price) {
+        this.price = price;
+    }
+
+    public String getCostPrice() {
+        return costPrice;
+    }
+
+    public void setCostPrice(String costPrice) {
+        this.costPrice = costPrice;
+    }
+
+    public String getSellerId() {
+        return sellerId;
+    }
+
+    public void setSellerId(String sellerId) {
+        this.sellerId = sellerId;
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    public Date getCheckTime() {
+        return checkTime;
+    }
+
+    public void setCheckTime(Date checkTime) {
+        this.checkTime = checkTime;
+    }
+
+    public String getAuditStatus() {
+        return auditStatus;
+    }
+
+    public void setAuditStatus(String auditStatus) {
+        this.auditStatus = auditStatus;
+    }
+
+    public Date getStartTime() {
+        return startTime;
+    }
+
+    public void setStartTime(Date startTime) {
+        this.startTime = startTime;
+    }
+
+    public Date getEndTime() {
+        return endTime;
+    }
+
+    public void setEndTime(Date endTime) {
+        this.endTime = endTime;
+    }
+
+    public Integer getNum() {
+        return num;
+    }
+
+    public void setNum(Integer num) {
+        this.num = num;
+    }
+
+    public Integer getStockCount() {
+        return stockCount;
+    }
+
+    public void setStockCount(Integer stockCount) {
+        this.stockCount = stockCount;
+    }
+
+    public String getIntroduction() {
+        return introduction;
+    }
+
+    public void setIntroduction(String introduction) {
+        this.introduction = introduction;
+    }
+
+    public Long getAgencyId() {
+        return agencyId;
+    }
+
+    public void setAgencyId(Long agencyId) {
+        this.agencyId = agencyId;
+    }
+
+    public Long getProducterId() {
+        return producterId;
+    }
+
+    public void setProducterId(Long producterId) {
+        this.producterId = producterId;
+    }
+
+    public GoodsDesc getGoodsDesc() {
+        return goodsDesc;
+    }
+
+    public void setGoodsDesc(GoodsDesc goodsDesc) {
+        this.goodsDesc = goodsDesc;
+    }
+
+    public List<Item> getItems() {
+        return items;
+    }
+
+    public void setItems(List<Item> items) {
+        this.items = items;
+    }
+
+    @Transient
     private GoodsDesc goodsDesc;
     /** 商品SKU列表 */
 	@Transient
     private List<Item> items;
     
-    /** setter and getter method */
-    public Long getId() {
-        return id;
-    }
-    public void setId(Long id) {
-        this.id = id;
-    }
-    public String getSellerId() {
-        return sellerId;
-    }
-    public void setSellerId(String sellerId) {
-        this.sellerId = sellerId == null ? null : sellerId.trim();
-    }
-    public String getGoodsName() {
-        return goodsName;
-    }
-    public void setGoodsName(String goodsName) {
-        this.goodsName = goodsName == null ? null : goodsName.trim();
-    }
-    public Long getDefaultItemId() {
-        return defaultItemId;
-    }
-    public void setDefaultItemId(Long defaultItemId) {
-        this.defaultItemId = defaultItemId;
-    }
-    public String getAuditStatus() {
-        return auditStatus;
-    }
-    public void setAuditStatus(String auditStatus) {
-        this.auditStatus = auditStatus == null ? null : auditStatus.trim();
-    }
-    public String getIsMarketable() {
-        return isMarketable;
-    }
-    public void setIsMarketable(String isMarketable) {
-        this.isMarketable = isMarketable == null ? null : isMarketable.trim();
-    }
-    public Long getBrandId() {
-        return brandId;
-    }
-    public void setBrandId(Long brandId) {
-        this.brandId = brandId;
-    }
-    public String getCaption() {
-        return caption;
-    }
-    public void setCaption(String caption) {
-        this.caption = caption == null ? null : caption.trim();
-    }
-    public Long getCategory1Id() {
-        return category1Id;
-    }
-    public void setCategory1Id(Long category1Id) {
-        this.category1Id = category1Id;
-    }
-    public Long getCategory2Id() {
-        return category2Id;
-    }
-    public void setCategory2Id(Long category2Id) {
-        this.category2Id = category2Id;
-    }
-    public Long getCategory3Id() {
-        return category3Id;
-    }
-    public void setCategory3Id(Long category3Id) {
-        this.category3Id = category3Id;
-    }
-    public String getSmallPic() {
-        return smallPic;
-    }
-    public void setSmallPic(String smallPic) {
-        this.smallPic = smallPic == null ? null : smallPic.trim();
-    }
-    public BigDecimal getPrice() {
-        return price;
-    }
-    public void setPrice(BigDecimal price) {
-        this.price = price;
-    }
-    public Long getTypeTemplateId() {
-        return typeTemplateId;
-    }
-    public void setTypeTemplateId(Long typeTemplateId) {
-        this.typeTemplateId = typeTemplateId;
-    }
-    public String getIsEnableSpec() {
-        return isEnableSpec;
-    }
-    public void setIsEnableSpec(String isEnableSpec) {
-        this.isEnableSpec = isEnableSpec == null ? null : isEnableSpec.trim();
-    }
-    public String getIsDelete() {
-        return isDelete;
-    }
-    public void setIsDelete(String isDelete) {
-        this.isDelete = isDelete == null ? null : isDelete.trim();
-    }
-	public GoodsDesc getGoodsDesc() {
-		return goodsDesc;
-	}
-	public void setGoodsDesc(GoodsDesc goodsDesc) {
-		this.goodsDesc = goodsDesc;
-	}
-	public List<Item> getItems() {
-		return items;
-	}
-	public void setItems(List<Item> items) {
-		this.items = items;
-	}
+
+
 }

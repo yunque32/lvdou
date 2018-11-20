@@ -8,9 +8,9 @@
     <artifactId>lvdou</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
-  
-        <module>lvdou-user-web</module>
  
+        <!--<module>lvdou-manager-web</module>-->
+        <module>lvdou-user-web</module>
 
     </modules>
 
