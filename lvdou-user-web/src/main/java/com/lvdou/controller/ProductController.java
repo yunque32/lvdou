@@ -2,7 +2,7 @@ package com.lvdou.controller;
 
 import com.lvdou.common.pojo.PageResult;
 import com.lvdou.pojo.Product;
-import com.lvdou.service.ProductServiceImpl;
+import com.lvdou.service.impl.ProductServiceImpl;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

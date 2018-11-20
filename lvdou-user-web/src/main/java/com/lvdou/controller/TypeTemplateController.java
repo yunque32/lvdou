@@ -1,7 +1,7 @@
 package com.lvdou.controller;
 
 import com.lvdou.pojo.TypeTemplate;
-import com.lvdou.service.TypeTemplateServiceImpl;
+import com.lvdou.service.impl.TypeTemplateServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

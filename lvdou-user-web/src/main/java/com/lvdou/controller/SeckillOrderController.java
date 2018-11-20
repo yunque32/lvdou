@@ -1,8 +1,8 @@
 package com.lvdou.controller;
 
-import com.lvdou.service.WeixinPayServiceImpl;
+import com.lvdou.service.impl.WeixinPayServiceImpl;
 import com.lvdou.pojo.SeckillOrder;
-import com.lvdou.service.SeckillOrderServiceImpl;
+import com.lvdou.service.impl.SeckillOrderServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

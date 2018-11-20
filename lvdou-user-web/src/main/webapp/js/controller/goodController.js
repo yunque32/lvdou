@@ -22,7 +22,7 @@ app.controller('goodController', function($scope, $controller, baseService){
     $scope.jia=function(){
         $scope.count=$scope.count+1;
     };
-    $scope.totalPrice= 123;
+    $scope.totalPrice= ($scope.count*$scope.price).toFixed(2);
     /** 定义搜索对象 */
     $scope.searchEntity = {};
     /** 分页查询 */

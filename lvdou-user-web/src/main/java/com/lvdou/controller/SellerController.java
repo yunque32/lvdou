@@ -1,7 +1,7 @@
 package com.lvdou.controller;
 
 import com.lvdou.pojo.Seller;
-import com.lvdou.service.SellerServiceImpl;
+import com.lvdou.service.impl.SellerServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.PostMapping;

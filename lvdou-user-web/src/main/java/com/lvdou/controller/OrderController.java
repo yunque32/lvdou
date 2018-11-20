@@ -1,8 +1,8 @@
 package com.lvdou.controller;
 
 import com.lvdou.common.util.IdWorker;
-import com.lvdou.service.OrderServiceImpl;
-import com.lvdou.service.WeixinPayServiceImpl;
+import com.lvdou.service.impl.OrderServiceImpl;
+import com.lvdou.service.impl.WeixinPayServiceImpl;
 import com.lvdou.pojo.Order;
 import com.lvdou.pojo.PayLog;
 import org.springframework.beans.factory.annotation.Autowired;

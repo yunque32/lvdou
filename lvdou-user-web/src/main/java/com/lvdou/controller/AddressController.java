@@ -1,7 +1,7 @@
 package com.lvdou.controller;
 
 import com.lvdou.pojo.Address;
-import com.lvdou.service.AddressServiceImpl;
+import com.lvdou.service.impl.AddressServiceImpl;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

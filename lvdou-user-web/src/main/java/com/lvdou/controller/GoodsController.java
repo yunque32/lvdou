@@ -2,7 +2,7 @@ package com.lvdou.controller;
 
 import com.lvdou.common.pojo.PageResult;
 import com.lvdou.pojo.Goods;
-import com.lvdou.service.GoodsServiceImpl;
+import com.lvdou.service.impl.GoodsServiceImpl;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;

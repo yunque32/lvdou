@@ -69,7 +69,7 @@
 
     <!-- 配置自定义的认证服务类 -->
     <bean id="userDetailsService"
-          class="com.lvdou.service.UserDetailsServiceImpl">
+          class="com.lvdou.service.impl.UserDetailsServiceImpl">
         <property name="sellerService" ref="sellerService"/>
     </bean>
 </beans>

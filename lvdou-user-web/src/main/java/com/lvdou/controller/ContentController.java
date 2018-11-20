@@ -1,6 +1,6 @@
 package com.lvdou.controller;
 
-import com.lvdou.service.ContentServiceImpl;
+import com.lvdou.service.impl.ContentServiceImpl;
 import com.lvdou.pojo.Content;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
