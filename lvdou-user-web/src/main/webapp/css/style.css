@@ -56,8 +56,7 @@ i{
 .scrolltab-item.crt {background-color: #518f09;position: relative;}
 .scrolltab-item.crt .scrolltab-title {color: #fff;}
 .scrolltab-content {height: 100%;background-color: #f1f6ec;overflow-y: auto;-webkit-overflow-scrolling: touch;-webkit-box-flex: 1;-webkit-flex: 1;-ms-flex: 1;flex: 1;padding: 0.4rem 0 0.4rem 0.4rem ;position: relative;}
-.jia { font-size: 1.3rem; color:#666; margin-top:3px;}
-.jian { font-size: 1.3rem; color:#666; margin-top:3px;}
+
 .guige { color:#999;}
 .order-footer { height: 36px; line-height: 36px; width:100%; text-align: center; background-color: #f3f3f3; position: fixed;  bottom: 0;}
 .heji { color:#ff4400; font-size: 22px;}
@@ -105,7 +104,8 @@ i{
     .complete {margin-right:2rem;background-color: #518f09;border: 2px solid #fff;color: white;padding: 14px 34px;text-align: center;text-decoration: none;display: inline-block;font-size: 34px;}
     .last { margin-right:0rem;}
     .boon { font-size: 2rem; text-align: left; width:70%; padding-left:37%; margin-top:1.2rem; line-height: 50px;}
-
+    .jia { font-size: 1.4rem; color:#666; margin-top:3px;}
+    .jian { font-size: 1.4rem; color:#666; margin-top:3px;}
 }/*屏幕分辨率最小992 end*/
 
 
@@ -137,7 +137,8 @@ i{
     .complete {margin-right:2rem;background-color: #518f09;border: 2px solid #fff;color: white;padding: 8px 14px;text-align: center;text-decoration: none;display: inline-block;font-size: 22px;}
     .last { margin-right:0rem;}
     .boon { font-size: 1.5rem; text-align: left; width:90%; padding-left:10%; margin-top:1.2rem; line-height: 35px;}
-
+    .jia { font-size: 1.1rem; color:#666; margin-top:3px;}
+    .jian { font-size: 1.1rem; color:#666; margin-top:3px;}
 }/*屏幕分辨率最大992px end*/
 
 

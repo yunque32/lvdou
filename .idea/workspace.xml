@@ -71,41 +71,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="getOrderInfo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/order/getOrderInfo.html">
+      <file leaf-file-name="mi.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/wss-test/mi.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+            <state relative-caret-position="456">
+              <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="76" column="46" lean-forward="true" selection-start-line="72" selection-start-column="40" selection-end-line="76" selection-end-column="46" />
+            <state relative-caret-position="264">
+              <caret line="77" column="1" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
               <folding>
+                <element signature="n#style#0;n#div#3;n#a#0;n#li#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#3;n#a#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mi.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/mi.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="58" column="1" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -208,8 +191,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/login.html" />
         <option value="$PROJECT_DIR$/lvdou-user-web/pom.xml" />
         <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/js/controller/GoodsController.js" />
         <option value="$PROJECT_DIR$/lvdou-user-web/src/main/webapp/js/controller/baseController.js" />
@@ -257,8 +238,10 @@
         <option value="$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/controller/GoodsController.java" />
         <option value="$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/pojo/Goods.java" />
         <option value="$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/order/getOrderInfo.html" />
-        <option value="$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/index.html" />
         <option value="$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/mi.html" />
+        <option value="$PROJECT_DIR$/../lvdou/.gitignore" />
+        <option value="$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/wss-test/mi.html" />
+        <option value="$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/index.html" />
       </list>
     </option>
   </component>
@@ -377,6 +360,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="lvdou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lvdou" type="462c0819:PsiDirectoryNode" />
+              <item name="lvdou-user-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="wss-test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -414,11 +406,11 @@
       <recent name="com.lvdou.task" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\lvdou\lvdou-user-web\src\main\webapp\wss-test" />
       <recent name="E:\lvdou\lvdou-user-web\src\main\webapp\js\base" />
       <recent name="E:\lvdou\lvdou-user-web\src\main\resources" />
       <recent name="E:\lvdou\lvdou-mo\src\main\webapp" />
       <recent name="E:\lvdou\lvdou-user-web\src\main\webapp\User" />
-      <recent name="E:\lvdou\lvdou-user-web\src\main\webapp\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -627,7 +619,7 @@
       <workItem from="1542277617360" duration="2215000" />
       <workItem from="1542331028372" duration="4753000" />
       <workItem from="1542589790909" duration="23350000" />
-      <workItem from="1542676223170" duration="5992000" />
+      <workItem from="1542676223170" duration="8773000" />
     </task>
     <task id="LOCAL-00001" summary="lvdou-cart resource提交">
       <created>1539226809107</created>
@@ -640,7 +632,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="611327000" />
+    <option name="totallyTimeSpent" value="614108000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -748,13 +740,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/service/TypeTemplateServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/java/com/lvdou/service/UserDetailsServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -1134,13 +1119,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/order/getOrderInfo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="485">
@@ -1148,20 +1126,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/index.html">
+    <entry file="file://$PROJECT_DIR$/../lvdou/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="76" column="46" lean-forward="true" selection-start-line="72" selection-start-column="40" selection-end-line="76" selection-end-column="46" />
-          <folding>
-            <element signature="n#style#0;n#div#3;n#a#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="96">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/mi.html">
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/order/getOrderInfo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        <state relative-caret-position="816">
+          <caret line="70" column="38" lean-forward="true" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/wss-test/mi.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lvdou/lvdou-user-web/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="77" column="1" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
+          <folding>
+            <element signature="n#style#0;n#div#3;n#a#0;n#li#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#a#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
