@@ -17,7 +17,7 @@
         <script src="/js/service/baseService.js"></script>
         <script src="/js/controller/baseController.js"></script>
         <script src="/js/controller/goodController.js"></script>
-         hy
+
     </head>
     <body ng-app="lvdou"
           ng-controller="goodController"
@@ -69,13 +69,13 @@
                                             <p>{{Goods.title}}</p>
                                         </div>
                                         <div class="jj">
-                                            ￥<span class="pri">{{Goods.price}}</span>5<span class="axe">斤</span>
+                                            ￥<span class="pri" ng-model="price">{{Goods.price}}</span>5<span class="axe">斤</span>
                                         </div>
                                         <div style="text-align: center">
 
-                                            <button id="jia" class="jia">-</button>
+                                            <button id="jian" class="jian" ng-click="jian()">-</button>
                                             <input class="num" ng-model="count">
-                                            <button id="jian" class="jian">+</button>
+                                            <button id="jia" class="jia" ng-click="jia()">+</button>
 
                                         </div>
                                     </a>
@@ -217,38 +217,8 @@
                                         <span class="jian">+</span>
                                     </div>
                                 </a>
-                                <a href="javascript:;" class="aui-flex-links-item">
-                                    <div class="aui-flex-links-img">
-                                        <img src="images/pd-001.jpg" alt="">
-                                    </div>
-                                    <div class="aui-flex-links-text">
-                                        <p>广西贵港奇异果</p>
-                                    </div>
-                                    <div class="jj">
-                                        ￥<span class="pri">11.00</span>5<span class="axe">斤</span>
-                                    </div>
-                                    <div style="text-align: center">
-                                        <span class="jia">-</span>
-                                        <input class="num" value="1">
-                                        <span class="jian">+</span>
-                                    </div>
-                                </a>
-                                <a href="javascript:;" class="aui-flex-links-item">
-                                    <div class="aui-flex-links-img">
-                                        <img src="images/pd-001.jpg" alt="">
-                                    </div>
-                                    <div class="aui-flex-links-text">
-                                        <p>广西贵港奇异果</p>
-                                    </div>
-                                    <div class="jj">
-                                        ￥<span class="pri">11.00</span>5<span class="axe">斤</span>
-                                    </div>
-                                    <div style="text-align: center">
-                                        <span class="jia">-</span>
-                                        <input class="num" value="1">
-                                        <span class="jian">+</span>
-                                    </div>
-                                </a>
+
+
                             </div>
                             <!-- 百香果产品排版结束 -->
                             </div>
@@ -278,38 +248,8 @@
                                             <span class="jian">+</span>
                                         </div>
                                     </a>
-                                    <a href="javascript:;" class="aui-flex-links-item">
-                                        <div class="aui-flex-links-img">
-                                            <img src="images/pd-001.jpg" alt="">
-                                        </div>
-                                        <div class="aui-flex-links-text">
-                                            <p>广西贵港奇异果</p>
-                                        </div>
-                                        <div class="jj">
-                                            ￥<span class="pri">11.00</span>5<span class="axe">斤</span>
-                                        </div>
-                                        <div style="text-align: center">
-                                            <span class="jia">-</span>
-                                            <input class="num" value="1">
-                                            <span class="jian">+</span>
-                                        </div>
-                                    </a>
-                                    <a href="javascript:;" class="aui-flex-links-item">
-                                        <div class="aui-flex-links-img">
-                                            <img src="images/pd-001.jpg" alt="">
-                                        </div>
-                                        <div class="aui-flex-links-text">
-                                            <p>广西贵港奇异果</p>
-                                        </div>
-                                        <div class="jj">
-                                            ￥<span class="pri">11.00</span>5<span class="axe">斤</span>
-                                        </div>
-                                        <div style="text-align: center">
-                                            <span class="jia">-</span>
-                                            <input class="num" value="1">
-                                            <span class="jian">+</span>
-                                        </div>
-                                    </a>
+
+
                                 </div>
                                 <!-- 百香果产品排版结束 -->
                             </div>
@@ -321,7 +261,7 @@
                             <div class="order">
                                 <div class="sure">
                                      已选2个商品
-                                    <div class="sure_l">合计：<span class="money">33.6</span></div>
+                                    <div class="sure_l">合计：<span class="money" ><input ng-model="totalPrice"/></span></div>
                                     <div class="sure_r"><span>购物车</span></div>
                                 </div>
                                 <div class="info">

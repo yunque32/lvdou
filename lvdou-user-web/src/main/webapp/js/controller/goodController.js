@@ -13,8 +13,16 @@ app.controller('goodController', function($scope, $controller, baseService){
             });
     };
     $scope.count=1;
-
-
+    $scope.jian=function(){
+        if($scope.count==1){
+            return $scope.count;
+        }
+        $scope.count=$scope.count-1;
+    };
+    $scope.jia=function(){
+        $scope.count=$scope.count+1;
+    };
+    $scope.totalPrice= 123;
     /** 定义搜索对象 */
     $scope.searchEntity = {};
     /** 分页查询 */
