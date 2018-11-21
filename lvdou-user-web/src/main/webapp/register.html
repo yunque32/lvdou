@@ -1,9 +1,9 @@
 ﻿<!DOCTYPE html>
 <html lang="zh-cmn-Hans">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
-	<title>WeUI</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+    <title>WeUI</title>
 
     <link href="css/demo.css" rel="stylesheet"/>
 
@@ -35,14 +35,14 @@
 <input type="text" id="add" value="">
 
 <div class="regitem">
-	<span>手机号码</span>
-	<input type="text" id="txtPhone" name="tel" value="">
+    <span>手机号码</span>
+    <input type="text" id="txtPhone" name="tel" value="" ng-model="user.phone">
 </div>
 
 <div class="regitem">
-	<span>验证码</span>
-	<input type="text" id="validate" name="code" placeholder=""/>
-	<button id="getCodeBtn0">获取验证码</button>
+    <span>验证码</span>
+    <input type="text" id="validate" name="code" placeholder=""/>
+    <button id="getCodeBtn0" ng-click="sendCode()">获取验证码</button>
 </div>
 <div class="agree"><input id="protacal" type="checkbox">我已经阅读并同意<a href="#">
     《优鲜吧个人用户注册协议》</a></div>
