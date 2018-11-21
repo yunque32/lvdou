@@ -68,6 +68,7 @@ i{
 .name-color { color:#518f09;}
 .num-color { color:#ff4400;}
 .modify {background-color: #518f09;border: none;color: white;padding: 3px 12px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;border-radius:25px;}
+.modify2 {background-color: #518f09;border: none;color: white;padding: 3px 12px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;border-radius:25px;}
 .total { text-align: right; padding:6px 10px; }
 .z-left { text-align: left;}
 .person {width: 35%; text-align: right;}
@@ -76,6 +77,7 @@ i{
 .cancel { text-align: center; padding:15px 0px;}
 .cancel a{ margin-left: 20px;}
 .order-number span{ position: absolute; right:0; padding-right:20px;}
+
 
 /*屏幕分辨率最小992时*/
 @media screen and (min-width:992px){
@@ -91,7 +93,7 @@ i{
     .axe { font-size: 16px;}
     .sure { width:83%; height:1.6rem; background-color: #e5e5e5;  overflow: hidden; position: relative; text-align: center;}
     .info { width:83%; padding:5px 8px; background-color: #f0f0f0; }
-
+    .member { height:120px; background-color: #518f09;}
     .size { width:25%; font-size: 1rem;  }
     .five { width:6%;}
     .direction { text-align: right; font-weight: bold;}
@@ -139,6 +141,7 @@ i{
     .boon { font-size: 1.5rem; text-align: left; width:90%; padding-left:10%; margin-top:1.2rem; line-height: 35px;}
     .jia { font-size: 1.1rem; color:#666; margin-top:3px;}
     .jian { font-size: 1.1rem; color:#666; margin-top:3px;}
+
 }/*屏幕分辨率最大992px end*/
 
 
