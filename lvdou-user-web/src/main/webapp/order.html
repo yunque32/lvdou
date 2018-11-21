@@ -60,14 +60,14 @@
     <tr>
         <td class="size direction">收件人：</td>
         <td class="five"></td>
-        <td class="size keepleft">黄先生</td>
+        <td class="size keepleft sir">黄先生</td>
         <td class="size keepleft"><a href="#" class="modify">修改</a></td>
     </tr>
     <tr>
         <td class="size direction">收件人手机：</td>
         <td class="five"></td>
-        <td class="size keepleft">13636963256</td>
-        <td class="size keepleft"><a href="#" class="modify">修改</a></td>
+        <td class="size keepleft phone">13636963256</td>
+        <td class="size keepleft"><a href="#" class="modify2">修改</a></td>
     </tr>
     <tr>
         <td class="size direction">配送地址1：</td>
@@ -97,3 +97,28 @@
 
 </body>
 </html>
+<script src="js/jquery-1.9.1.js"></script>
+<script>
+   $(".modify").click(function () {
+       var oldText = $(".sir").html();
+       $(".sir").html("");
+       var $input = $("<input type='text' value='"+oldText+"'/>")
+       $(".sir").append($input);
+       $input.select();
+       $input.focus();
+       $input.blur(function(){
+           $(".sir").html($(this).val())
+       });
+   })
+   $(".modify2").click(function () {
+       var oldText = $(".phone").html();
+       $(".phone").html("");
+       var $input = $("<input type='text' value='"+oldText+"'/>")
+       $(".phone").append($input);
+       $input.select();
+       $input.focus();
+       $input.blur(function(){
+           $(".phone").html($(this).val())
+       });
+   })
+</script>

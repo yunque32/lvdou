@@ -68,6 +68,7 @@ i{
 .name-color { color:#518f09;}
 .num-color { color:#ff4400;}
 .modify {background-color: #518f09;border: none;color: white;padding: 3px 12px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;border-radius:25px;}
+.modify2 {background-color: #518f09;border: none;color: white;padding: 3px 12px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;border-radius:25px;}
 .total { text-align: right; padding:6px 10px; }
 .z-left { text-align: left;}
 .person {width: 35%; text-align: right;}
