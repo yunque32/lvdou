@@ -42,6 +42,17 @@ app.controller('userController', function($scope, baseService){
             alert("手机号码格式不正确！");
         }
     };
+    //登录
+    $scope.login=function(){
+        baseService.sendPost("/user/loginCheck",$scope.user)
+            .then(function (response) {
+                alert(response.data);
+                location.href = "/index.html";
+            },function () {
+                alert("出现异常，请重试！")
+            })
+    };
+
     $scope.checkUserName=function () {
         baseService.sendGet("/user/checkUserName?userName="+$scope.user.username)
             .then(function (response) {

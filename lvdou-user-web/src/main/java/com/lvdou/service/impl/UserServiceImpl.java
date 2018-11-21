@@ -35,10 +35,7 @@ public class UserServiceImpl implements IUserService {
     private RedisTemplate redisTemplate;
 
     private Destination smsQueue;
-    @Value("${templateCode}")
-    private String templateCode;
-    @Value("${signName}")
-    private String signName;
+
     String vcode="";  //验证码
     private String signStr="";
     private long timestamp;
@@ -142,9 +139,15 @@ public class UserServiceImpl implements IUserService {
           return userMapper.selectUserByUsername(username);
     }
 
-
     @Override
     public Object login(String username, String password) {
         return null;
+    }
+
+    @Override
+    public String selectUserByUser(User user) {
+
+
+        return userMapper.selectUserNameByUser(user);
     }
 }

@@ -47,13 +47,20 @@ public class UserController {
         }
         return false;
     }
+
     @GetMapping("/checkUserName")
     public Map<String,Object> checkUserName(String userName){
         return  userService.checkUserName(userName);
     }
     @PostMapping("/registerUser")
     public Map<String,String> registerUser(User user){
-
         return userService.registerUser(user);
+    }
+
+    @PostMapping("/logincheck")
+    public String logincheck(User user){
+
+        return userService.selectUserByUser(user);
+
     }
 }
