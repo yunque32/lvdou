@@ -6,8 +6,15 @@
     <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport"/>
 
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+    <script src="/js/plugins/angularjs/angular.min.js"></script>
+    <script src="/js/base/base.js"></script>
+    <script src="/js/service/baseService.js"></script>
+    <script src="/js/controller/baseController.js"></script>
+    <script src="/js/controller/goodController.js"></script>
 </head>
-<body>
+<body ng-app="lvdou"
+      ng-controller="goodController">
 <div class="ban" style="position: relative"></div>
 <div class="order-number">订单号：4405050532</div>
 
@@ -25,11 +32,14 @@
         <td>1</td>
         <td class="name-color">百香果2</td>
         <td>1斤</td>
-        <td><div style="text-align: center">
-            <span class="jia">-</span>
-            <input class="num" value="1">
-            <span class="jian">+</span>
-        </div></td>
+        <td>
+                <div style="text-align: center">
+                    <button id="jian" class="jian" ng-click="jian()">-</button>
+                    <input class="num" ng-model="count">
+                    <button id="jia" class="jia" ng-click="jia()">+</button>
+                </div>
+        </div>
+        </td>
         <td><span class="num-color">20</span> 元</td>
         <td><span class="num-color">40</span>元</td>
         <td><a href="#"> 删除</a></td>

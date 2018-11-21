@@ -1,25 +1,33 @@
 ﻿<!DOCTYPE html>
 <html lang="zh-cmn-Hans">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
-	<title>WeUI</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+    <title>WeUI</title>
 
-	<link href="css/demo.css" rel="stylesheet" />
+    <link href="css/demo.css" rel="stylesheet"/>
+
+    <script src="/js/plugins/angularjs/angular.min.js"></script>
+    <script src="/js/base/base.js"></script>
+    <script src="/js/service/baseService.js"></script>
+    <script src="/js/controller/baseController.js"></script>
+    <script src="/js/controller/userController.js"></script>
 </head>
-<body>
+<body ng-app="lvdou"
+      ng-controller="userController">
 
 <div class="member">
-	<img src="images/login.png">
+    <img src="images/login.png">
 </div>
 <!--regitem start-->
+<form>
 <div class="regitem">
-	<span>姓名</span>
-	<input type="text" id="UserName" name="name" value="">
+    <span>姓名</span>
+    <input type="text" id="UserName" name="name" value="" ng-model="user.username">
 </div>
 <div class="regitem">
-	<span>配送地址</span>
-	<input type="text" id="address" name="job" value="">
+    <span>配送地址</span>
+    <input type="text" id="address" name="job" value="" ng-model="address">
 </div>
 <span style="margin-top:10px;width:1rem;
      display:inline-block;
@@ -27,24 +35,23 @@
 <input type="text" id="add" value="">
 
 <div class="regitem">
-	<span>手机号码</span>
-	<input type="text" id="txtPhone" name="tel" value="">
+    <span>手机号码</span>
+    <input type="text" id="txtPhone" name="tel" value="" ng-model="user.phone">
 </div>
 
 <div class="regitem">
-	<span>验证码</span>
-	<input type="text" id="validate" name="code" placeholder=""/>
-	<button id="getCodeBtn0">获取验证码</button>
+    <span>验证码</span>
+    <input type="text" id="validate" name="code" placeholder=""/>
+    <button id="getCodeBtn0" ng-click="sendCode()">获取验证码</button>
 </div>
-<div class="agree"><input type="checkbox">我已经阅读并同意<a href="#">《优鲜吧个人用户注册协议》</a></div>
+<div class="agree"><input id="protacal" type="checkbox">我已经阅读并同意<a href="#">
+    《优鲜吧个人用户注册协议》</a></div>
 
 <div class="page__bd page__bd_spacing" style="margin-top:20px;">
-	<div class="dregbtn" id="submit"><a href="javascript:void(0)">提交</a></div>
+    <div class="dregbtn" id="submit"><a href="javascript:void(0)" ng-click="save()">提交</a></div>
 </div>
-
+</form>
 <!--regitem end-->
-
-
 
 
 <script src="js/jquery-1.9.1.js"></script>

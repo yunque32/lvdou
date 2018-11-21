@@ -33,7 +33,7 @@ app.controller('userController', function($scope, baseService){
             baseService.sendGet("/user/sendCode?phone=" + $scope.user.phone)
                 .then(function(response){
                     if (response.data){
-                        alert("发送成功！");
+                        alert("发送成功！请注意查收");
                     }else {
                         alert("发送验证码失败！请重试");
                     }
