@@ -6,8 +6,15 @@
 	<title>WeUI</title>
 
 	<link href="css/demo.css" rel="stylesheet" />
+
+	<script src="/js/plugins/angularjs/angular.min.js"></script>
+	<script src="/js/base/base.js"></script>
+	<script src="/js/service/baseService.js"></script>
+	<script src="/js/controller/baseController.js"></script>
+	<script src="/js/controller/userController.js"></script>
 </head>
-<body>
+<body ng-app="lvdou"
+	  ng-controller="userController">
 
 <div class="member">
 	<img src="images/login.png">
@@ -28,13 +35,13 @@
 
 <div class="regitem">
 	<span>手机号码</span>
-	<input type="text" id="txtPhone" name="tel" value="">
+	<input type="text" id="txtPhone" name="tel" value="" ng-model="user.phone">
 </div>
 
 <div class="regitem">
-	<span>验证码</span>
+	<span>短信验证码</span>
 	<input type="text" id="validate" name="code" placeholder=""/>
-	<button id="getCodeBtn0">获取验证码</button>
+	<button id="getCodeBtn0" ng-click="sendCode()">获取验证码</button>
 </div>
 <div class="agree"><input type="checkbox">我已经阅读并同意<a href="#">《优鲜吧个人用户注册协议》</a></div>
 
@@ -43,8 +50,6 @@
 </div>
 
 <!--regitem end-->
-
-
 
 
 <script src="js/jquery-1.9.1.js"></script>
