@@ -9,7 +9,7 @@ import tk.mybatis.mapper.common.Mapper;
 import java.util.List;
 import java.util.Map;
 
-public interface SpecificationMapper extends Mapper<Specification>{
+public interface SpecificationMapper extends Mapper<Specification> {
 
     /** 多条件分页查询 */
     List<Specification> findAll(@Param("specification") Specification specification);
