@@ -13,6 +13,7 @@
     <bytecodeTargetLevel>
       <module name="fastdfs-client" target="1.8" />
       <module name="fastdfs_client" target="1.8" />
+      <module name="lvdou" target="1.8" />
       <module name="lvdou-cart" target="1.8" />
       <module name="lvdou-cart-interface" target="1.8" />
       <module name="lvdou-cart-service" target="1.8" />
@@ -51,6 +52,7 @@
       <module name="lvdou-user" target="1.8" />
       <module name="lvdou-user-interface" target="1.8" />
       <module name="lvdou-user-service" target="1.8" />
+      <module name="lvdou-user-web" target="1.8" />
       <module name="mi" target="1.8" />
       <module name="pinyougou-search-interface" target="1.5" />
       <module name="wang" target="1.8" />

@@ -3,3 +3,8 @@ target
 .idea/*.xml
 rebel.xml
 wss-test/*
+/lvdou.iml
+*.iml
+.classpath
+.project
+.settings
