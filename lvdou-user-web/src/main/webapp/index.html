@@ -263,7 +263,8 @@
                                     <div class="sure_r"><span>购物车</span></div>
                                 </div>
                                 <div class="info">
-                                    <div class="info_l">姓名：张三&nbsp&nbsp福利余额：100元</div>
+                                    <div class="info_l" ng-if="user.name">姓名：张三&nbsp&nbsp福利余额：100元</div>
+                                    <div class="info_l" ng-if="!user.name">姓名：游客 </div>
                                     <div class="info_r">
                                         <button class="button button9">信息修改</button>
                                         <button class="button button9">订单记录</button>

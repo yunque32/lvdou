@@ -22,6 +22,7 @@ app.controller('goodController', function($scope, $controller, baseService){
     $scope.jia=function(){
         $scope.count=$scope.count+1;
     };
+    //对总金额四舍五入并保留2位
     $scope.totalPrice= ($scope.count*$scope.price).toFixed(2);
     /** 定义搜索对象 */
     $scope.searchEntity = {};
