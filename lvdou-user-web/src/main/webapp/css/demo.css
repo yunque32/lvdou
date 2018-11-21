@@ -93,6 +93,8 @@ a{ text-decoration:none;
 
 	}
 	.member img{ width:100%; }
+	.agree { font-size: 20px; text-align:center }
+	.agree a{ font-size: 20px;}
 }
 
 /*屏幕分辨率最大992时*/
@@ -105,5 +107,7 @@ a{ text-decoration:none;
 	}
 	.member { }
 	.member img{ width:100%; }
+	.agree { font-size: 16px; text-align:center }
+	.agree a{ font-size: 16px;}
 }
 

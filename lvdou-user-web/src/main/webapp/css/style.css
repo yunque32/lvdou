@@ -77,6 +77,7 @@ i{
 .cancel a{ margin-left: 20px;}
 .order-number span{ position: absolute; right:0; padding-right:20px;}
 
+
 /*屏幕分辨率最小992时*/
 @media screen and (min-width:992px){
     .scrolltab-item {height: 5rem;position: relative;z-index: 1;width: 180px;display: block;line-height: 5rem;text-align: center;}
@@ -91,7 +92,7 @@ i{
     .axe { font-size: 16px;}
     .sure { width:83%; height:1.6rem; background-color: #e5e5e5;  overflow: hidden; position: relative; text-align: center;}
     .info { width:83%; padding:5px 8px; background-color: #f0f0f0; }
-
+    .member { height:120px; background-color: #518f09;}
     .size { width:25%; font-size: 1rem;  }
     .five { width:6%;}
     .direction { text-align: right; font-weight: bold;}
@@ -139,6 +140,7 @@ i{
     .boon { font-size: 1.5rem; text-align: left; width:90%; padding-left:10%; margin-top:1.2rem; line-height: 35px;}
     .jia { font-size: 1.1rem; color:#666; margin-top:3px;}
     .jian { font-size: 1.1rem; color:#666; margin-top:3px;}
+
 }/*屏幕分辨率最大992px end*/
 
 
