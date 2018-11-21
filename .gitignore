@@ -1,5 +1,0 @@
-target
-*workspace.xml
-.idea/*.xml
-rebel.xml
-wss-test/*
