@@ -1,6 +1,6 @@
 target
 *workspace.xml
-.idea/*.xml
+.idea
 rebel.xml
 wss-test/*
 /lvdou.iml
