@@ -1,5 +1,6 @@
 target
 *workspace.xml
-.idea/*.xml
+.idea
 rebel.xml
 wss-test/*
+/lvdou-user-web/src/main/resources/applicationContext-mapper.xml
