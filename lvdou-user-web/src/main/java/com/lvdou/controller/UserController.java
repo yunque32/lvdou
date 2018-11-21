@@ -39,7 +39,6 @@ public class UserController {
             if(StringUtils.isNoneBlank(phone)&&phone.length()>0){
                 /** 发送验证码 */
                 userService.sendValidate(phone);
-
             }
             return true;
         }catch (Exception ex){
