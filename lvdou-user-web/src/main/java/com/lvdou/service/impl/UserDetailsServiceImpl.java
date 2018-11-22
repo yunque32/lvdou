@@ -1,7 +1,7 @@
 package com.lvdou.service.impl;
 
 import com.lvdou.pojo.Seller;
-import com.lvdou.user.service.UserService;
+import com.lvdou.service.IUserService;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
@@ -24,7 +24,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         return new User(username, "", authorities);
     }*/
     private  SellerServiceImpl sellerService;
-    private UserService userService;
+    private IUserService userService;
     private UserRoleServiceImpl userRoleService;
     /** 根据用户名加载用户 */
     @Override
