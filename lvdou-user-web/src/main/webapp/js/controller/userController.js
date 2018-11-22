@@ -48,8 +48,8 @@ app.controller('userController', function($scope, baseService){
             .then(function (response) {
                 alert(response.data);
                 location.href = "/index.html";
-            },function () {
-                alert("出现异常，请重试！")
+            },function (response) {
+                alert("出现异常，请重试！"+data);
             })
     };
 
