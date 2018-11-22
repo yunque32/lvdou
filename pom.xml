@@ -8,12 +8,9 @@
     <artifactId>lvdou</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
- 
         <!--<module>lvdou-manager-web</module>-->
         <module>lvdou-user-web</module>
-
     </modules>
-
 
     <packaging>pom</packaging>
     <name>${project.artifactId}</name>
