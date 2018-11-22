@@ -46,11 +46,6 @@
             <artifactId>commons-codec</artifactId>
         </dependency>
 
-        <!-- zkclient(zookeeper客户端) -->
-        <dependency>
-            <groupId>com.github.sgroschupf</groupId>
-            <artifactId>zkclient</artifactId>
-        </dependency>
         <dependency>
             <groupId>com</groupId>
             <artifactId>lvdou-user-interface</artifactId>
