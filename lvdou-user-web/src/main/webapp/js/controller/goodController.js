@@ -14,13 +14,14 @@ app.controller('goodController', function($scope, $controller, baseService){
     };
     $scope.count=1;
     $scope.jian=function(){
-        if($scope.count==1){
-            return $scope.count;
+        if(count==1){
+            return  $scope.count;
         }
-        $scope.count=$scope.count-1;
     };
-    $scope.jia=function(){
-        $scope.count=$scope.count+1;
+    $scope.jia=function(a){
+        alert(a );
+        // $scope.count=$scope.count+1;
+
     };
     //对总金额四舍五入并保留2位
     $scope.totalPrice= ($scope.count*$scope.price).toFixed(2);
