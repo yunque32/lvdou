@@ -22,7 +22,7 @@ import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
 @Service
-@PropertySource(value = "classpath:sms.properties",encoding = "utf-8")
+@PropertySource(value = "classpath:props/sms.properties",encoding = "utf-8")
 @Transactional
 public class UserServiceImpl implements IUserService {
     // 三种用户：商城后台管理用户、商家用户、商城用户(会员)
@@ -141,10 +141,5 @@ public class UserServiceImpl implements IUserService {
         return null;
     }
 
-    @Override
-    public User selectUserByUser(User user) {
 
-
-        return userMapper.selectOne(user);
-    }
 }

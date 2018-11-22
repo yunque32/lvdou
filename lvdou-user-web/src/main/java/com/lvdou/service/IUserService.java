@@ -6,5 +6,4 @@ public interface IUserService {
 
     Object login(String username,String password);
 
-    User selectUserByUser(User user);
 }

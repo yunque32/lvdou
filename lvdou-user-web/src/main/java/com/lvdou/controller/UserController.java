@@ -57,10 +57,10 @@ public class UserController {
         return userService.registerUser(user);
     }
 
-    @PostMapping("/logincheck")
-    public User logincheck(User user){
-
-        return userService.selectUserByUser(user);
-
-    }
+//    @PostMapping("/logincheck")
+//    public User logincheck(User user){
+//
+//        return userService.selectUserByUser(user);
+//
+//    }
 }

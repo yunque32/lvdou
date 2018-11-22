@@ -1,6 +1,8 @@
 package com.lvdou.realms;
 
+import com.lvdou.mapper.UserMapper;
 import com.lvdou.pojo.User;
+import com.lvdou.service.IUserService;
 import com.lvdou.service.impl.UserServiceImpl;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
@@ -13,7 +15,7 @@ import org.springframework.stereotype.Service;
 public class MyRealm extends AuthorizingRealm {
     
     @Autowired
-    private UserServiceImpl userService;
+    private UserMapper userMapper;
 
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
@@ -27,7 +29,7 @@ public class MyRealm extends AuthorizingRealm {
         System.out.println("进入到了shiro认证方法里");
 
         UsernamePasswordToken token=(UsernamePasswordToken)arg0;
-        User user = userService.selectUserByUsername(token.getUsername());
+        User user = userMapper.selectUserByUsername(token.getUsername());
         if(user==null){
             System.out.println("数据库中没有这个用户");
             return null;
