@@ -44,7 +44,7 @@ app.controller('userController', function($scope, baseService){
     };
     //登录
     $scope.login=function(){
-        baseService.sendPost("/user/loginCheck",$scope.user)
+        baseService.sendPost("/login",$scope.user)
             .then(function (response) {
                 alert(response.data);
                 location.href = "/index.html";

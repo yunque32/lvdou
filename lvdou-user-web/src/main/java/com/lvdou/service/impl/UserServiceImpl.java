@@ -30,11 +30,9 @@ public class UserServiceImpl implements IUserService {
     @Autowired
     private UserMapper userMapper;
 
-    private UserRoleServiceImpl userRoleService;
     @Autowired
     private RedisTemplate redisTemplate;
 
-    private Destination smsQueue;
 
     String vcode="";  //验证码
     private String signStr="";
@@ -145,9 +143,9 @@ public class UserServiceImpl implements IUserService {
     }
 
     @Override
-    public String selectUserByUser(User user) {
+    public User selectUserByUser(User user) {
 
 
-        return userMapper.selectUserNameByUser(user);
+        return userMapper.selectOne(user);
     }
 }

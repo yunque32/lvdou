@@ -9,5 +9,5 @@ public interface UserMapper extends Mapper<User> {
     User selectUserByUsername(String username);
 
 
-    String selectUserNameByUser(User user);
+
 }

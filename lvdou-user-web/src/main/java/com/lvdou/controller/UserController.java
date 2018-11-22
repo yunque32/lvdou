@@ -58,7 +58,7 @@ public class UserController {
     }
 
     @PostMapping("/logincheck")
-    public String logincheck(User user){
+    public User logincheck(User user){
 
         return userService.selectUserByUser(user);
 
