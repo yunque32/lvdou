@@ -12,19 +12,26 @@ app.controller('goodController', function($scope, $controller, baseService){
                 $scope.GoodsList = response.data;
             });
     };
-    $scope.count=1;
-    $scope.jian=function(a){
-        if($("#"+a).val()!='1'){
-            $("#"+a).val(parseInt($("#"+a).val())-1);
+    $scope.jian=function(goods){
+
+        if($("#"+goods.id).val()!='0'){
+            $("#"+goods.id).val(parseInt($("#"+goods.id).val())-1);
+            $scope.priceRecount(goods,'jian');
         }
     };
-    $scope.jia=function(a){
-          $("#"+a).val(parseInt($("#"+a).val())+1);
-        // $scope.count=$scope.count+1;
+    $scope.jia=function(goods){
+           $("#"+goods.id).val(parseInt($("#"+goods.id).val())+1);
+        $scope.priceRecount(goods,'jia');
     };
+    $scope.totalPrice=0;
     //对总金额四舍五入并保留2位
-    $scope.totalPrice= ($scope.count*$scope.price).toFixed(2);
-    /** 定义搜索对象 */
+    $scope.priceRecount=function(goods,suanfa){
+        if(suanfa=='jia'){
+            $scope.totalPrice =  $scope.totalPrice+parseInt(goods.price) ;
+        }else {
+            $scope.totalPrice =$scope.totalPrice- parseInt(goods.price);
+        }
+    };
     $scope.searchEntity = {};
     /** 分页查询 */
     $scope.search = function(page, rows){
