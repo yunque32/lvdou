@@ -3,13 +3,7 @@ package com.lvdou.pojo;
 import javax.persistence.*;
 import java.io.Serializable;
 
-/**
- * 类型模版实体
- * @author LEE.SIU.WAH
- * @email lixiaohua7@163.com
- * @date 2017年12月11日 下午5:36:41
- * @version 1.0
- */
+
 @Table(name="tb_type_template")
 public class TypeTemplate implements Serializable{
     

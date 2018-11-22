@@ -33,7 +33,7 @@ app.controller('userController', function($scope, baseService){
             baseService.sendGet("/user/sendCode?phone=" + $scope.user.phone)
                 .then(function(response){
                     if (response.data){
-                        alert("发送成功！");
+                        alert("发送成功！请注意查收");
                     }else {
                         alert("发送验证码失败！请重试");
                     }
@@ -42,6 +42,17 @@ app.controller('userController', function($scope, baseService){
             alert("手机号码格式不正确！");
         }
     };
+    //登录
+    $scope.login=function(){
+        baseService.sendPost("/login",$scope.user)
+            .then(function (response) {
+                alert(response.data);
+                location.href = "/index.html";
+            },function (response) {
+                alert("出现异常，请重试！"+data);
+            })
+    };
+
     $scope.checkUserName=function () {
         baseService.sendGet("/user/checkUserName?userName="+$scope.user.username)
             .then(function (response) {

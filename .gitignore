@@ -4,7 +4,15 @@ target
 rebel.xml
 wss-test/*
 
+/lvdou.iml
+*.iml
+.classpath
+.project
+.settings
+
+
 /lvdou-user-web/src/main/resources/applicationContext-mapper.xml
 
 /lvdou.iml
+
 

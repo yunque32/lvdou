@@ -39,7 +39,6 @@ public class UserController {
             if(StringUtils.isNoneBlank(phone)&&phone.length()>0){
                 /** 发送验证码 */
                 userService.sendValidate(phone);
-
             }
             return true;
         }catch (Exception ex){
@@ -48,13 +47,20 @@ public class UserController {
         }
         return false;
     }
+
     @GetMapping("/checkUserName")
     public Map<String,Object> checkUserName(String userName){
         return  userService.checkUserName(userName);
     }
     @PostMapping("/registerUser")
     public Map<String,String> registerUser(User user){
-
         return userService.registerUser(user);
     }
+
+//    @PostMapping("/logincheck")
+//    public User logincheck(User user){
+//
+//        return userService.selectUserByUser(user);
+//
+//    }
 }

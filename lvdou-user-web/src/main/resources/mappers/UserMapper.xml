@@ -5,7 +5,9 @@
 <mapper namespace="com.lvdou.mapper.UserMapper" >
 
 
-
+ <select id="selectUserByUsername" parameterType="string" resultType="user">
+	 select * from user where username= #{username};
+ </select>
 
 
 
