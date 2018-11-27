@@ -24,10 +24,10 @@
           ng-init=" findAllGoods();">
 
         <section class="aui-flexView">
-            <div class="ban" style="position: relative">
+            <!--<div class="ban" style="position: relative">
                 <button class="button button1">公司</button>
                 <button class="button button2">访客</button>
-            </div>
+            </div>-->
             <section class="aui-scrollView">
                 <!-- m-scrolltab-start-->
                 <div class="m-scrolltab" data-ydui-scrolltab>
@@ -56,7 +56,7 @@
                         <!-- scrolltab-content-item start-->
 
                         <div class="scrolltab-content-item">
-                            <h2>百香果</h2>
+
                             <div class="min">
                                 <!-- 百香果产品排版开 -->
                                 <div class="aui-flex-links" >
@@ -259,14 +259,14 @@
                             <div class="order">
                                 <div class="sure">
                                      已选2个商品
-                                    <div class="sure_l">合计：<span class="money" ><input ng-model="totalPrice"/></span></div>
+                                    <div class="sure_l">合计：<span class="money" ><td>{{totalPrice}} 元</td></span></div>
                                     <div class="sure_r"><span>购物车</span></div>
                                 </div>
                                 <div class="info">
                                     <div class="info_l" ng-if="user.name">姓名：张三&nbsp&nbsp福利余额：100元</div>
                                     <div class="info_l" ng-if="!user.name">姓名：游客 </div>
                                     <div class="info_r">
-                                        <button class="button button9">信息修改</button>
+                                        <button class="button button9">个人信息修改</button>
                                         <button class="button button9">订单记录</button>
                                     </div>
                                     <div style="clear: both"></div>

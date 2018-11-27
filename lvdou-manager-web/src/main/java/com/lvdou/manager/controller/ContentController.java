@@ -1,19 +1,15 @@
 package com.lvdou.manager.controller;
 
-import com.alibaba.dubbo.config.annotation.Reference;
 import com.lvdou.common.pojo.PageResult;
-import com.lvdou.content.service.ContentService;
 import com.lvdou.pojo.Content;
+import com.lvdou.service.impl.ContentServiceImpl;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/content")
 public class ContentController {
 
-	@Reference(timeout = 10000)
-	private ContentService contentService;
+	private ContentServiceImpl contentService;
 
 	/** 多条件分页查询方法 */
 	@GetMapping("/findByPage")

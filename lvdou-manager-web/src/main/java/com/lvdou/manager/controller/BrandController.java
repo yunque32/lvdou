@@ -2,7 +2,7 @@ package com.lvdou.manager.controller;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.lvdou.common.pojo.PageResult;
 import com.lvdou.pojo.Brand;
-import com.lvdou..service.BrandService;
+import com.lvdou.service.impl.BrandServiceImpl;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,7 +15,7 @@ public class BrandController {
 
     /** 引用服务 timeout:调用服务方法超时的毫秒数*/
     @Reference(timeout = 10000)
-    private BrandService brandService;
+    private BrandServiceImpl brandService;
 
     /** 处理Get请求 */
     @GetMapping("/findAll")

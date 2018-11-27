@@ -1,9 +1,8 @@
 package com.lvdou.manager.controller;
 
-import com.alibaba.dubbo.config.annotation.Reference;
 import com.lvdou.common.pojo.PageResult;
-import com.lvdou.content.service.ContentCategoryService;
 import com.lvdou.pojo.ContentCategory;
+import com.lvdou.service.impl.ContentCategoryServiceImpl;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -12,8 +11,7 @@ import java.util.List;
 @RequestMapping("/contentCategory")
 public class ContentCategoryController {
 
-	@Reference(timeout = 10000)
-	private ContentCategoryService contentCategoryService;
+	private ContentCategoryServiceImpl contentCategoryService;
 
 	/** 多条件分页查询方法 */
 	@GetMapping("/findByPage")

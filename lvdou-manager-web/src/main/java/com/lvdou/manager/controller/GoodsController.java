@@ -1,36 +1,24 @@
 package com.lvdou.manager.controller;
 
-import com.alibaba.dubbo.config.annotation.Reference;
 import com.lvdou.common.pojo.PageResult;
 import com.lvdou.pojo.Goods;
-import com.lvdou..service.GoodsService;
+import com.lvdou.service.impl.GoodsServiceImpl;
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jms.core.JmsTemplate;
-import org.springframework.jms.core.MessageCreator;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import javax.jms.*;
-import java.util.Arrays;
 
 @RestController
 @RequestMapping("/goods")
 public class GoodsController {
 
-	@Reference(timeout = 10000)
-	private GoodsService goodsService;
-//	@Autowired
-//	private JmsTemplate jmsTemplate;
+	private GoodsServiceImpl goodsService;
+
 //	@Autowired
 //	private Destination solrQueue;
 //	@Autowired
 //	private Destination solrDeleteQueue;
-//	@Autowired
-//	private Destination pageTopic;
-//	@Autowired
-//	private Destination pageDeleteTopic;
+
 
 	/** 多条件分页查询商品 */
 	@GetMapping("/findByPage")

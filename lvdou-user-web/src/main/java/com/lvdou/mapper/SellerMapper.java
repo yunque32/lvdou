@@ -10,4 +10,6 @@ public interface SellerMapper extends Mapper<Seller>{
 
     /** 多条件查询商家 */
     List<Seller> findAll(@Param("seller") Seller seller);
+
+    Seller selectBySellerName(String loginname);
 }

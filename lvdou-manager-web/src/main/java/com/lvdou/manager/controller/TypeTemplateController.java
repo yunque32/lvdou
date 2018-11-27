@@ -2,10 +2,9 @@ package com.lvdou.manager.controller;
 
 import com.lvdou.common.pojo.PageResult;
 import com.lvdou.pojo.TypeTemplate;
+import com.lvdou.service.impl.TypeTemplateServiceImpl;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.web.bind.annotation.*;
-import com.alibaba.dubbo.config.annotation.Reference;
-import com.lvdou..service.TypeTemplateService;
 
 /**
  * TypeTemplateController
@@ -14,8 +13,7 @@ import com.lvdou..service.TypeTemplateService;
 @RequestMapping("/typeTemplate")
 public class TypeTemplateController {
 
-	@Reference
-	private TypeTemplateService typeTemplateService;
+	private TypeTemplateServiceImpl typeTemplateService;
 
 	/** 分页查询规格 */
 	@GetMapping("/findByPage")

@@ -1,12 +1,9 @@
 package com.lvdou.manager.controller;
 
-import com.alibaba.dubbo.config.annotation.Reference;
 import com.lvdou.common.pojo.PageResult;
-import com.lvdou.pojo.Agency;
 import com.lvdou.pojo.Product;
-import com.lvdou..service.ProductService;
+import com.lvdou.service.impl.ProductServiceImpl;
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Date;
@@ -18,8 +15,7 @@ import java.util.Map;
 @RequestMapping("/product")
 public class ProductController {
     
-    @Reference(timeout = 10000)
-    private ProductService productService;
+    private ProductServiceImpl productService;
 
     @GetMapping("/findAll")
     public List<Product> findAll(){

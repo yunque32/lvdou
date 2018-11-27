@@ -93,7 +93,6 @@
             <groupId>tk.mybatis</groupId>
             <artifactId>mapper</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-solr</artifactId>
@@ -132,7 +131,6 @@
             <version>${spring.version}</version>
         </dependency>
     </dependencies>
-
     <!-- 构建部分 -->
     <build>
         <plugins>

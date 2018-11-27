@@ -4,6 +4,7 @@ import com.lvdou.common.util.Base64Utils;
 import com.lvdou.common.util.FastJsonUtils;
 import com.lvdou.common.util.HttpClientPost;
 import com.lvdou.common.util.Md5Utils;
+import com.lvdou.mapper.SellerMapper;
 import com.lvdou.mapper.UserMapper;
 import com.lvdou.pojo.User;
 import com.lvdou.service.IUserService;
@@ -28,7 +29,8 @@ public class UserServiceImpl implements IUserService {
     // 三种用户：商城后台管理用户、商家用户、商城用户(会员)
     @Autowired
     private UserMapper userMapper;
-
+    @Autowired
+    private SellerMapper sellerMapper;
     @Autowired
     private RedisTemplate redisTemplate;
 
@@ -139,6 +141,15 @@ public class UserServiceImpl implements IUserService {
     @Override
     public Object login(String username, String password) {
         return null;
+    }
+
+    @Override
+    public Object selectByName(String loginname) {
+        User user = userMapper.selectUserByUsername(loginname);
+        if(user!=null){
+            return user;
+        }
+        return sellerMapper.selectBySellerName(loginname);
     }
 
 

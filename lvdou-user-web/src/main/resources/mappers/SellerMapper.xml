@@ -23,4 +23,8 @@
 			</if>
 		</where>
 	</select>
+	<select id="selectBySellerName" parameterType="string" resultType="seller">
+		select * from seller where name=#{sellername};
+		
+	</select>
 </mapper>

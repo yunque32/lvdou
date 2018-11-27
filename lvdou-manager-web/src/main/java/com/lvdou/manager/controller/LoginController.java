@@ -8,9 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * 获取登录用户名的控制器
- */
+
 @RestController
 public class LoginController {
 

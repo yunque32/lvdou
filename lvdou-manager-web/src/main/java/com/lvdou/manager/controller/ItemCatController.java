@@ -1,12 +1,12 @@
 package com.lvdou.manager.controller;
 
 import com.lvdou.pojo.ItemCat;
+import com.lvdou.service.impl.ItemCatServiceImpl;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.lvdou..service.ItemCatService;
 
 import java.util.List;
 
@@ -18,7 +18,7 @@ import java.util.List;
 public class ItemCatController {
 
 	@Reference(timeout = 10000)
-	private ItemCatService itemCatService;
+	private ItemCatServiceImpl itemCatService;
 
 	/** 根据父级id查询商品分类 */
 	@GetMapping("/findItemCatByParentId")

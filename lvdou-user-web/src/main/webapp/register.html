@@ -15,7 +15,6 @@
 </head>
 <body ng-app="lvdou"
       ng-controller="userController">
-
 <div class="member">
     <img src="images/login.png">
 </div>
@@ -32,11 +31,11 @@
 <span style="margin-top:10px;width:1rem;
      display:inline-block;
 	 text-align:right;">配送地址2</span>
-<input type="text" id="add" value="">
+<input type="text" id="address2" value="">
 
 <div class="regitem">
     <span>手机号码</span>
-    <input type="text" id="txtPhone" name="tel" value="" ng-model="user.phone">
+    <input type="text" id="txtPhone" name="tel" value="必填" ng-model="user.phone">
 </div>
 
 <div class="regitem">
@@ -56,6 +55,6 @@
 
 <script src="js/jquery-1.9.1.js"></script>
 <script src="layer/layer.js"></script>
-<script src="js/demo.js"></script>
+<script src="js/base/demo.js"></script>
 </body>
 </html>

@@ -6,8 +6,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.alibaba.dubbo.config.annotation.Reference;
-import com.lvdou..service.SellerService;
+import com.lvdou.service.impl.SellerServiceImpl;
 
 /**
  * SellerController
@@ -16,8 +15,7 @@ import com.lvdou..service.SellerService;
 @RequestMapping("/seller")
 public class SellerController {
 
-	@Reference(timeout = 10000)
-	private SellerService sellerService;
+	private SellerServiceImpl sellerService;
 
 	/** 分页查询未审核的商家 */
 	@GetMapping("/findByPage")

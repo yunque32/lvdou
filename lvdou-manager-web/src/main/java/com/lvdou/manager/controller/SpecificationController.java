@@ -5,25 +5,16 @@ import com.lvdou.pojo.Specification;
 import com.lvdou.pojo.SpecificationOption;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.web.bind.annotation.*;
-import com.alibaba.dubbo.config.annotation.Reference;
-import com.lvdou..service.SpecificationService;
+import com.lvdou.service.impl.SpecificationServiceImpl;
 
 import java.util.List;
 import java.util.Map;
 
-/**
- * 规格处理器
- * @author LEE.SIU.WAH
- * @email lixiaohua7@163.com
- * @date 2017年12月7日 下午2:09:46
- * @version 1.0
- */
 @RestController
 @RequestMapping("/specification")
 public class SpecificationController {
 
-	@Reference
-	private SpecificationService specificationService;
+	private SpecificationServiceImpl specificationService;
 
 	/** 分页查询规格 */
 	@GetMapping("/findByPage")
