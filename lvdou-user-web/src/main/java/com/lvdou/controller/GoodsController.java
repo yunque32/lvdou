@@ -9,6 +9,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 
 @RestController
@@ -19,9 +20,11 @@ public class GoodsController {
 	private GoodsServiceImpl goodsService;
 
 	@GetMapping("/findAllGoods")
-	public List<Goods> findAllGoods(){
+	public  List<Goods> findAllGoods(){
 
-		return goodsService.findAllGoods();
+		List<Goods> allGoods = goodsService.findAllGoods();
+			System.out.println("总共返回了多少条记录"+allGoods.size());
+		return allGoods;
 
 	}
 

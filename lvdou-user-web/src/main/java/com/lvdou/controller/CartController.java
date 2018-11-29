@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.List;
@@ -18,11 +19,11 @@ import java.util.List;
 @RequestMapping("/cart")
 public class CartController {
 
-    @Autowired
+    @Resource
     CartServiceImpl cartService ;
-    @Autowired
+    @Resource
     private HttpServletRequest request;
-    @Autowired
+    @Resource
     private HttpServletResponse response;
 
     /** 添加SKU商品到购物车 */

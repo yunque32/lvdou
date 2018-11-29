@@ -10,6 +10,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -18,13 +19,13 @@ import java.util.List;
 @Transactional
 public class SeckillOrderServiceImpl     {
 
-    @Autowired
+    @Resource
     private RedisTemplate<String, Object> redisTemplate;
-    @Autowired
+    @Resource
     private SeckillGoodsMapper seckillGoodsMapper;
-    @Autowired
+    @Resource
     private IdWorker idWorker;
-    @Autowired
+    @Resource
     private SeckillOrderMapper seckillOrderMapper;
 
     /** 保存订单到Redis */

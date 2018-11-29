@@ -1,21 +1,22 @@
 package com.lvdou.realms;
 
 import com.lvdou.mapper.UserMapper;
-import com.lvdou.pojo.User;
-import com.lvdou.service.IUserService;
-import com.lvdou.service.impl.UserServiceImpl;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
 
 @Service
 public class MyRealm extends AuthorizingRealm {
     
-    @Autowired
+    @Resource
     private UserMapper userMapper;
+    @Resource
+    private RedisTemplate redisTemplate;
 
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
@@ -27,13 +28,19 @@ public class MyRealm extends AuthorizingRealm {
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken arg0) throws AuthenticationException {
 
         System.out.println("进入到了shiro认证方法里");
-
-        UsernamePasswordToken token=(UsernamePasswordToken)arg0;
-        User user = userMapper.selectUserByUsername(token.getUsername());
-        if(user==null){
-            System.out.println("数据库中没有这个用户");
-            return null;
+        if(userMapper==null){
+            System.out.println("userMapper为空！！！不能调用");
+        }else if(redisTemplate==null){
+            System.out.println("redis为空");
         }
-        return new SimpleAuthenticationInfo(user.getId(),"","");
+
+//        UsernamePasswordToken token=(UsernamePasswordToken)arg0;
+//        User user = userMapper.selectUserByUsername(token.getUsername());
+//        if(user==null){
+//            System.out.println("数据库中没有这个用户");
+//            return null;
+//        }
+//        return new SimpleAuthenticationInfo(user.getId(),"","");
+        return null;
     }
 }

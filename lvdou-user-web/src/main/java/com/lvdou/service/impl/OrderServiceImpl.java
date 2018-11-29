@@ -13,6 +13,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Date;
@@ -22,15 +23,15 @@ import java.util.List;
 @Transactional
 public class OrderServiceImpl     {
 
-    @Autowired
+    @Resource
     private IdWorker idWorker;
-    @Autowired
+    @Resource
     private RedisTemplate<String, Object> redisTemplate;
-    @Autowired
+    @Resource
     private OrderMapper orderMapper;
-    @Autowired
+    @Resource
     private OrderItemMapper orderItemMapper;
-    @Autowired
+    @Resource
     private PayLogMapper payLogMapper;
 
     /** 保存订单 */

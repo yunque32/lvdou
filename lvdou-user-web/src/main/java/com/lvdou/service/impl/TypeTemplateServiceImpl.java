@@ -15,6 +15,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
 
+import javax.annotation.Resource;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
@@ -22,11 +23,11 @@ import java.util.Map;
 @Service
 @Transactional
 public class TypeTemplateServiceImpl  {
-	@Autowired
+	@Resource
 	private TypeTemplateMapper typeTemplateMapper;
-	@Autowired
+	@Resource
 	private SpecificationOptionMapper specificationOptionMapper;
-	@Autowired
+	@Resource
 	private RedisTemplate redisTemplate;
 
 	/**

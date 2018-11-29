@@ -5,14 +5,15 @@ import com.lvdou.mapper.UserRoleMapper;
 import com.lvdou.pojo.Role;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
 
 public class UserRoleServiceImpl  {
 
-    @Autowired
+    @Resource
     private UserRoleMapper userRoleMapper;
-    @Autowired
+    @Resource
     private RoleMapper roleMapper;
 
     public List<Role> getRoleByUserId(Long id) {

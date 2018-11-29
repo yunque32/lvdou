@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.annotation.Resource;
 import java.util.List;
 import java.util.Map;
 
@@ -17,7 +18,7 @@ import java.util.Map;
 @Transactional
 public class BrandServiceImpl {
 
-    @Autowired
+    @Resource
     private BrandMapper brandMapper;
 
     public List<Brand> findAll() {

@@ -45,6 +45,16 @@ public class Goods implements Serializable{
     private Long agencyId;
 	@Column(name = "producter_id")
     private Long producterId;
+    @Column(name = "classify")
+    private int classify;
+
+    public int getClassify() {
+        return classify;
+    }
+
+    public void setClassify(int classify) {
+        this.classify = classify;
+    }
 
     public Goods() {
     }

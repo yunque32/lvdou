@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.annotation.Resource;
 import java.util.Date;
 
 @Service
@@ -17,7 +18,7 @@ import java.util.Date;
 public class SellerServiceImpl  {
 	
 	/** 注入数据访问层代理对象 */
-	@Autowired
+	@Resource
 	private SellerMapper sellerMapper;
 
 	/** 添加商家 */

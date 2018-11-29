@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
 
+import javax.annotation.Resource;
 import java.util.*;
 
 
@@ -20,21 +21,23 @@ import java.util.*;
 @Transactional
 public class GoodsServiceImpl   {
 
-	@Autowired
+	@Resource
 	private GoodsMapper goodsMapper;
-	@Autowired
+	@Resource
 	private GoodsDescMapper goodsDescMapper;
-	@Autowired
+	@Resource
 	private ItemCatMapper itemCatMapper;
-	@Autowired
+	@Resource
 	private BrandMapper brandMapper;
-	@Autowired
+	@Resource
 	private SellerMapper sellerMapper;
-	@Autowired
+	@Resource
 	private ItemMapper itemMapper;
 
-	public List<Goods> findAllGoods() {
-		return goodsMapper.selectAll();
+	public  List<Goods> findAllGoods() {
+
+
+		return  goodsMapper.selectAll();
 	}
 
 	/** 保存商品 */

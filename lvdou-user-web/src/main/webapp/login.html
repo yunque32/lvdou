@@ -25,13 +25,13 @@
         <form>
             <div class="regitem">
                 <span>手机号码</span>
-                <input type="text" id="txtPhone" name="tel" value="" ng-model="user.phone">
+                <input type="text" id="txtPhone" name="tel" value="" ng-model="user.mobile">
             </div>
 
             <div class="regitem">
                 <span>验证码</span>
                 <input type="text" id="validate" name="code" placeholder=""/>
-                <button id="getCodeBtn0" ng-click="sendCode()">获取验证码</button>
+                <button id="getCodeBtn0" ng-click="sendCode()" ng-model="user.vcode">获取验证码</button>
             </div>
             <p class="free"><a href="#">免费注册</a> </p>
 

@@ -7,6 +7,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 @Service
@@ -14,9 +15,9 @@ import java.util.List;
 public class ItemCatServiceImpl{
 	
 	/** 注入数据访问层代理对象 */
-	@Autowired
+	@Resource
 	private ItemCatMapper itemCatMapper;
-	@Autowired
+	@Resource
 	private RedisTemplate redisTemplate;
 
 	/** 根据父级id查询商品分类 */

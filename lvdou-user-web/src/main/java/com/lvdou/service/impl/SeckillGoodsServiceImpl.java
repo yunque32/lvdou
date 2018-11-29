@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
 
+import javax.annotation.Resource;
 import java.util.Date;
 import java.util.List;
 
@@ -17,11 +18,11 @@ import java.util.List;
 public class SeckillGoodsServiceImpl    {
 
     /** 注入数据访问接口代理对象 */
-    @Autowired
+    @Resource
     private SeckillGoodsMapper seckillGoodsMapper;
-    @Autowired
+    @Resource
     private ProductMapper productMapper;
-    @Autowired
+    @Resource
     private RedisTemplate redisTemplate;
 
     /** 查询秒杀商品列表 */

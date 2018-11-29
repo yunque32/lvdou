@@ -1,61 +1,46 @@
 package com.lvdou.service.impl;
 
-import com.lvdou.common.util.Base64Utils;
-import com.lvdou.common.util.FastJsonUtils;
-import com.lvdou.common.util.HttpClientPost;
-import com.lvdou.common.util.Md5Utils;
+import com.lvdou.common.util.*;
 import com.lvdou.mapper.SellerMapper;
 import com.lvdou.mapper.UserMapper;
 import com.lvdou.pojo.User;
 import com.lvdou.service.IUserService;
 import org.apache.commons.codec.digest.DigestUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
+import javax.annotation.Resource;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
 @Service
-@PropertySource(value = "classpath:props/sms.properties",encoding = "utf-8")
-@Transactional
 public class UserServiceImpl implements IUserService {
     // 三种用户：商城后台管理用户、商家用户、商城用户(会员)
-    @Autowired
+    @Resource
     private UserMapper userMapper;
-    @Autowired
+    @Resource
     private SellerMapper sellerMapper;
-    @Autowired
+    @Resource
     private RedisTemplate redisTemplate;
-
 
     String vcode="";  //验证码
     private String signStr="";
     private long timestamp;
     private String sign="";
     private String key="";
-    private String empty="";
+    //以下几个参数我曾尝试用反射读取写成配置文件，但老是乱码，最后放弃了，能用就行
+    private String BaseURL="http://119.23.45.121:9999/sms/send"; //BaseURL
+    private String accountKey="b282e371e3d84ca2ab05671b2294c983"; //账号
+    private String accounttoken="205ec77b30d24643990468fbb050e844"; //token
+    private String appId="41ae0bd57a054f068b692096bd37c62b"; //appId
 
-    @Value("${sms.url}")
-    private String BaseURL; //BaseURL
-    @Value("${sms.accountKey}")
-    private String accountKey; //账号
-    @Value("${sms.accounttoken}")
-    private String accounttoken; //token
-    @Value("${sms.appId}")
-    private String appId; //appId
+    private String smsType="2";
 
-    @Value("${sms.smsType}")
-    private String smsType; //smsType
-
-    @Value("${sms.content}")
-    private String content; //内容
+    private String content="【绿豆传媒】您的验证码是:"; //内容
 
     /** 保存用户 */
     public void save(User user){
@@ -73,8 +58,8 @@ public class UserServiceImpl implements IUserService {
 
 
     /** 检验验证码 */
-    public boolean checkSmsCode(String phone, String smsCode){
-        return smsCode.equals(redisTemplate.boundValueOps(phone).get());
+    public boolean checkSmsCode(String mobile, String smsCode){
+        return smsCode.equals(redisTemplate.boundValueOps(mobile).get());
     }
 
     public Map checkUserName(String userName) {
@@ -101,11 +86,13 @@ public class UserServiceImpl implements IUserService {
         return null;
     }
     public Map sendValidate(String mobile) throws Exception {
+        if(redisTemplate==null){
+            System.out.println("redis 为空！");
+            return null;
+        }
         System.out.println("发送号码是："+mobile);
         timestamp = System.currentTimeMillis();
-        vcode  = UUID.randomUUID().toString()
-                .replaceAll("-", "")
-                .replaceAll("[0-9]", "").substring(0,6);
+        vcode  = CommonUtils.vcode();
         System.out.println("生成的验证码是"+vcode);
         String contentStr=content+vcode;
         String encode = java.net.URLEncoder.encode(contentStr, "utf-8");
@@ -116,7 +103,8 @@ public class UserServiceImpl implements IUserService {
         String keyStr=accountKey+":"+timestamp;
         keyStr = new String(keyStr.getBytes(),"UTF-8");
 
-        key=Base64Utils.convert(keyStr); //base64加密的key
+        key=Base64Utils.convert(keyStr);
+        //base64加密的key
         //String url2 ="http://119.23.45.121:9999/sms/report/send?
         // id=b282e371e3d84ca2ab05671b2294c983
         // &sign=2c2af13589e23239ddc5f43e317bac9e
@@ -127,11 +115,10 @@ public class UserServiceImpl implements IUserService {
         System.out.println("来到了发送短信的一步了吗？");
         System.out.println("最后生成的url是："+url);
         String body = HttpClientPost.URLConnection(url, null,"UTF-8");
+        redisTemplate.boundValueOps(mobile).set(vcode, 10, TimeUnit.MINUTES);
 
-        Map map=FastJsonUtils.stringToCollect(body);
-        redisTemplate.boundValueOps(mobile).set(vcode, 5, TimeUnit.SECONDS);
         System.out.println("来到了最后一步了吗？====");
-        return map;
+        return null;
     }
 
     public User selectUserByUsername(String username) {

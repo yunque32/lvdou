@@ -1,29 +1,6 @@
 /** 定义控制器层 */
 app.controller('userController', function($scope, baseService){
 
-    // 定义user对象
-    $scope.user = {};
-
-    /** 注册用户 */
-    $scope.save = function(){
-        // 先判断密码是否一致
-        if ($scope.user.password == $scope.password){
-            baseService.sendPost("/user/save?smsCode=" + $scope.smsCode, $scope.user)
-                .then(function(response){
-                    if (response.data){
-                        // 清空数据
-                        $scope.user = {};
-                        $scope.password = "";
-                        $scope.smsCode = "";
-                        alert("注册成功！");
-                    }else{
-                        alert("注册失败！请重试");
-                    }
-                });
-        }else{
-            alert("两次密码不一致！");
-        }
-    };
 
     // 发送短信验证码
     $scope.sendCode = function(){
@@ -34,25 +11,48 @@ app.controller('userController', function($scope, baseService){
                 .then(function(response){
                     if (response.data){
                         alert("发送成功！请注意查收");
-                    }else {
-                        alert("发送验证码失败！请重试");
                     }
+                },function () {
+                    alert('发送失败！');
                 });
         }else{
             alert("手机号码格式不正确！");
         }
     };
     //登录
+    $scope.vcode="";
+    $scope.user.mobile="";
+    $scope.checkvcode=function(){
+      baseService.sendGet("/user/checkvcode")
+          .then(function (response) {
+              if(response.data==true){
+                  alert('验证码验证成功');
+              }
+          },function (response) {
+              if(response.data=false){
+                 alert('验证码验证失败！');
+              }
+          });
+    };
     $scope.login=function(){
-        baseService.sendPost("/login",$scope.user)
+        baseService.sendGet("/user/checkvcode",$scope.user.mobile,$scope.user.vcode)
+            .then(function (response) {
+                alert(vcode);
+            },function (response) {
+                alert('验证码错误');
+            })
+    };
+
+    $scope.shirologin=function(){
+        baseService.sendPost("/user/shirologin",$scope.user)
             .then(function (response) {
                 alert(response.data);
                 location.href = "/index.html";
             },function (response) {
                 alert("出现异常，请重试！"+data);
             })
-    };
 
+    };
     $scope.checkUserName=function () {
         baseService.sendGet("/user/checkUserName?userName="+$scope.user.username)
             .then(function (response) {
@@ -64,7 +64,7 @@ app.controller('userController', function($scope, baseService){
             },function (response) {
                 alert("出现异常，请重试！")
             })
-    }
+    };
     $scope.registerUser=function () {
         baseService.sendPost("/user/registerUser",$scope.user)
             .then(function (response) {

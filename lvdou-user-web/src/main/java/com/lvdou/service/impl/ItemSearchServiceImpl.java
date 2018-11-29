@@ -11,6 +11,7 @@ import org.springframework.data.solr.core.query.*;
 import org.springframework.data.solr.core.query.result.*;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -23,9 +24,9 @@ import java.util.Map;
 
 public class ItemSearchServiceImpl     {
 
-    @Autowired
+    @Resource
     private SolrTemplate solrTemplate;
-    @Autowired
+    @Resource
     private RedisTemplate redisTemplate;
 
     /** 添加或修改SKU商品的Solr索引库 */

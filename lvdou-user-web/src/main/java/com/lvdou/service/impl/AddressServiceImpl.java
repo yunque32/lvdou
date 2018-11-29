@@ -6,13 +6,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 @Service
 @Transactional
 public class AddressServiceImpl  {
 
-    @Autowired
+    @Resource
     private AddressMapper addressMapper;
 
     /** 查询用户的收件地址 */

@@ -12,19 +12,20 @@
              -->
             <value>
                 /css/**=anon
-                /data/**=anon
-                /demo/**=anon
                 /images/**=anon
                 /js/**=anon
-                /upload/**=anon
-                /validatecode.jsp=anon
+                /layer/**=anon
                 /services/**=anon
                 /user/**=anon
+
+                /*.html=anon
+                /admin/login.html=anon
                 /**=authc
             </value>
 
         </property>
         <property name="loginUrl" value="/login.html"/>
+
      </bean>
 
     <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">

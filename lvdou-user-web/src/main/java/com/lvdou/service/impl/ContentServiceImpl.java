@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
 
+import javax.annotation.Resource;
 import java.io.Serializable;
 import java.util.Arrays;
 import java.util.List;
@@ -19,9 +20,9 @@ import java.util.List;
 @Transactional
 public class ContentServiceImpl     {
 
-	@Autowired
+	@Resource
 	private ContentMapper contentMapper;
-	@Autowired
+	@Resource
 	private RedisTemplate redisTemplate;
 
 	/** 添加方法 */

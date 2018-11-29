@@ -12,6 +12,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,7 +29,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     //private  SellerServiceImpl sellerService;
    // private IUserService userService;
    // private UserRoleServiceImpl userRoleService;
-    @Autowired
+    @Resource
     private IUserService iuserService;
     /** 根据用户名加载用户 */
     @Override

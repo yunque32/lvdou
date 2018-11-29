@@ -55,6 +55,16 @@ public class User implements Serializable{
     private Date birthday;
 	@Column(name="last_login_time")
     private Date lastLoginTime;
+	@Column(name = "address")
+    private String address;
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
 
     public Long getId() {
         return id;
@@ -280,6 +290,7 @@ public class User implements Serializable{
                 "id=" + id +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
+                ", roleList='" + roleList + '\'' +
                 ", phone='" + phone + '\'' +
                 ", email='" + email + '\'' +
                 ", created=" + created +
@@ -299,6 +310,7 @@ public class User implements Serializable{
                 ", experienceValue=" + experienceValue +
                 ", birthday=" + birthday +
                 ", lastLoginTime=" + lastLoginTime +
+                ", address='" + address + '\'' +
                 '}';
     }
 }

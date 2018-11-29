@@ -27,6 +27,7 @@ public class UserController {
                 return true;
             }
         }catch (Exception ex){
+            System.out.println("检测验证码出现异常！");
             ex.printStackTrace();
         }
         return false;
@@ -47,6 +48,13 @@ public class UserController {
         }
         return false;
     }
+    @GetMapping("/checkvcode")
+    public boolean checkvcode(String mobile,String vcode){
+        if(vcode!=null&&vcode.length()==6&&mobile!=null&&mobile.length()==11){
+            return userService.checkSmsCode(mobile,vcode);
+        }
+        return false;
+    }
 
     @GetMapping("/checkUserName")
     public Map<String,Object> checkUserName(String userName){
@@ -63,4 +71,5 @@ public class UserController {
 //        return userService.selectUserByUser(user);
 //
 //    }
+
 }
