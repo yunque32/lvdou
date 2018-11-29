@@ -34,24 +34,21 @@ app.controller('userController', function($scope, baseService){
               }
           });
     };
+
     $scope.login=function(){
-        baseService.sendGet("/user/checkvcode",$scope.user.mobile,$scope.user.vcode)
+        baseService.sendPost("/user/login",$scope.user,$scope.vcode)
             .then(function (response) {
-                alert(vcode);
-            },function (response) {
-                alert('验证码错误');
-            })
-    };
-
-    $scope.shirologin=function(){
-        baseService.sendPost("/user/shirologin",$scope.user)
-            .then(function (response) {
-                alert(response.data);
+                if(response.data=="3"){
+                    alert("验证码有误");
+                }else if(response.data=="2"){
+                    alert("手机号码格式有误")
+                }else if(response.data=="3"){
+                    alert("登录成功");
+                }
                 location.href = "/index.html";
-            },function (response) {
-                alert("出现异常，请重试！"+data);
+            },function () {
+                alert('亲，作为日理万鸡的系统，我很忙啦，请稍后再试！')
             })
-
     };
     $scope.checkUserName=function () {
         baseService.sendGet("/user/checkUserName?userName="+$scope.user.username)

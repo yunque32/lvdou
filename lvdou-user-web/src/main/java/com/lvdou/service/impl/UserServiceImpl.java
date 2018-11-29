@@ -49,9 +49,10 @@ public class UserServiceImpl implements IUserService {
             user.setCreated(new Date());
             user.setUpdated(user.getCreated());
             // 设置密码MD5加密
-            user.setPassword(DigestUtils.md5Hex(user.getPassword()));
+            //user.setPassword(DigestUtils.md5Hex(user.getPassword()));
             userMapper.insertSelective(user);
         }catch (Exception ex){
+            System.out.println("保存用户异常");
             throw new RuntimeException(ex);
         }
     }
@@ -115,7 +116,7 @@ public class UserServiceImpl implements IUserService {
         System.out.println("来到了发送短信的一步了吗？");
         System.out.println("最后生成的url是："+url);
         String body = HttpClientPost.URLConnection(url, null,"UTF-8");
-        redisTemplate.boundValueOps(mobile).set(vcode, 10, TimeUnit.MINUTES);
+        redisTemplate.boundValueOps(mobile).set(vcode, 15, TimeUnit.MINUTES);
 
         System.out.println("来到了最后一步了吗？====");
         return null;

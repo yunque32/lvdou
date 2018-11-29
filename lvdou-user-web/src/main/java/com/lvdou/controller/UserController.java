@@ -3,6 +3,11 @@ package com.lvdou.controller;
 import com.lvdou.pojo.User;
 import com.lvdou.service.impl.UserServiceImpl;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.ibatis.annotations.Param;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authc.AuthenticationToken;
+import org.apache.shiro.authc.UsernamePasswordToken;
+import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -48,12 +53,19 @@ public class UserController {
         }
         return false;
     }
-    @GetMapping("/checkvcode")
-    public boolean checkvcode(String mobile,String vcode){
-        if(vcode!=null&&vcode.length()==6&&mobile!=null&&mobile.length()==11){
-            return userService.checkSmsCode(mobile,vcode);
+    @PostMapping("/login")
+    public String login(User user,
+                              String vcode){
+        final String mobile = user.getPhone();
+        if(vcode!=null&&vcode.length()==6){
+             if(mobile!=null&&mobile.length()==11){
+
+                 return "1";
+             }
+             return "2";
+        }else {
+            return "3";
         }
-        return false;
     }
 
     @GetMapping("/checkUserName")
@@ -65,11 +77,5 @@ public class UserController {
         return userService.registerUser(user);
     }
 
-//    @PostMapping("/logincheck")
-//    public User logincheck(User user){
-//
-//        return userService.selectUserByUser(user);
-//
-//    }
 
 }
