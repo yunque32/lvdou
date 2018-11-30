@@ -11,15 +11,14 @@
                   **： 通配任意级资源
              -->
             <value>
+                /admin/login.html=anon
                 /css/**=anon
                 /images/**=anon
                 /js/**=anon
                 /layer/**=anon
                 /services/**=anon
                 /user/**=anon
-
                 /*.html=anon
-                /admin/login.html=anon
                 /**=authc
             </value>
 

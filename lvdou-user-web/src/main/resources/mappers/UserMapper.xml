@@ -6,7 +6,7 @@
 
 
  <select id="selectUserByUsername" parameterType="string" resultType="user">
-	 select * from user where username= #{username};
+	 select * from user where phone = #{username};
  </select>
 
 

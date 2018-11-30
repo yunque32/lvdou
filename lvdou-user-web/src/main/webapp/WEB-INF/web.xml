@@ -33,7 +33,7 @@
     </filter>
     <filter-mapping>
         <filter-name>shiroFilter</filter-name>
-        <url-pattern>/*</url-pattern>
+        <url-pattern>*.action</url-pattern>
     </filter-mapping>-->
 
     <!-- 配置Spring MVC前端控制器(核心控制器) -->

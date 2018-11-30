@@ -1,6 +1,7 @@
 package com.lvdou.realms;
 
 import com.lvdou.mapper.UserMapper;
+import com.lvdou.pojo.User;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
@@ -34,13 +35,14 @@ public class MyRealm extends AuthorizingRealm {
             System.out.println("redis为空");
         }
 
-//        UsernamePasswordToken token=(UsernamePasswordToken)arg0;
-//        User user = userMapper.selectUserByUsername(token.getUsername());
-//        if(user==null){
-//            System.out.println("数据库中没有这个用户");
-//            return null;
-//        }
-//        return new SimpleAuthenticationInfo(user.getId(),"","");
-        return null;
+        UsernamePasswordToken token=(UsernamePasswordToken)arg0;
+
+        User user = userMapper.selectUserByUsername(token.getUsername());
+        if(user==null){
+            System.out.println("数据库中没有这个用户");
+            return null;
+        }
+        return new SimpleAuthenticationInfo(user.getPhone(),"","");
+
     }
 }

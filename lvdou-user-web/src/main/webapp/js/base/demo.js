@@ -30,21 +30,19 @@ $(function () {
             alert("验证码不能为空");
             return false;
         }
-        else {
-            $.ajax({
-                type: "post",
-                url: "user/add.action",
-                data:$('#userdata').serialize(),
-                dataType:'json',
-                success: function (result) {
-                    alert(result.message);
-                    window.location.href="success.html";
-                },
-                error: function () { alert("用户名密码验证失败") }
-            });
-
-
-        }
+        // else {
+        //     $.ajax({
+        //         type: "post",
+        //         url: "user/add.action",
+        //         data:$('#userdata').serialize(),
+        //         dataType:'json',
+        //         success: function (result) {
+        //             alert(result.message);
+        //             window.location.href="success.html";
+        //         },
+        //         error: function () { alert("用户名密码验证失败") }
+        //     });
+        // }
     //ajax--end
 
     $(".dregbtn a").click(function () {

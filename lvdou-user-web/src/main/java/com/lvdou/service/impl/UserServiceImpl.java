@@ -32,14 +32,12 @@ public class UserServiceImpl implements IUserService {
     private long timestamp;
     private String sign="";
     private String key="";
-    //以下几个参数我曾尝试用反射读取写成配置文件，但老是乱码，最后放弃了，能用就行
+    //以下几个参数我曾尝试写在配置文件里用反射读取，但老是乱码，最后放弃了，能用就行
     private String BaseURL="http://119.23.45.121:9999/sms/send"; //BaseURL
     private String accountKey="b282e371e3d84ca2ab05671b2294c983"; //账号
     private String accounttoken="205ec77b30d24643990468fbb050e844"; //token
     private String appId="41ae0bd57a054f068b692096bd37c62b"; //appId
-
     private String smsType="2";
-
     private String content="【绿豆传媒】您的验证码是:"; //内容
 
     /** 保存用户 */
@@ -87,10 +85,7 @@ public class UserServiceImpl implements IUserService {
         return null;
     }
     public Map sendValidate(String mobile) throws Exception {
-        if(redisTemplate==null){
-            System.out.println("redis 为空！");
-            return null;
-        }
+
         System.out.println("发送号码是："+mobile);
         timestamp = System.currentTimeMillis();
         vcode  = CommonUtils.vcode();
@@ -141,4 +136,15 @@ public class UserServiceImpl implements IUserService {
     }
 
 
+    public int saveUserToRedis(User loginUser) {
+        String phone = loginUser.getPhone();
+        try {
+            redisTemplate.boundValueOps(phone).set(loginUser, 30, TimeUnit.MINUTES);
+        }catch (Exception e){
+            System.out.println("redis保存用户发生异常");
+            e.printStackTrace();
+            return 1;
+        }
+        return 0;
+    }
 }
