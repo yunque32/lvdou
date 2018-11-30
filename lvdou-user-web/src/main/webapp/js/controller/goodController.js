@@ -17,11 +17,13 @@ app.controller('goodController', function($scope, $controller, baseService){
         if($("#"+goods.id).val()!='0'){
             $("#"+goods.id).val(parseInt($("#"+goods.id).val())-1);
             $scope.priceRecount(goods,'jian');
+            GoodidListMap.remove(goods.id);
         }
     };
     $scope.jia=function(goods){
            $("#"+goods.id).val(parseInt($("#"+goods.id).val())+1);
         $scope.priceRecount(goods,'jia');
+        GoodidListMap.put(goods.id,goods.price+'-'+$("#"+goods.id).val());
     };
     $scope.totalPrice=0;
     //对总金额四舍五入并保留2位
@@ -105,53 +107,6 @@ app.controller('goodController', function($scope, $controller, baseService){
         });
     };
 
-    /** 倒计时方法 */
-    $scope.downCount = function(endTime){
-        // 计算出相差的毫秒数(结束时间的毫秒数 - 当前时间的毫秒数)
-        var millsSeconds = new Date(endTime).getTime() - new Date().getTime();
-        // 格式 1天 10:10:10
-
-        // 计算出相差的秒数
-        var seconds = Math.floor(millsSeconds / 1000);
-        // 判断秒数
-        if (seconds > 0){
-            // 计算出相差的分钟
-            var minutes = Math.floor(seconds / 60);
-            // 计算出相差的小时
-            var hours = Math.floor(minutes / 60);
-            // 计算出相差的天数
-            var day = Math.floor(hours / 24);
-
-            //  定义res数组封装最后显示的数据
-            var res = new Array();
-
-            if (day > 0){
-                res.push(calc(day) + "天 ");
-            }
-            if (hours > 0){
-                res.push(calc(hours - day * 24) + ":");
-            }
-            if (minutes > 0){
-                res.push(calc(minutes - hours * 60) + ":");
-            }
-            if (seconds > 0){
-                res.push(calc(seconds - minutes * 60));
-            }
-            $scope.timeStr = res.join("");
-
-            // 延迟定时器 setTimeout()
-            $timeout(function(){
-
-                $scope.downCount(endTime);
-            }, 1000);
-        }else{
-            $scope.timeStr = "秒杀已结束！";
-        }
-    };
-    var calc = function(num){
-        return num > 9 ? num : "0" + num;
-    };
-
 
     /** 秒杀下单方法 */
     $scope.submitOrder = function(){
@@ -176,6 +131,15 @@ app.controller('goodController', function($scope, $controller, baseService){
             location.href = "/login.html?service="+$scope.redirectUrl;
         }
     };
+    $scope.GoodidListMap=new Map();
+    $scope.confirmOrder=function () {
+        baseService.sendGet("/goods/confirmOrder")
+            .then(function () {
+                alert('1');
+            },function () {
+                alert('2');
+            });
+    }
 
 
 });

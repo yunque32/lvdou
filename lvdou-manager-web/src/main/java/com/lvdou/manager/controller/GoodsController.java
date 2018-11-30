@@ -25,10 +25,10 @@ public class GoodsController {
 	public PageResult findByPage(Goods goods, Integer page, Integer rows){
 		try{
 			// Get请求中文转码
-			if (goods != null && StringUtils.isNoneBlank(goods.getGoodsName())){
-				goods.setGoodsName(new String(goods.getGoodsName()
-						.getBytes("ISO8859-1"), "UTF-8"));
-			}
+//			if (goods != null && StringUtils.isNoneBlank(goods.getGoodsName())){
+//				goods.setGoodsName(new String(goods.getGoodsName()
+//						.getBytes("ISO8859-1"), "UTF-8"));
+//			}
 			// 审核状态(未审核)
 			//goods.setAuditStatus("0");
 

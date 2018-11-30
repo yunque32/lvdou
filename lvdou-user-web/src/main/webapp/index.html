@@ -17,7 +17,6 @@
         <script src="/js/service/baseService.js"></script>
         <script src="/js/controller/baseController.js"></script>
         <script src="/js/controller/goodController.js"></script>
-
     </head>
     <body ng-app="lvdou"
           ng-controller="goodController"
@@ -79,15 +78,12 @@
                                                 </div>
                                             </a>
                                         </div>
-
                                     </li>
                                 </div>
                                 <!-- 百香果产品排版结束 -->
                             </div>
                         </div>
-
                         <!-- scrolltab-content-item end-->
-
                         <!-- scrolltab-content-item start-->
                         <div class="scrolltab-content-item">
                             <h2>奇异果</h2>
@@ -233,7 +229,8 @@
                                 <div class="sure">
                                      已选2个商品
                                     <div class="sure_l">合计：<span class="money" ><td>{{totalPrice}} 元</td></span></div>
-                                    <div class="sure_r"><span>购物车</span></div>
+                                    <!--<div id="shopcart" class="sure_r"><span>购物车</span></div>-->
+                                    <button id="shopcart" ng-click="shopcart()">确认订单</button>
                                 </div>
                                 <div class="info">
                                     <div class="info_l" ng-if="user.name">姓名：张三&nbsp&nbsp福利余额：100元</div>

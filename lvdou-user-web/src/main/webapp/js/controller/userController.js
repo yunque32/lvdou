@@ -36,7 +36,7 @@ app.controller('userController', function($scope, baseService){
     $scope.vcode="";
     $scope.phone="";
     $scope.login=function(){
-        baseService.sendPost("/user/login",$scope.user,$scope.vcode)
+        baseService.sendPost("/user/login2",$scope.user,$scope.vcode)
             .then(function (response) {
                 alert('最起码有响应！');
                 if(response.data=="3"){
