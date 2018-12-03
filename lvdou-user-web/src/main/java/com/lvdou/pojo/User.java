@@ -23,8 +23,7 @@ public class User implements Serializable{
     private String email;
 	@Column(name="created")
     private Date created;
-	@Column(name="updated")
-    private Date updated;
+
 	@Column(name="source_type")
     private String sourceType;
 	@Column(name="nick_name")
@@ -55,15 +54,15 @@ public class User implements Serializable{
     private Date birthday;
 	@Column(name="last_login_time")
     private Date lastLoginTime;
-	@Column(name = "address")
-    private String address;
+	@Column(name = "address_id")
+    private String addressId;
 
-    public String getAddress() {
-        return address;
+    public String getAddressId() {
+        return addressId;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setAddressId(String addressId) {
+        this.addressId = addressId;
     }
 
     public Long getId() {
@@ -118,14 +117,6 @@ public class User implements Serializable{
 
     public void setCreated(Date created) {
         this.created = created;
-    }
-
-    public Date getUpdated() {
-        return updated;
-    }
-
-    public void setUpdated(Date updated) {
-        this.updated = updated;
     }
 
     public String getSourceType() {
@@ -250,39 +241,6 @@ public class User implements Serializable{
         this.lastLoginTime = lastLoginTime;
     }
 
-    public User() {
-    }
-
-    public User(String username, String password, String phone,
-                String email, Date created, Date updated,
-                String sourceType, String nickName, String name,
-                String status, String headPic, String qq,
-                Long accountBalance, String mobileCheck,
-                String emailCheck, String sex, Integer userLevel,
-                Integer points, Integer experienceValue,
-                Date birthday, Date lastLoginTime) {
-        this.username = username;
-        this.password = password;
-        this.phone = phone;
-        this.email = email;
-        this.created = created;
-        this.updated = updated;
-        this.sourceType = sourceType;
-        this.nickName = nickName;
-        this.name = name;
-        this.status = status;
-        this.headPic = headPic;
-        this.qq = qq;
-        this.accountBalance = accountBalance;
-        this.mobileCheck = mobileCheck;
-        this.emailCheck = emailCheck;
-        this.sex = sex;
-        this.userLevel = userLevel;
-        this.points = points;
-        this.experienceValue = experienceValue;
-        this.birthday = birthday;
-        this.lastLoginTime = lastLoginTime;
-    }
 
     @Override
     public String toString() {
@@ -294,7 +252,6 @@ public class User implements Serializable{
                 ", phone='" + phone + '\'' +
                 ", email='" + email + '\'' +
                 ", created=" + created +
-                ", updated=" + updated +
                 ", sourceType='" + sourceType + '\'' +
                 ", nickName='" + nickName + '\'' +
                 ", name='" + name + '\'' +
@@ -310,7 +267,7 @@ public class User implements Serializable{
                 ", experienceValue=" + experienceValue +
                 ", birthday=" + birthday +
                 ", lastLoginTime=" + lastLoginTime +
-                ", address='" + address + '\'' +
+                ", addressId='" + addressId + '\'' +
                 '}';
     }
 }

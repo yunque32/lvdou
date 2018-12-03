@@ -1,8 +1,10 @@
 package com.lvdou.service.impl;
 
 import com.lvdou.common.util.*;
+import com.lvdou.mapper.AddressMapper;
 import com.lvdou.mapper.SellerMapper;
 import com.lvdou.mapper.UserMapper;
+import com.lvdou.pojo.Address;
 import com.lvdou.pojo.User;
 import com.lvdou.service.IUserService;
 import org.apache.commons.codec.digest.DigestUtils;
@@ -10,6 +12,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.util.Date;
@@ -24,6 +27,8 @@ public class UserServiceImpl implements IUserService {
     private UserMapper userMapper;
     @Resource
     private SellerMapper sellerMapper;
+    @Resource
+    private AddressMapper addressMapper;
     @Resource
     private RedisTemplate redisTemplate;
 
@@ -45,7 +50,7 @@ public class UserServiceImpl implements IUserService {
         try {
             // 设置创建时间
             user.setCreated(new Date());
-            user.setUpdated(user.getCreated());
+
             // 设置密码MD5加密
             //user.setPassword(DigestUtils.md5Hex(user.getPassword()));
             userMapper.insertSelective(user);
@@ -54,11 +59,65 @@ public class UserServiceImpl implements IUserService {
             throw new RuntimeException(ex);
         }
     }
+    @Transactional
+    public Map<String,Object> saveUserAndAddress(User user,String address,String vcode){
 
+        Map<String, Object> map = checkVCode(user, vcode);
+
+        User user1 = (User) map.get("user");
+        if(user1==null){
+            return map;
+        }
+        Date createDate = new Date();
+        user1.setCreated(createDate);
+
+        int i = userMapper.insert(user1);
+        if(i==1) {
+            Address add = new Address();
+            add.setAddress(address);
+            add.setCreateDate(createDate);
+            add.setPhone(user.getPhone());
+            int j = addressMapper.insert(add);
+            if (j == 1) {
+                System.out.println("数据库插入地址成功！");
+            } else {
+                System.out.println("数据库保存地址失败");
+                map.put("msg", "数据库保存地址失败！");
+            }
+        }else {
+            System.out.println("数据库保存用户失败");
+            map.put("msg","数据库保存用户失败！");
+        }
+        return map;
+    }
 
     /** 检验验证码 */
-    public boolean checkSmsCode(String mobile, String smsCode){
-        return smsCode.equals(redisTemplate.boundValueOps(mobile).get());
+    public Map<String,Object> checkVCode(User user, String Vcode){
+        Map<String, Object> map = new HashMap<>();
+        String phone = user.getPhone();
+        if(phone!=null&&phone.length()==11){
+            if(Vcode!=null&&Vcode.length()==6) {
+                User user1 = userMapper.selectUserByUsername(user.getPhone());
+                if(user1==null){
+                    if (Vcode.equals(redisTemplate.boundValueOps(phone).get())) {
+
+                    } else {
+                        map.put("msg", "验证码输入错误");
+                    }
+                }else {
+                    map.put("msg","此账户已经被注册！");
+                }
+
+            }else{
+                map.put("msg","验证码格式有误！");
+            }
+        }else {
+            map.put("msg","手机号码格式有误！");
+        }
+
+        return map;
+
+
     }
 
     public Map checkUserName(String userName) {
@@ -68,9 +127,9 @@ public class UserServiceImpl implements IUserService {
         user.setUsername(userName);
         User user1 = userMapper.selectOne(user);
         if(user1==null){
-            map.put("checkResult","1");
+            map.put("msg","1");
         }else {
-            map.put("checkResult","2");
+            map.put("msg","2");
         }
         return map;
     }
@@ -79,14 +138,14 @@ public class UserServiceImpl implements IUserService {
         Map<String, String> map = new HashMap<>();
         int insert = userMapper.insert(user);
         if(insert==1){
-           map.put("registerResult","1");
+           map.put("msg","1");
            return map;
         }
         return null;
     }
-    public Map sendValidate(String mobile) throws Exception {
+    public Map sendValidate(String phone) throws Exception {
 
-        System.out.println("发送号码是："+mobile);
+        System.out.println("发送号码是："+phone);
         timestamp = System.currentTimeMillis();
         vcode  = CommonUtils.vcode();
         System.out.println("生成的验证码是"+vcode);
@@ -107,13 +166,12 @@ public class UserServiceImpl implements IUserService {
         // &key=YjI4MmUzNzFlM2Q4NGNhMmFiMDU2NzFiMjI5NGM5ODM6MTUyNjU0NDQzMjI0MQ==
         // &pageSize=500";
         String url = BaseURL+"?id="+accountKey+"&sign="+sign+
-                "&key="+key+"&to="+mobile+"&appId="+appId+"&content="+encode+"&smsType="+smsType;
+                "&key="+key+"&to="+phone+"&appId="+appId+"&content="+encode+"&smsType="+smsType;
         System.out.println("来到了发送短信的一步了吗？");
         System.out.println("最后生成的url是："+url);
         String body = HttpClientPost.URLConnection(url, null,"UTF-8");
-        redisTemplate.boundValueOps(mobile).set(vcode, 15, TimeUnit.MINUTES);
+        redisTemplate.boundValueOps(phone).set(vcode, 15, TimeUnit.MINUTES);
 
-        System.out.println("来到了最后一步了吗？====");
         return null;
     }
 

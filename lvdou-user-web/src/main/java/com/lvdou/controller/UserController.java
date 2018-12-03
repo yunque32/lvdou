@@ -1,20 +1,19 @@
 package com.lvdou.controller;
 
+import com.lvdou.pojo.Address;
 import com.lvdou.pojo.User;
 import com.lvdou.service.impl.UserServiceImpl;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.ibatis.annotations.Param;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationToken;
 import org.apache.shiro.authc.IncorrectCredentialsException;
 import org.apache.shiro.authc.UnknownAccountException;
 import org.apache.shiro.authc.UsernamePasswordToken;
-import org.apache.shiro.config.IniSecurityManagerFactory;
 import org.apache.shiro.subject.Subject;
-import org.apache.shiro.util.Factory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.Map;
 
 @RestController
@@ -25,21 +24,13 @@ public class UserController {
     private  UserServiceImpl userService;
 
     /** 注册用户 */
-    @PostMapping("/save")
-    public boolean save(@RequestBody User user,String vcode){
-        try{
-            // 检验验证码
-            boolean ok = userService.checkSmsCode(user.getPhone(), vcode);
-            if (ok) {
-                // 保存用户
-                userService.save(user);
-                return true;
-            }
-        }catch (Exception ex){
-            System.out.println("检测验证码出现异常！");
-            ex.printStackTrace();
-        }
-        return false;
+    @PostMapping("/saveUser")
+    public Map<String,Object> save(@RequestBody User user,
+                                String address, String vcode){
+
+       return userService.saveUserAndAddress(user,address,vcode);
+
+
     }
 
     /** 发送短信验证码 */
@@ -58,12 +49,11 @@ public class UserController {
         return false;
     }
     @PostMapping("/login")
-    public String login(@Param("user") User user,
-                        @Param("vcode") String vcode){
-        //boolean ok = userService.checkSmsCode(user.getPhone(), vcode);
-         String phone = "15914389603";
-
-            //String mobileReg="^1[3|5|7|8]\\d{9}$";
+    public Map<String,Object> login(@RequestBody User user,
+                        @RequestParam("vcode") String vcode){
+         String phone = user.getPhone();
+        Map<String, Object> map = new HashMap<>();
+        //String mobileReg="^1[3|5|7|8]\\d{9}$";
              if(phone!=null&&phone.length()==11){
                  Subject subject = SecurityUtils.getSubject();
 
@@ -80,37 +70,29 @@ public class UserController {
                      if(a==0){
                          System.out.println("用户存入redis成功");
                      }
+                     map.put("user",user);
+                     return map;
                  } catch (UnknownAccountException e) {
-                    return "4";
+                     map.put("msg","账户不存在！");
                  } catch (IncorrectCredentialsException e) {
                      System.out.println("密码错误！！！！！wss");
-                     return "5";
+                    map.put("msg","密码错误");
                  } catch (Exception e) {
                      System.out.println("系统错误");
                      e.printStackTrace();
-                     return "6";
+                    map.put("msg","系统异常");
                  }
                  //1:代表登录成功
-                 return "1";
+
              }
-             return "2";
+             map.put("msg","手机号码格式有误！");
+             return map;
+
     }
     @PostMapping("/login2")
-    public User login2(@Param("user") User user
-                        ,@Param("vcode") String vcode){
-        String phone = user.getPhone();
-        if(phone==""||phone==null){
-            System.out.println("手机号码为空");
-            return null;
-        }
-        User user1 = userService.selectUserByUsername(phone);
-        if(user1!=null){
-            System.out.println("查出数据库用户"+phone);
-            return user1;
-        }else{
-            System.out.println("根据号码查询不到用户");
-        }
-        return null;
+    public Map<String,Object> login2(@RequestBody User user
+                        ,@RequestParam("vcode") String vcode){
+            return  userService.checkVCode(user, vcode);
     }
 
     @GetMapping("/checkUserName")

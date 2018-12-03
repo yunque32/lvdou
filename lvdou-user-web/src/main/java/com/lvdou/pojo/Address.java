@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
-@Table(name="tb_address")
+@Table(name="address")
 public class Address implements Serializable{
 
 	private static final long serialVersionUID = -4689694958239207095L;
@@ -19,8 +19,8 @@ public class Address implements Serializable{
     private String cityId;
 	@Column(name="town_id")
     private String townId;
-	@Column(name="mobile")
-    private String mobile;
+	@Column(name="phone")
+    private String phone;
 	@Column(name="address")
     private String address;
 	@Column(name="contact")
@@ -33,6 +33,14 @@ public class Address implements Serializable{
     private Date createDate;
 	@Column(name="alias")
     private String alias;
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
 
     public Long getId() {
         return id;
@@ -72,14 +80,6 @@ public class Address implements Serializable{
 
     public void setTownId(String townId) {
         this.townId = townId == null ? null : townId.trim();
-    }
-
-    public String getMobile() {
-        return mobile;
-    }
-
-    public void setMobile(String mobile) {
-        this.mobile = mobile == null ? null : mobile.trim();
     }
 
     public String getAddress() {
@@ -128,5 +128,23 @@ public class Address implements Serializable{
 
     public void setAlias(String alias) {
         this.alias = alias == null ? null : alias.trim();
+    }
+
+    @Override
+    public String toString() {
+        return "Address{" +
+                "id=" + id +
+                ", userId='" + userId + '\'' +
+                ", provinceId='" + provinceId + '\'' +
+                ", cityId='" + cityId + '\'' +
+                ", townId='" + townId + '\'' +
+                ", phone='" + phone + '\'' +
+                ", address='" + address + '\'' +
+                ", contact='" + contact + '\'' +
+                ", isDefault='" + isDefault + '\'' +
+                ", notes='" + notes + '\'' +
+                ", createDate=" + createDate +
+                ", alias='" + alias + '\'' +
+                '}';
     }
 }
