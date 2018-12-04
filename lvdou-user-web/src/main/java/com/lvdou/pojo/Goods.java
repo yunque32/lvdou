@@ -47,7 +47,11 @@ public class Goods implements Serializable{
     private Long producterId;
     @Column(name = "classify")
     private int classify;
-
+    @Transient
+    private GoodsDesc goodsDesc;
+    /** 商品SKU列表 */
+    @Transient
+    private List<Item> items;
     public int getClassify() {
         return classify;
     }
@@ -212,11 +216,7 @@ public class Goods implements Serializable{
         this.items = items;
     }
 
-    @Transient
-    private GoodsDesc goodsDesc;
-    /** 商品SKU列表 */
-	@Transient
-    private List<Item> items;
+
     
 
 

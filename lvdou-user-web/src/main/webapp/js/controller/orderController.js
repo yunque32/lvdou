@@ -1,4 +1,4 @@
-/** 定义订单控制器 */
+ /** 定义订单控制器 */
 app.controller("orderController", function ($scope,$controller,$location,$interval,baseService) {
     /** 继承cartController */
     $controller("cartController", {$scope:$scope});
@@ -123,7 +123,7 @@ app.controller("orderController", function ($scope,$controller,$location,$interv
     };
 
     $scope.afterPaySuccess=function(){
-        alert("第一步成功！")
+        alert("第一步成功！");
         baseService.sendGet("/order/afterPaySuccess")
             .then(function (response) {
                 alert("成功了"+response);

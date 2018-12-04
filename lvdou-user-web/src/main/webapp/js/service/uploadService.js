@@ -1,7 +1,7 @@
 app.service('uploadService', function($http){
 
     /** 定义文件异步上传的方法 */
-    this.uploadFile = function(){
+    this.uploadExcelFile = function(){
 
         // 创建表单数据对象
         var formData = new FormData();
@@ -37,14 +37,14 @@ app.service('uploadService', function($http){
         }
 
     };
-    this.uploadExcelFile=function () {
+    this.uploadFile=function () {
 
         var formData = new FormData();
-        formData.append("file",file.files[0]);
+        formData.append("files",file.files);
         return $http({
             method : 'post',
             // 请求URL
-            url : '/uploadExcelFile',
+            url : '/uploadFile',
             // 表单数据对象
             data : formData,
             headers : {"Content-Type": undefined}, // 设置请求头

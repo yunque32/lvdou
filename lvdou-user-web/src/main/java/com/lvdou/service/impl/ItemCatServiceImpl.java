@@ -8,7 +8,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Service
 @Transactional(readOnly=false)
@@ -21,7 +23,9 @@ public class ItemCatServiceImpl{
 	private RedisTemplate redisTemplate;
 
 	/** 根据父级id查询商品分类 */
-	public List<ItemCat> findItemCatByParentId(Long parentId){
+	public Map<String,Object> findItemCatByParentId(Long parentId){
+		System.out.println("进入到了Service方法！");
+		Map<String, Object> map = new HashMap<>();
 		try{
 			// select * from tb_item_cat where parent_id = ?
 			// 创建ItemCat对象封装查询条件
@@ -29,10 +33,21 @@ public class ItemCatServiceImpl{
 			// 设置父级id
 			itemCat.setParentId(parentId);
 			// 查询
-			return itemCatMapper.select(itemCat);
+			List<ItemCat> ItemCats = itemCatMapper.select(itemCat);
+			if(ItemCats==null){
+				map.put("msg","没查出什么来！");
+				return map;
+			}
+
+			map.put("ItemCats",ItemCats);
 		}catch (Exception ex){
+
+			map.put("msg","查询商品分类出现运行时异常！");
 			throw new RuntimeException(ex);
+
 		}
+		return map;
+
 	}
 
 	/** 把商品分类数据存入Redis */
@@ -42,7 +57,7 @@ public class ItemCatServiceImpl{
 			List<ItemCat> itemCatList = itemCatMapper.selectAll();
 			for (ItemCat itemCat : itemCatList){
 				redisTemplate.boundHashOps("itemCats")
-						.put(itemCat.getName(), itemCat.getTypeId());
+						.put(itemCat.getName(), itemCat.getId());
 			}
 		}catch (Exception ex){
 			throw new RuntimeException(ex);

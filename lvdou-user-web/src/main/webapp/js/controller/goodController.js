@@ -12,18 +12,19 @@ app.controller('goodController', function($scope, $controller, baseService){
                 $scope.GoodsList = response.data;
             });
     };
+    var map = new Map();
     $scope.jian=function(goods){
-
-        if($("#"+goods.id).val()!='0'){
+        if(parseInt($("#"+goods.id).val())>0){
             $("#"+goods.id).val(parseInt($("#"+goods.id).val())-1);
             $scope.priceRecount(goods,'jian');
-            GoodidListMap.remove(goods.id);
+         
         }
     };
     $scope.jia=function(goods){
-           $("#"+goods.id).val(parseInt($("#"+goods.id).val())+1);
+         $("#"+goods.id).val(parseInt($("#"+goods.id).val())+1);
         $scope.priceRecount(goods,'jia');
-        GoodidListMap.put(goods.id,goods.price+'-'+$("#"+goods.id).val());
+        map.put("a","b");
+        alert(map);
     };
     $scope.totalPrice=0;
     //对总金额四舍五入并保留2位
@@ -131,7 +132,7 @@ app.controller('goodController', function($scope, $controller, baseService){
             location.href = "/login.html?service="+$scope.redirectUrl;
         }
     };
-    $scope.GoodidListMap=new Map();
+
     $scope.confirmOrder=function () {
         baseService.sendGet("/goods/confirmOrder")
             .then(function () {
@@ -139,7 +140,24 @@ app.controller('goodController', function($scope, $controller, baseService){
             },function () {
                 alert('2');
             });
-    }
+    };
+    $scope.uploadFile = function(){
+
+        // 调用服务层方法
+        uploadService.uploadFile().then(function(response){
+            // 判断上传状态 {status : 200, url : ''}
+            if (response.data.status == 200){
+
+                // {url : ''}
+                $scope.image_entity.url = response.data.url;
+            }else{
+                alert("上传失败！");
+            }
+        });
+    };
+
+    /** 定义保存商品图片的数据格式 */
+    $scope.goods = {goodsDesc : {itemImages : [], specificationItems : []}}
 
 
 });

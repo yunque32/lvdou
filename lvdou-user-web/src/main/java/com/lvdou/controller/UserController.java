@@ -1,5 +1,6 @@
 package com.lvdou.controller;
 
+import com.lvdou.mapper.UserMapper;
 import com.lvdou.pojo.Address;
 import com.lvdou.pojo.User;
 import com.lvdou.service.impl.UserServiceImpl;
@@ -13,6 +14,8 @@ import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -23,6 +26,8 @@ public class UserController {
     @Autowired
     private  UserServiceImpl userService;
 
+    @Resource
+    private UserMapper userMapper;
     /** 注册用户 */
     @PostMapping("/saveUser")
     public Map<String,Object> save(@RequestBody User user,
@@ -91,8 +96,15 @@ public class UserController {
     }
     @PostMapping("/login2")
     public Map<String,Object> login2(@RequestBody User user
-                        ,@RequestParam("vcode") String vcode){
-            return  userService.checkVCode(user, vcode);
+                        , @RequestParam("vcode") String vcode, HttpServletRequest req){
+        HashMap<String, Object> map = new HashMap<>();
+        User user1 = userMapper.selectUserByUsername(user.getPhone());
+        if(user1==null){
+            map.put("msg","账户不存在！");
+        }else {
+            map.put("user",user1);
+        }
+        return map;
     }
 
     @GetMapping("/checkUserName")

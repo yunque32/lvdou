@@ -16,6 +16,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
@@ -25,10 +26,6 @@ import java.util.*;
 @RestController
 @RequestMapping("/upload")
 public class UploadController {
-
-    /** 文件服务器的访问地址*/
-    @Value("${fileServerUrl}")
-    private String fileServerUrl;
 
     public File getImgFile() {
         return imgFile;
@@ -118,17 +115,18 @@ public class UploadController {
         return data;
     }
     @PostMapping("/uploadExcelFile")
-    public List<Map<String,String>> selectFile(@RequestParam("file")MultipartFile multipartFile){
+    public List<Map<String,String>> selectExcelFile(
+            @RequestParam("file")MultipartFile multipartFile){
         List<Map<String,String>> list = new ArrayList<>();
-        Map<String, String> statusmap = new HashMap<>();
-        statusmap.put("status","500");
+        Map<String, String> map = new HashMap<>();
+        map.put("msg","500");
+        try {
         String originalFilename = multipartFile.getOriginalFilename();
         String subname = FilenameUtils.getExtension(originalFilename);
-        StringBuffer url=new StringBuffer("127.0.0.1:9101/admin/index.html?=");
+        StringBuffer url=new StringBuffer("127.0.0.1:9999/admin/index.html?=");
         File file = new File("D://" + originalFilename);
-        try {
+
             multipartFile.transferTo(file);
-            Map<String, String> map = new HashMap<>();
             FileInputStream fis=new FileInputStream(file);
             if("xls".equals(subname)){
                 HSSFWorkbook workbook=new HSSFWorkbook(fis);
@@ -203,15 +201,23 @@ public class UploadController {
                 System.out.println("上传文件不是Excel文档");
                 return list;
             }
-        } catch (Exception e) {
-            System.out.println("失败了");
+        }catch (IOException e){
+            map.put("msg","读取文件异常，请检查文件名");
             e.printStackTrace();
-            list.add(statusmap);
-            return list;
-
+        }catch (Exception e){
+            map.put("msg","其他异常");
+            e.printStackTrace();
         }
-        statusmap.put("status","200");
-        list.add(statusmap);
+        list.add(map);
         return list;
     };
+    @PostMapping("/uploadFile")
+    public  Map<String,Object> selectFile(
+            @RequestParam("file")MultipartFile multipartFile){
+        Map<String, Object> map = new HashMap<>();
+
+
+        return map;
+    }
+
 }

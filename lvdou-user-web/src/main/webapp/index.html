@@ -7,10 +7,14 @@
               name="viewport"/>
         <meta content="yes" name="apple-mobile-web-app-capable"/>
         <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
-        <meta content="telephone=no" name="format-detection"/>
+        <meta content="teleuser.phone=no" name="format-detection"/>
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
-        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <link rel="stylesheet" href="/js/plugins/adminLTE/css/AdminLTE.css"/>
+        <link rel="stylesheet" href="/js/plugins/bootstrap/css/bootstrap.css"/>
+
+        <script src="/js/plugins/jquery/jquery-2.2.3.min.js"></script>
         <script type="text/javascript" src="js/base/scrollTab.js"></script>
+        <script src="/js/plugins/bootstrap/bootstrap.js"></script>
 
         <script src="/js/plugins/angularjs/angular.min.js"></script>
         <script src="/js/base/base.js"></script>
@@ -69,7 +73,8 @@
                                                     <p>{{Goods.title}}</p>
                                                 </div>
                                                 <div class="jj">
-                                                    ￥<span class="pri" ng-model="price">{{Goods.price}}</span>5<span class="axe">斤</span>
+                                                    ￥<span class="pri" ng-model="price">{{Goods.price}}</span>5
+                                                    <span class="axe">斤</span>
                                                 </div>
                                                 <div style="text-align: center">
                                                     <button id="jian" class="jian" ng-click="jian(Goods)">-</button>
@@ -233,10 +238,12 @@
                                     <button id="shopcart" ng-click="shopcart()">确认订单</button>
                                 </div>
                                 <div class="info">
-                                    <div class="info_l" ng-if="user.name">姓名：张三&nbsp&nbsp福利余额：100元</div>
-                                    <div class="info_l" ng-if="!user.name">姓名：游客 </div>
-                                    <div class="info_r">
-                                        <button class="button button9">个人信息修改</button>
+                                    <div class="info_l" ng-if="user.phone">姓名：{{user.phone}}&nbsp&nbsp福利余额：100元</div>
+                                    <div class="info_l" ng-if="!user.phone">姓名：游客 </div>
+                                    <div class="info_r" ng-if="user.phone">
+                                        <button type="button" class="btn bg-olive btn-xs"
+                                                data-toggle="modal" data-target="#yuanModal" >
+                                            个人信息修改</button>
                                         <button class="button button9">订单记录</button>
                                     </div>
                                     <div style="clear: both"></div>
@@ -250,14 +257,41 @@
 
             </section>
         </section>
-            <!--必要脚本代码-->
-            <script>
-                $(function(){
-                    $(".button").click(function(){
-                        $(this).css({"background-color":"#518f09","color":"yellow"}).siblings().css({"background-color":"#518f09","color":"#fff"});
-                    })
-                })
-            </script>
 
+        <div class="modal fade" id="yuanModal" tabindex="-1" role="dialog"
+             aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" >
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"
+                                aria-hidden="true" >×</button>
+                        <h3 id="myModalLabel3">个人信息</h3>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered table-striped"  width="800px">
+                            <tr>
+                                <td>昵称</td>
+                                <td>来自星星的帅哥</td>
+                            </tr>
+                            <tr>
+                                <td>联系方式</td>
+                                <td>135914389603</td>
+                            </tr>
+                            <tr>
+                                <td>默认地址</td>
+                                <td>广州白云区</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success" data-dismiss="modal"
+                                ng-click="saveOrUpdate();"
+                                aria-hidden="true">保存</button>
+                        <button class="btn btn-default" data-dismiss="modal"
+                                aria-hidden="true">关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

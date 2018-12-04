@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport"/>
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"
+          name="viewport"/>
 
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
 
@@ -35,10 +36,9 @@
         <td>
                 <div style="text-align: center">
                     <button id="jian" class="jian" ng-click="jian()">-</button>
-                    <input class="num" ng-model="count">
+                    <input class="num" ng-model="count" value="1">
                     <button id="jia" class="jia" ng-click="jia()">+</button>
                 </div>
-        </div>
         </td>
         <td><span class="num-color">20</span> 元</td>
         <td><span class="num-color">40</span>元</td>
@@ -48,11 +48,13 @@
         <td>2</td>
         <td class="name-color">百香果</td>
         <td>1斤</td>
-        <td><div style="text-align: center">
-            <span class="jia">-</span>
-            <input class="num" value="1">
-            <span class="jian">+</span>
-        </div></td>
+        <td>
+            <div style="text-align: center">
+                <button id="jian" class="jian" ng-click="jian(Goods)">-</button>
+                <input  id= {{Goods.id}} class="num"  value="0" >
+                <button id="jia" class="jia" ng-click="jia(Goods)">+</button>
+            </div>
+        </td>
         <td><span class="num-color">20</span>元</td>
         <td><span class="num-color">40</span>元</td>
         <td><a href="#"> 删除</a></td>

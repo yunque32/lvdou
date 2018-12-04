@@ -24,12 +24,22 @@ public class LoginController {
     /** 获取登录用户名 */
     @GetMapping("/user/showLoginName")
     public Map<String,String> showName(HttpServletRequest request){
-        SecurityContextImpl securityContextImpl = (SecurityContextImpl) request
-                .getSession().getAttribute("SPRING_SECURITY_CONTEXT");
+        Map<String, String> map = new HashMap<>(8);
+        try {
+            SecurityContextImpl securityContextImpl = (SecurityContextImpl) request
+                    .getSession().getAttribute("SPRING_SECURITY_CONTEXT");
 
 // 登录名
-        String name = securityContextImpl.getAuthentication().getName();
+            String name = securityContextImpl.getAuthentication().getName();
 
+            map.put("loginName", name);
+            return map;
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("登录失败！！！");
+            map.put("msg","登录失败");
+        }
+        return map;
         // 登录密码，未加密的
 //        System.out.println("Credentials:"
 //                + securityContextImpl.getAuthentication().getCredentials());
@@ -46,9 +56,7 @@ public class LoginController {
 //            System.out.println("Authority" + grantedAuthority.getAuthority());
 //        }
 
-            Map<String, String> map = new HashMap<>(1);
-            map.put("loginName", name);
-            return map;
+
     }
     @GetMapping("/sessionTimeout")
     public String sessionTimeout(){

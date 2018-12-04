@@ -5,16 +5,20 @@ app.controller('itemCatController', function($scope, $controller, baseService){
     $controller('baseController',{$scope:$scope});
 
     /** 根据父级id查询所有的商品分类 */
-    $scope.findItemCatByParentId = function(parentId){
+    $scope.parentId=0;
+    $scope.findItemCatByParentId = function(){
         // 发送异步请求
-        baseService.sendGet("/itemCat/findItemCatByParentId",
-            "parentId=" + parentId)
+        baseService.sendGet("/itemCat/findItemCatByParentId?parentId="
+            +$scope.parentId)
             .then(function(response){
-                // 获取响应数据
-                $scope.dataList = response.data;
-        });
+                // 第一个下拉列表中的数据
+                if(response.data.ItemCats){
+                    $scope.itemCatList1=response.data.ItemCats;
+                }else{
+                    alert(response.data.msg);
+                }
+            });
     };
-
 
     // 定义级别的变量
     $scope.grade = 1;

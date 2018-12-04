@@ -1,6 +1,5 @@
 package com.lvdou.controller;
 
-import com.lvdou.pojo.ItemCat;
 import com.lvdou.service.impl.ItemCatServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -8,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/itemCat")
@@ -19,9 +18,9 @@ public class ItemCatController {
 
 	/** 根据父级id查询商品分类 */
 	@GetMapping("/findItemCatByParentId")
-	public List<ItemCat> findItemCatByParentId(@RequestParam(value = "parentId",
+	public Map<String,Object> findItemCatByParentId(@RequestParam(value = "parentId",
 			defaultValue = "0")Long parentId){
-
+		System.out.println("来到控制器方法");
 		return itemCatService.findItemCatByParentId(parentId);
 	}
 }

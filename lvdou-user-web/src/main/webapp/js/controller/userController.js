@@ -23,17 +23,17 @@ app.controller('userController', function($scope, baseService){
         baseService.sendPost("/user/login2?vcode="+$scope.vcode,$scope.user)
             .then(function (response) {
                 if(response.data.user){
-                    $scope.user=response.data.user;
+
                     location.href = "/index.html";
-                    alert("登录成功！");
+                    var s = JSON.stringify(response.data.user);
+
                 }else {
                     alert(response.data.msg);
-                }
+                };
             },function () {
                 alert('亲，作为日理万鸡的系统，我很忙啦，请稍后再试！');
-            })
+            });
     };
-
 
     $scope.checkUserName=function () {
         baseService.sendGet("/user/checkUserName?userName="+$scope.user.username)
@@ -53,8 +53,6 @@ app.controller('userController', function($scope, baseService){
                 $scope.address1,$scope.user)
                 .then(function (response) {
                     if(response.data.user){
-
-                        alert("注册成功！");
                         location.href = "/index.html";
                     }else {
                         alert(response.data.msg);

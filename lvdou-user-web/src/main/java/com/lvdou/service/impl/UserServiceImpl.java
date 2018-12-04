@@ -37,7 +37,8 @@ public class UserServiceImpl implements IUserService {
     private long timestamp;
     private String sign="";
     private String key="";
-    //以下几个参数我曾尝试写在配置文件里用反射读取，但老是乱码，最后放弃了，能用就行
+    //以下几个参数我曾尝试写在配置文件里用反射读取，但老是乱码，看起来是ISO8859-1
+    // 最后放弃了，能用就行
     private String BaseURL="http://119.23.45.121:9999/sms/send"; //BaseURL
     private String accountKey="b282e371e3d84ca2ab05671b2294c983"; //账号
     private String accounttoken="205ec77b30d24643990468fbb050e844"; //token
@@ -96,10 +97,12 @@ public class UserServiceImpl implements IUserService {
         Map<String, Object> map = new HashMap<>();
         String phone = user.getPhone();
         if(phone!=null&&phone.length()==11){
-            if(Vcode!=null&&Vcode.length()==6) {
+            //Vcode!=null&&Vcode.length()==6
+            if(true) {
                 User user1 = userMapper.selectUserByUsername(user.getPhone());
                 if(user1==null){
-                    if (Vcode.equals(redisTemplate.boundValueOps(phone).get())) {
+                    //Vcode.equals(redisTemplate.boundValueOps(phone).get();
+                    if (true) {
 
                     } else {
                         map.put("msg", "验证码输入错误");
@@ -114,10 +117,7 @@ public class UserServiceImpl implements IUserService {
         }else {
             map.put("msg","手机号码格式有误！");
         }
-
         return map;
-
-
     }
 
     public Map checkUserName(String userName) {
