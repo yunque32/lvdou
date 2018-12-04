@@ -20,7 +20,7 @@ public class ItemCatController {
 	@GetMapping("/findItemCatByParentId")
 	public Map<String,Object> findItemCatByParentId(@RequestParam(value = "parentId",
 			defaultValue = "0")Long parentId){
-		System.out.println("来到控制器方法");
 		return itemCatService.findItemCatByParentId(parentId);
 	}
+
 }

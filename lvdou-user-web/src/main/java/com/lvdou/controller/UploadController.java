@@ -14,11 +14,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
+import java.awt.*;
+import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.*;
+import java.util.List;
 
 /**
  * 文件上传控制器
@@ -212,12 +212,20 @@ public class UploadController {
         return list;
     };
     @PostMapping("/uploadFile")
-    public  Map<String,Object> selectFile(
-            @RequestParam("file")MultipartFile multipartFile){
+    public  Map<String,Object> selectFile(ArrayList<Image> images){
+
         Map<String, Object> map = new HashMap<>();
 
-
+        if(images==null){
+            System.out.println("list为空");
+            map.put("msg","图片都没传过来，给你显示什么？");
+        }else {
+                for (Image image : images) {
+                    System.out.println(image.getSource().toString()+"wss");
+                }
+        }
         return map;
+
     }
 
 }
