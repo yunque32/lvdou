@@ -1,0 +1,113 @@
+﻿* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "微软雅黑";
+	font-size:0.12rem
+}
+html{
+	font-size: 31.25vw;
+}
+.regitem-title{height:150px;
+         line-height:150px;
+		 text-align:center}
+
+
+a{ text-decoration:none;
+}
+
+.regitem{ margin:10px 0px; position: relative; display:inline-block;}
+
+.regitem span{
+	 width:1rem;
+     display:inline-block;
+	 text-align:right;
+}
+.dregbtn{text-align:center;}
+.dregbtn a{
+	display:inline-block;
+    height:.3rem;
+	width:100%;
+	background-color:#1AAD19;
+	color:#FFFFFF;
+	border-radius:5px;
+	line-height:.3rem;
+
+}
+
+
+
+.regitem>button {
+	position: absolute;
+	width: 110px;
+	height: 30px;
+	line-height: 24px;
+	text-align: center;
+	top: 0px;
+	right: 0px;
+	background-color: #dedede;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.regitem>button.clicked {
+	background-color: #4477d0;
+}
+
+.regitem .modify {
+	position: absolute;
+	width: 70px;
+	height: 30px;
+	line-height: 24px;
+	text-align: center;
+	top: 0px;
+	right: -80px;
+	background-color: #dedede;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.regitem .xg {
+	top:9px;
+}
+
+.free { text-align: right; padding:2% 25%; font-size: 0.1rem; }
+.free a { color: #666;}
+.welcome { padding: 1% 30% 5% 30%; color: #1AAD19}
+
+/*屏幕分辨率最小992时*/
+@media screen and (min-width:992px){
+	.regitem>button {
+		position: absolute;
+		width: 200px;
+		height: 60px;
+		line-height: 30px;
+		text-align: center;
+		top: 0px;
+		right: 0px;
+		background-color: #dedede;
+		color: #fff;
+		cursor: pointer;
+		font-size: 32px;
+
+	}
+	.member img{ width:100%; }
+	.agree { font-size: 20px; text-align:center }
+	.agree a{ font-size: 20px;}
+}
+
+/*屏幕分辨率最大992时*/
+@media screen and (max-width:992px){
+	.regitem>button {
+		width: 78px;
+		height: 25px;
+		line-height: 20px;
+		font-size: 14px;
+	}
+	.member { }
+	.member img{ width:100%; }
+	.agree { font-size: 16px; text-align:center }
+	.agree a{ font-size: 16px;}
+}
+

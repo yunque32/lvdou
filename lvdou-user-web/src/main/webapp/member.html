@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+      <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+	<!-- Bootstrap Styles-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+     <!-- FontAwesome Styles-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+        <!-- Custom Styles-->
+    <link href="assets/css/custom-styles.css" rel="stylesheet" />
+     <!-- Google Fonts-->
+   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+
+</head>
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default top-navbar" role="navigation">
+            <div class="navbar-header">
+
+                <a class="navbar-brand" href="index.html"><strong>合作商家后台</strong></a>
+            </div>
+
+            <ul class="nav navbar-top-links navbar-right">
+
+
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+
+                        <li><a href="#"><i class="fa fa-sign-out fa-fw"></i> 退出</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+        </nav>
+        <!--/. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+
+                    <li>
+                        <a  href="order.html"><i class="fa fa-align-justify"></i> 订单管理</a>
+                    </li>
+                    <li class="active-menu">
+                        <a href="ui-elements.html"><i class="fa fa-desktop"></i> 会员管理</a>
+                    </li>
+                    <li >
+                        <a href="chart.html"><i class="fa fa-clipboard"></i> 帐号管理</a>
+                    </li>
+                    <li>
+                        <a href="tab-panel.html"><i class="fa fa-user"></i> 用户管理</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper" >
+            <br /><br /><br />
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    订单管理
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                       
+                            <table width="100%" border="0">
+                                <tr>
+                                    <td><button class="button line btn3">刷新</button>
+                                        <button class="button line">删除</button>
+                                        <button class="button line">修改</button>
+                                        <button class="button btn2">导出</button></td>
+
+                                    <td style="width: 110px;"><input class="form-control" placeholder="请输入姓名"></td>
+                                    <td style="width: 10px;"></td>
+                                    <td><button class="button line">查询</button></td>
+                                    <td style="width: 110px;"><input class="form-control" placeholder="批量充值"></td>
+                                    <td style="width: 10px;"></td>
+                                    <td><button class="button line">充值</button></td>
+                                </tr>
+                            </table>
+
+                        <table class="table  table-hover " >
+                            <thead>
+                            <tr role="row">
+                                <th class="sorting_asc" style="width: 50px;"><input type="checkbox" value="">序号</th>
+                                <th class="sorting" style="width: 120px;"><select>
+                                    <option value="volvo">公司部门</option>
+                                    <option value="audi">人事部</option>
+                                    <option value="saab">开发部</option>
+                                    <option value="opel">财务部</option>
+                                </select></th>
+                                <th class="sorting" style="width: 120px;">姓名</th>
+                                <th class="sorting" style="width: 150px;">手机号码</th>
+                                <th class="sorting" style="width: 78px;">会员金额</th>
+                                <th class="sorting" style="width: 78px;">充值金额</th>
+                                <th class="sorting" style="width: 40px;"></th>
+                                <th class="sorting" style="width: 40px;">操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="gradeA odd">
+                                <td class="sorting_1"><input type="checkbox" value="">1</td>
+                                <td class=" ">开发部</td>
+                                <td class=" ">陈开一</td>
+                                <td class="center ">13652623556</td>
+                                <td class="center ">20元</td>
+                                <td class="center ">10元</td>
+                                <td class="center "><input class="form-control" placeholder="请输入充值金额"></td>
+                                <td class="center "><button class="button line">充值</button></td>
+                            </tr><tr class="gradeA even">
+                                <td class="sorting_1"><input type="checkbox" value="">2</td>
+                                <td class=" ">开发部</td>
+                                <td class=" ">陈开一</td>
+                                <td class="center ">13652623556</td>
+                                <td class="center ">20元</td>
+                                <td class="center ">10元</td>
+                                <td class="center "><input class="form-control" placeholder="请输入充值金额"></td>
+                                <td class="center "><button class="button line">充值</button></td>
+                            </tr></tbody>
+                        </table><div class="row"><div class="col-sm-6" >显示57个条目中的1到10个</div><div class="col-sm-6" style="text-align: right;"><div ><ul class="pagination"><li  ><a href="#">上一页</a></li><li class="paginate_button active" ><a href="#">1</a></li><li class="paginate_button "><a href="#">2</a></li><li class="paginate_button " ><a href="#">3</a></li><li class="paginate_button "><a href="#">4</a></li><li class="paginate_button " tabindex="0"><a href="#">5</a></li><li class="paginate_button " tabindex="0"><a href="#">6</a></li><li class="paginate_button next"><a href="#">下一页</a></li></ul></div></div></div></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- /. WRAPPER  -->
+    <!-- JS Scripts-->
+    <!-- jQuery Js -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+      <!-- Bootstrap Js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+
+    <!--时间js start-->
+    <script src="assets/js/moment-with-locales.js"></script>
+    <script src="assets/js/bootstrap-datetimepicker.js"></script>
+    <!--时间js end-->
+
+    <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker12').datetimepicker({locale: 'zh-cn', viewMode: 'days', format: 'YYYY/MM/DD'});
+            $('#datetimepicker13').datetimepicker({locale: 'zh-cn', viewMode: 'days', format: 'YYYY/MM/DD'});
+            $("#datetimepicker12").on("dp.change",function (e) {
+                $('#datetimepicker13').data("DateTimePicker").minDate(e.date);
+            });
+            $("#datetimepicker13").on("dp.change",function (e) {
+                $('#datetimepicker12').data("DateTimePicker").maxDate(e.date);
+            });
+        });
+    </script>
+</body>
+</html>

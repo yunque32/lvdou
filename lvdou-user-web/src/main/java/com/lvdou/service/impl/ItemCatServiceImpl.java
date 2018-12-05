@@ -24,7 +24,6 @@ public class ItemCatServiceImpl{
 
 	/** 根据父级id查询商品分类 */
 	public Map<String,Object> findItemCatByParentId(Long parentId){
-		System.out.println("进入到了Service方法！");
 		Map<String, Object> map = new HashMap<>();
 		try{
 			// select * from tb_item_cat where parent_id = ?

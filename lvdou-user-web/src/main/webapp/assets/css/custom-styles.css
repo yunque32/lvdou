@@ -1,0 +1,73 @@
+body {font-family: 'Open Sans', sans-serif; font-size:15px;background: url(../img/bg-img.jpg) !important;}
+#wrapper {width: 100%;}
+#page-wrapper {padding: 15px 15px;min-height: 900px;background: #E6E6E6; margin: 0 0 0 220px;}
+#page-inner {width:100%;margin:10px 20px 10px 0px;background-color:transparent;padding:10px;min-height:1200px;}
+
+/*---header start---*/
+.top-navbar{margin:0px;background: #4A4A4A;border-bottom:none;position: fixed;width: 100%;z-index: 300;}
+.top-navbar .navbar-brand {color: #fff;width: 220px;text-align: left;height: 60px;font-size: 24px;font-weight: 700;line-height: 30px;background: #24383A;}
+.top-navbar .nav > li > a {position: relative;display: block;padding: 20px;color: #FFFFFF;margin: 0px;}
+.top-navbar .nav > li > a:hover, .top-navbar .nav > li > a:focus {text-decoration: none;color: #319DB5 !important;background: transparent;}
+.active-menu {background-color: #6aa918 !important;color: #fff !important;}
+/*---header end---*/
+
+/*---左侧菜单start---*/
+.sidebar-collapse .nav > li > a {color: #FFFFFF;background:transparent;text-shadow:none;}
+.sidebar-collapse > .nav > li > a { padding: 12px 10px;}
+.navbar-side {border:none;background: #518f09 url(../img/bg-img.jpg) !important;}
+.navbar-side .nav > li > a > i{color: #FFFFFF;padding: 8px;width: 30px;text-align: center;}
+.navbar-side {z-index: 1;position: fixed;width: 220px;top: 80px;}
+.navbar-default {border:0px solid black;}
+/*---左侧菜单end---*/
+
+.color { height: 180px;  padding:10px; color:#fff; position: relative;  }
+.block { background-color: #00c0ef;  }
+.block2 { background-color: #6aa918; }
+.block3 { background-color: #f39c11; }
+.block4 { background-color: #dd4c39;}
+.block4_con { text-align: center; padding-top: 20px;}
+.block_num { font-size: 42px;}
+.block_detail { width:100%; height:36px; line-height: 36px;  text-align: center; position: absolute; bottom:0; }
+.block_detail a { color: #fff;}
+.block2_num { font-size: 42px;}
+.block2_detail { width:100%; height:36px; text-align: center; position: absolute; bottom:0; }
+.block2_detail a { color: #fff;}
+.han { height: 36px; width: 100%;}
+
+/*------增删改查按钮start-----*/
+.button {background-color: #6aa918;border: none;color: white;padding: 5px 15px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;cursor: pointer;float: left;}
+.button2 { margin-left:12px;background-color: #6aa918;border: none;color: white;padding: 5px 15px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;cursor: pointer;}
+.button:hover { background-color: #3e8e41;}
+.btn { border-top-left-radius: 6px;border-bottom-left-radius: 6px;}
+.btn2 { border-top-right-radius: 6px;border-bottom-right-radius: 6px;}
+.btn3 { border-top-left-radius: 6px;border-bottom-left-radius: 6px;}
+.line {  border-right:1px solid #a1d2a3;}
+.form-group { margin-bottom: 0;}
+/*------增删改查按钮end-----*/
+
+.long { width:80px;}
+.min { min-height: 800px;}
+.aui-flex-box { border-bottom: 1px dashed #dfdfdf;}
+.aui-flex-box h4 { color: #999}
+.aui-flex-box h4 em { color: #666}
+
+.form-control2{width:27%;height:34px;padding:6px 12px;font-size:14px;line-height:1.42857143;color:#555;background-color:#fff;background-image:none;border:1px solid #ccc;border-radius:4px;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075);box-shadow:inset 0 1px 1px rgba(0,0,0,.075);-webkit-transition:border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;-o-transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s}
+.log {  font-size: 16px; font-weight:bold; }
+.shang { padding-top:25px; border-top: 1px dashed #dfdfdf;}
+.xia { margin-bottom: 8px;}
+
+.h4, h4 { font-size: 16px;}
+.phone { display: inline-block; margin-right:10px;}
+.sure { margin-top:10px;}
+.sure2 { margin-top:10px; margin-left: 126px;}
+select {
+    border: solid 1px #fff; width:85px;
+}
+.month { width:8%; padding: 5px 0; text-align: right; }
+.bottom { padding-bottom: 0px;}
+.red { color: #ff0000; font-size: 16px; }
+.zuo { padding-left: 0px;}
+.center { text-align: center;}
+
+.sorting2 { text-align: center;}
+

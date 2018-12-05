@@ -16,9 +16,11 @@ app.controller("baseController", function($scope, $http){
 
         });
     };
-    $(function(){
-        $(".button").click(function(){
-            $(this).css({"background-color":"#518f09","color":"yellow"}).siblings().css({"background-color":"#518f09","color":"#fff"});
-        })
-    })
+    // $(function(){
+    //     $(".button").click(function(){
+    //         $(this).css({"background-color":"#518f09","color":"yellow"})
+    //          .siblings().css({"background-color":"#518f09","color":"#fff"});
+    //     })
+    // })
+
 });

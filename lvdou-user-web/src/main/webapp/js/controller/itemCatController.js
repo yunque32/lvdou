@@ -1,5 +1,5 @@
 /** 定义控制器层 */
-app.controller('itemCatController', function($scope, $controller, baseService){
+app.controller('itemCatController', function($scope, $controller,baseService,uploadService){
 
     /** 指定继承baseController */
     $controller('baseController',{$scope:$scope});
@@ -43,8 +43,6 @@ app.controller('itemCatController', function($scope, $controller, baseService){
         // 查询分类
         $scope.findItemCatByParentId(entity.id);
     };
-
-
 
 
     /** 添加或修改 */
@@ -94,5 +92,9 @@ app.controller('itemCatController', function($scope, $controller, baseService){
             }
         });
     };
+
+    $scope.uploadFile=function () {
+        uploadService.uploadFile();
+    }
 
 });

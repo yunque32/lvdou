@@ -16,11 +16,9 @@ app.service('uploadService', function($http){
                 formData.append('file', file);
                 $http({
                     method: "post",
-                    url: commonService.projectName + "/so/assetmanage/upload",
+                    url: "/upload/uploadExcelFile",
                     data: formData,
-                    headers: {
-                        'Content-Type': undefined
-                    },
+                    headers: {'Content-Type': "multipart/form-data"},
                     transformRequest: angular.identity
                 }).then(function (response) {
                     if (response.status == 200) {
@@ -40,17 +38,26 @@ app.service('uploadService', function($http){
     this.uploadFile=function () {
 
         var formData = new FormData();
-        formData.append("files",file.files);
+        formData.append("file",file.files[0]);
         return $http({
             method : 'post',
             // 请求URL
-            url : '/uploadFile',
+            url : '/upload/uploadFile',
             // 表单数据对象
             data : formData,
-            headers : {"Content-Type": undefined}, // 设置请求头
+            headers : {"Content-Type":undefined}, // 设置请求头
             transFormRequest : angular.identity // 转换表单的请求对象(把文件转化成字节)
+        }).then(function (response) {
+            if(response.data.msg){
+                alert(response.data.msg);
+            }else{
+                alert('未知失败！');
+            }
+        },function () {
+            alert('服务器没响应！');
         });
+    };
 
-    }
+
 
 });

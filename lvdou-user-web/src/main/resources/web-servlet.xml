@@ -35,7 +35,13 @@
             </bean>
         </mvc:message-converters>
     </mvc:annotation-driven>
-
+    <bean id="multipartResolver"
+          class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!-- 设置文件上传的默认编码 -->
+        <property name="defaultEncoding" value="UTF-8"/>
+        <!-- 设置文件上传的大小 2M -->
+        <property name="maxUploadSize" value="2097152"/>
+    </bean>
     <!-- 配置静态资源用WEB容器默认的servlet来处理 -->
     <mvc:default-servlet-handler/>
 

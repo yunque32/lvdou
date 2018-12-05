@@ -1,7 +1,7 @@
 app.service('uploadService', function($http){
 
     /** 定义文件异步上传的方法 */
-    this.uploadFile = function(){
+    this.uploadExcelFile = function(){
 
         // 创建表单数据对象
         var formData = new FormData();
@@ -12,15 +12,13 @@ app.service('uploadService', function($http){
         var file = document.getElementById("file").files[0];
         if(file.name) {
             var fileName = file.name.substring(file.name.lastIndexOf(".") + 1);
-            if (fileName == "xlsx" || fileName == "xls") {
+            if (fileName == 'xlsx' || fileName == "xls") {
                 formData.append('file', file);
                 $http({
                     method: "post",
                     url: commonService.projectName + "/so/assetmanage/upload",
                     data: formData,
-                    headers: {
-                        'Content-Type': undefined
-                    },
+                    headers: {'Content-Type': undefined},
                     transformRequest: angular.identity
                 }).then(function (response) {
                     if (response.status == 200) {
@@ -37,14 +35,14 @@ app.service('uploadService', function($http){
         }
 
     };
-    this.uploadExcelFile=function () {
+    this.uploadFile=function () {
 
         var formData = new FormData();
         formData.append("file",file.files[0]);
         return $http({
             method : 'post',
             // 请求URL
-            url : '/uploadExcelFile',
+            url : '/upload/uploadFile',
             // 表单数据对象
             data : formData,
             headers : {"Content-Type": undefined}, // 设置请求头

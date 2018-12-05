@@ -1,0 +1,303 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+      <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+	<!-- Bootstrap Styles-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+     <!-- FontAwesome Styles-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+        <!-- Custom Styles-->
+    <link href="assets/css/custom-styles.css" rel="stylesheet" />
+     <!-- Google Fonts-->
+   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+
+</head>
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default top-navbar" role="navigation">
+            <div class="navbar-header">
+
+                <a class="navbar-brand" href="index.html"><strong>合作商家后台</strong></a>
+            </div>
+
+            <ul class="nav navbar-top-links navbar-right">
+
+
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+
+                        <li><a href="#"><i class="fa fa-sign-out fa-fw"></i> 退出</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+        </nav>
+        <!--/. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+
+                    <li>
+                        <a  href="order.html"><i class="fa fa-align-justify"></i> 订单管理</a>
+                    </li>
+                    <li>
+                        <a href="ui-elements.html"><i class="fa fa-desktop"></i> 会员管理</a>
+                    </li>
+                    <li >
+                        <a href="chart.html"><i class="fa fa-clipboard"></i> 帐号管理</a>
+                    </li>
+                    <li class="active-menu">
+                        <a href="tab-panel.html"><i class="fa fa-user"></i> 用户管理</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper" >
+            <br /><br /><br />
+
+
+            <div class="panel panel-default min">
+                <div class="panel-heading">
+                    用户管理
+                </div>
+
+            <!-- 选项卡start -->
+                <div class="panel-body bottom" >
+                    <div class="log xia">操作日志</div>
+                    <table width="100%" border="0">
+                        <tr>
+                            <td><button class="button line btn3">刷新</button>
+                                <button class="button btn2">导出</button></td>
+                            <td style="width: 100px;"></td>
+                            <td style="width: 180px;">
+                                <div class="form-group">
+                                    <div class='input-group date' >
+                                        <input type='text' class="form-control" id='datetimepicker12'/>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                </span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width: 40px;text-align: center;">至</td>
+                            <td style="width: 180px;">
+                                <div class="form-group">
+                                    <div class='input-group date' >
+                                        <input type='text' class="form-control" id='datetimepicker13'/>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                </span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width: 10px;"></td>
+                            <td><button class="button line">查询</button></td>
+
+                        </tr>
+                    </table>
+                    <ul class="nav nav-tabs sure">
+                        <li class="active"><a href="#home" data-toggle="tab">会员管理</a>
+                        </li>
+                        <li class=""><a href="#profile" data-toggle="tab">充值记录</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div class="tab-pane fade active in" id="home">
+                            <!-- 会员管理记录 start -->
+                            <div class="sure">
+                                <table class="table  table-hover " >
+                                    <thead>
+                                    <tr role="row">
+                                        <th class="sorting_asc" style="width: 50px;"><input id="j_cbAll" type="checkbox" value="">序号</th>
+                                        <th class="center" style="width: 150px;"><select>
+                                            <option value="volvo">公司部门</option>
+                                            <option value="audi">人事部</option>
+                                            <option value="saab">开发部</option>
+                                            <option value="opel">财务部</option>
+                                        </select></th>
+                                        <th class="center" style="width: 150px;">操作方式</th>
+                                        <th class="center" style="width: 220px;">操作日期</th>
+                                        <th class="center" style="width: 120px;">操作内容</th>
+                                        <th class="center" style="width: 120px;" >变动金额</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="j_tb">
+                                    <tr class="gradeA even">
+                                        <td class="sorting_1"><input type="checkbox" value="">1</td>
+                                        <td class="center">开发部</td>
+                                        <td class="center">操作方式</td>
+                                        <td class="center ">2019-10-20</td>
+                                        <td class="center ">******</td>
+                                        <td class="center "><span class="red">20</span>元</td>
+                                    </tr><tr class="gradeA even">
+                                        <td class="sorting_1"><input type="checkbox" value="">1</td>
+                                        <td class="center">开发部</td>
+                                        <td class="center">操作方式</td>
+                                        <td class="center ">2019-10-20</td>
+                                        <td class="center ">******</td>
+                                        <td class="center "><span class="red">20</span>元</td>
+                                    </tr><tr class="gradeA even">
+                                        <td class="sorting_1"><input type="checkbox" value="">1</td>
+                                        <td class="center">开发部</td>
+                                        <td class="center">操作方式</td>
+                                        <td class="center ">2019-10-20</td>
+                                        <td class="center ">******</td>
+                                        <td class="center "><span class="red">20</span>元</td>
+                                    </tr>
+                                    </tbody>
+                                </table><div class="row"><div class="col-sm-6" ><div style="padding-left: 20px;">显示57个条目中的1到10个</div></div><div class="col-sm-6" style="text-align: right;"><div ><ul class="pagination"><li  ><a href="#">上一页</a></li><li class="paginate_button active" ><a href="#">1</a></li><li class="paginate_button "><a href="#">2</a></li><li class="paginate_button " ><a href="#">3</a></li><li class="paginate_button "><a href="#">4</a></li><li class="paginate_button " tabindex="0"><a href="#">5</a></li><li class="paginate_button " tabindex="0"><a href="#">6</a></li><li class="paginate_button next"><a href="#">下一页</a></li></ul></div></div></div></div>
+
+                            <!-- 会员管理记录 end -->
+                        </div>
+                        <div class="tab-pane fade" id="profile">
+                            <!-- 充值记录 start -->
+                            <div class="sure">
+
+
+                                <table class="table  table-hover " >
+                                    <thead>
+                                    <tr role="row">
+                                        <th class="sorting_asc" style="width: 50px;"><input type="checkbox" />序号</th>
+                                        <th class="center" style="width: 150px;">充值日期</th>
+                                        <th class="center" style="width: 150px;">充值银行</th>
+                                        <th class="center" style="width: 150px;">充值帐号</th>
+                                        <th class="center" style="width: 78px;">充值金额</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="gradeA even">
+                                        <td class=""><input type="checkbox" value="">1</td>
+                                        <td class="center">2018-11-20</td>
+                                        <td class="center">中国人民银行</td>
+                                        <td class="center ">4063526525255666</td>
+                                        <td class="center "><span class="red">20</span>元</td>
+                                    </tr> <tr class="gradeA even">
+                                        <td class=""><input type="checkbox" value="">1</td>
+                                        <td class="center">2018-11-20</td>
+                                        <td class="center">中国人民银行</td>
+                                        <td class="center ">4063526525255666</td>
+                                        <td class="center "><span class="red">20</span>元</td>
+                                    </tr></tbody>
+                                </table><div class="row"><div class="col-sm-6" ><div >显示57个条目中的1到10个</div></div><div class="col-sm-6" style="text-align: right;"><div ><ul class="pagination"><li  ><a href="#">上一页</a></li><li class="paginate_button active" ><a href="#">1</a></li><li class="paginate_button "><a href="#">2</a></li><li class="paginate_button " ><a href="#">3</a></li><li class="paginate_button "><a href="#">4</a></li><li class="paginate_button " tabindex="0"><a href="#">5</a></li><li class="paginate_button " tabindex="0"><a href="#">6</a></li><li class="paginate_button next"><a href="#">下一页</a></li></ul></div></div></div></div>
+
+                            <!-- 充值记录 end -->
+                        </div>
+                    </div>
+                </div>
+                <!-- 选项卡end -->
+
+                <div class="panel-body ">
+                    <div class="log shang">信息管理</div>
+                    <div class="aui-flex-box">
+                        <h4 class="phone">合作商家： <em>小叶超市</em></h4></br>
+                        <h4 class="phone ">固定电话： <span class="tel">020-363655520</span></h4><button class="phone num1">修改</button></br>
+                        <h4 class="phone">手机号码： <span class="tel2">13695956266</span></h4><button class="phone num2">修改</button>
+                        <h4>联系地址： <input class="form-control2" placeholder="请输入您的联系地址"></h4>
+                    </div>
+                    <div class="aui-flex-box">
+                        <h4>修改密码  <em></em></h4>
+                        <h4>&nbsp;&nbsp;&nbsp;&nbsp;原密码： <input class="form-control2" placeholder="请输入原密码"></h4>
+                        <h4>&nbsp;&nbsp;&nbsp;&nbsp;新密码： <input class="form-control2" placeholder="请输入新密码"></h4>
+                        <h4>确认密码： <input class="form-control2" placeholder="请输入新密码"></h4>
+                    </div>
+                    <button class="sure2">确认修改</button>
+                </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- /. WRAPPER  -->
+    <!-- JS Scripts-->
+    <!-- jQuery Js -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+      <!-- Bootstrap Js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!--时间js start-->
+    <script src="assets/js/moment-with-locales.js"></script>
+    <script src="assets/js/bootstrap-datetimepicker.js"></script>
+    <!--时间js end-->
+
+    <script>
+       $(function () {
+           $(".num1").click(function () {
+               var oldText = $(".tel").html();
+               $(".tel").html("");
+               var $input = $("<input type='text' value='"+oldText+"'>");
+               $(".tel").append($input);
+               $input.select();
+               $input.focus();
+               $input.blur(function () {
+                   $(".tel").html($(this).val())
+               });
+           })
+       })
+    </script>
+
+    <script>
+        $(function () {
+            $(".num2").click(function () {
+                var oldText = $(".tel2").html();
+                $(".tel2").html("");
+                var $input = $("<input type='text' value='"+oldText+"'>");
+                $(".tel2").append($input);
+                $input.select();
+                $input.focus();
+                $input.blur(function () {
+                    $(".tel2").html($(this).val())
+                });
+            })
+        })
+    </script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker12').datetimepicker({locale: 'zh-cn', viewMode: 'days', format: 'YYYY/MM/DD'});
+            $('#datetimepicker13').datetimepicker({locale: 'zh-cn', viewMode: 'days', format: 'YYYY/MM/DD'});
+            $("#datetimepicker12").on("dp.change",function (e) {
+                $('#datetimepicker13').data("DateTimePicker").minDate(e.date);
+            });
+            $("#datetimepicker13").on("dp.change",function (e) {
+                $('#datetimepicker12').data("DateTimePicker").maxDate(e.date);
+            });
+        });
+    </script>
+
+    <script>
+        var all = document.getElementById("j_cbAll");
+        var tbody = document.getElementById("j_tb");
+        var checkboxs = tbody.getElementsByTagName("input");
+        all.onclick = function() {
+            for (var i = 0; i < checkboxs.length; i++) {
+                var checkbox = checkboxs[i];
+                checkbox.checked = this.checked;
+            }
+        };
+        for (var i = 0; i < checkboxs.length; i++) {
+            checkboxs[i].onclick = function() {
+                var isCheckedAll = true;
+                for (var i = 0; i < checkboxs.length; i++) {
+                    if (!checkboxs[i].checked) {
+                        isCheckedAll = false;
+                        break;
+                    }
+                }
+                all.checked = isCheckedAll;
+            };
+        }
+    </script>
+</body>
+</html>

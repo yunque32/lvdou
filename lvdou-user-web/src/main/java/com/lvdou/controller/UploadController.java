@@ -13,7 +13,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.multipart.MultipartHttpServletRequest;
 
+import javax.net.ssl.SSLServerSocket;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.awt.*;
 import java.io.*;
 import java.text.SimpleDateFormat;
@@ -54,66 +58,7 @@ public class UploadController {
     private File imgFile;
     private String imgFileFileName;
     private String imgFileContentType;
-    Map<Object, Object> result = new HashMap<>();
-    /** 文件上传 */
-    @PostMapping("/file")
-    public Map<String, Object> upload1(@RequestParam("file") MultipartFile multipartFile){
-        // {status : 200, url : ''}
-//        Map<String, Object> data = new HashMap<>();
-//        data.put("status", 500);
-//        try{
-//
-//            /** 上传文件到FastDFS文件服务器 */
-//            // 加载配置文件，得到配置文件的绝对路径
-//            String conf_filename = this.getClass()
-//                    .getResource("/fastdfs_client.conf").getPath();
-//            // 初始化客户端全局信息对象
-//            ClientGlobal.init(conf_filename);
-//            // 创建存储客户端对象
-//            StorageClient storageClient = new StorageClient();
-//            // 获取上传文件的原文件名
-//            String originalFilename = multipartFile.getOriginalFilename();
-//            // 上传文件
-//            /**
-//             * http://192.168.12.131/group1/M00/00/01/wKgMg1tMHUGALO2fAAMGxOgwmic727.jpg
-//             * [group1, M00/00/01/wKgMg1tMHB6AdUVgAAMGxOgwmic562.jpg]
-//             * 数组中第一个元素：组名
-//             * 数组中第二个元素: 远程文件名称
-//             */
-//            String[] arr = storageClient.upload_file(multipartFile.getBytes(),
-//                    FilenameUtils.getExtension(originalFilename), null);
-//
-//            // 定义StringBuilder拼接字符串
-//            StringBuilder url = new StringBuilder(fileServerUrl);
-//            for (String str : arr){
-//                url.append("/" + str);
-//            }
-//
-//            data.put("status", 200);
-//            data.put("url", url.toString());
-//        }catch (Exception ex){
-//            ex.printStackTrace();
-//        }
-        return null;
-    }
-    @PostMapping("/image")
-    public Map<String, Object> upload(@RequestParam("image") MultipartFile multipartFile){
-        // {status : 200, url : ''}
-        Map<String, Object> data = new HashMap<>();
-        data.put("status", 500);
-        try{
 
-            String originalFilename = multipartFile.getOriginalFilename();
-            String extension = FilenameUtils.getExtension(originalFilename);
-            File file = new File("D://" + originalFilename);
-            System.out.println(file);
-            multipartFile.transferTo(file);
-
-        }catch (Exception ex){
-            ex.printStackTrace();
-        }
-        return data;
-    }
     @PostMapping("/uploadExcelFile")
     public List<Map<String,String>> selectExcelFile(
             @RequestParam("file")MultipartFile multipartFile){
@@ -121,11 +66,10 @@ public class UploadController {
         Map<String, String> map = new HashMap<>();
         map.put("msg","500");
         try {
-        String originalFilename = multipartFile.getOriginalFilename();
-        String subname = FilenameUtils.getExtension(originalFilename);
-        StringBuffer url=new StringBuffer("127.0.0.1:9999/admin/index.html?=");
-        File file = new File("D://" + originalFilename);
-
+            String originalFilename = multipartFile.getOriginalFilename();
+            String subname = FilenameUtils.getExtension(originalFilename);
+            StringBuffer url=new StringBuffer("127.0.0.1:9999/admin/index.html?=");
+            File file = new File("D://" + originalFilename);
             multipartFile.transferTo(file);
             FileInputStream fis=new FileInputStream(file);
             if("xls".equals(subname)){
@@ -199,6 +143,7 @@ public class UploadController {
                 }
             }else{
                 System.out.println("上传文件不是Excel文档");
+                map.put("msg","上传的文件不是Excel文档");
                 return list;
             }
         }catch (IOException e){
@@ -210,22 +155,33 @@ public class UploadController {
         }
         list.add(map);
         return list;
-    };
+    }
+
     @PostMapping("/uploadFile")
-    public  Map<String,Object> selectFile(ArrayList<Image> images){
+    public  Map<String,Object> uploadFile(@RequestParam("file")
+             MultipartFile multipartFile ){
 
+        System.out.println("进入到了Controller");
         Map<String, Object> map = new HashMap<>();
-
-        if(images==null){
-            System.out.println("list为空");
-            map.put("msg","图片都没传过来，给你显示什么？");
-        }else {
-                for (Image image : images) {
-                    System.out.println(image.getSource().toString()+"wss");
-                }
+        if(multipartFile==null){
+            map.put("msg","参数没有传送成功！");
+            return map;
+        }
+        try{
+            String originalFilename = multipartFile.getOriginalFilename();
+            File file = new File("D://" + originalFilename);
+            multipartFile.transferTo(file);
+            map.put("msg","成功！");
+        } catch (FileNotFoundException e) {
+            System.out.println("文件没找到，请检查路径设置！");
+            map.put("msg","系统错误：找不到位置存放文件！");
+            e.printStackTrace();
+        } catch (IOException e) {
+            System.out.println("系统错误：读取不了文件，请检查文件格式是否正确！");
+            map.put("msg","系统错误：读取不了文件，请检查文件格式是否正确！");
+            e.printStackTrace();
         }
         return map;
-
     }
 
 }
