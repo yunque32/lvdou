@@ -13,7 +13,7 @@
     <import resource="classpath:applicationContext-mapper.xml"/>
     <!-- 导入redis配置文件 -->
     <import resource="classpath:applicationContext-redis.xml"/>
-    <import resource="classpath:eeapplicationContext-shiro.xml"/>
+    <import resource="classpath:applicationContext-shiro.xml"/>
 
     <!-- 配置分布式id生成器 -->
     <bean id="idWorker" class="com.lvdou.common.util.IdWorker">
